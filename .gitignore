@@ -2,8 +2,8 @@
 
 
 .idea
-/data/Training Set/TrainingSet*
-/data/Validation Set (Preliminary)/PreliminaryValidationSet*
+data/Train_set/TrainingSet*
+data/Test_set/PreliminaryValidationSet*
 
 
 
