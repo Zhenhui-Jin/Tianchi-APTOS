@@ -19,16 +19,19 @@ class DataLoad:
         self.train_images = pd.DataFrame(train_images)
         self.test_images = pd.DataFrame(test_images)
 
-        self.train_data: DataFrame = self.load_csv(train_path)
-        self.test_data: DataFrame = self.load_csv(test_path)
+        self.train_csv: DataFrame = self.load_csv(train_path)
+        self.test_csv: DataFrame = self.load_csv(test_path)
+
+        self.train_data: DataFrame = None
+        self.test_data: DataFrame = None
 
     def merge_csv_image(self):
         """
         将CSV数据和对应图像路径合并
         :return:
         """
-        self.train_data: DataFrame = pd.merge(self.train_data, pd.DataFrame(self.train_images), on='patient ID')
-        self.test_data: DataFrame = pd.merge(self.test_data, pd.DataFrame(self.test_images), on='patient ID')
+        self.train_data: DataFrame = pd.merge(self.train_csv, pd.DataFrame(self.train_images), on='patient ID')
+        self.test_data: DataFrame = pd.merge(self.test_csv, pd.DataFrame(self.test_images), on='patient ID')
 
     @staticmethod
     def load_csv(path) -> DataFrame:
@@ -62,7 +65,7 @@ class DataLoad:
                 images.append({'patient ID': file_id, 'ImgNumber': file_number, 'ImgPath': file_path})
 
     @staticmethod
-    def read_image(path: str) -> np.ndarray:
+    def read_image(path: str):
         """
         使用OpenCV加载图像数据
         :param path:
@@ -73,12 +76,122 @@ class DataLoad:
         img = img[:500, 500:, :]
         return img
 
+    def get_pre_cst_test_data(self, size=None):
+        """
+        获取治疗前的预测数据 preCST
+        :param size: 获取样本数量，None为获取全部
+        :return: data, label
+        """
+        if self.test_data is None:
+            raise Exception("先调用 merge_csv_image()")
+
+        def numberF(x):
+            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
+
+        test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
+        imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
+        imgNumber = imgNumber.astype(int)
+        test_data = test_data[test_data.apply(numberF, axis=1)]
+
+        if size is not None:
+            test_data = test_data.head(size)
+
+        test_data['Img'] = test_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
+
+        data = test_data['Img']
+
+        label = test_data['preCST']
+
+        return data, label
+
+    def get_pre_cst_train_data(self, size=None):
+        """
+        获取治疗前的训练数据 preCST
+        :param size: 获取样本数量，None为获取全部
+        :return: data, label
+        """
+        if self.train_data is None:
+            raise Exception("先调用 merge_csv_image()")
+
+        def numberF(x):
+            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
+
+        train_data = self.train_data[self.train_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
+        imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
+        imgNumber = imgNumber.astype(int)
+        train_data = train_data[train_data.apply(numberF, axis=1)]
+        if size is not None:
+            train_data = train_data.head(size)
+
+        train_data['Img'] = train_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
+
+        data = train_data['Img']
+        label = train_data['preCST']
+
+        return data, label
+
+    def get_cst_test_data(self, size=None):
+        """
+        获取治疗后的预测数据  CST
+        :param size: 获取样本数量，None为获取全部
+        :return: data, label
+        """
+        if self.test_data is None:
+            raise Exception("先调用 merge_csv_image()")
+
+        def numberF(x):
+            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
+
+        test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('20'))]
+        imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
+        imgNumber = imgNumber.astype(int)
+        test_data = test_data[test_data.apply(numberF, axis=1)]
+
+        if size is not None:
+            test_data = test_data.head(size)
+
+        test_data['Img'] = test_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
+
+        data = test_data['Img']
+        label = test_data['preCST']
+
+        return data, label
+
+    def get_cst_train_data(self, size=None):
+        """
+        获取治疗后的训练数据 CST
+        :param size: 获取样本数量，None为获取全部
+        :return: data, label
+        """
+        if self.train_data is None:
+            raise Exception("先调用 merge_csv_image()")
+
+        def numberF(x):
+            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
+
+        train_data = self.train_data[self.train_data['ImgNumber'].apply(lambda x: x.startswith('20'))]
+        imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
+        imgNumber = imgNumber.astype(int)
+        train_data = train_data[train_data.apply(numberF, axis=1)]
+
+        if size is not None:
+            train_data = train_data.head(size)
+
+        train_data['Img'] = train_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
+
+        data = train_data['Img']
+        label = train_data['preCST']
+
+        return data, label
+
 
 dataLoad = DataLoad(config.TRAIN_DATA_FILE, config.TEST_DATA_FILE)
 
 if __name__ == '__main__':
-    print(dataLoad.train_images.head(3))
-    print(dataLoad.train_data.info())
-    print(dataLoad.train_data.head(3))
-
-    dataLoad.train_data.to_csv('train.csv')
+    dataLoad.merge_csv_image()
+    data, label, = dataLoad.get_pre_cst_train_data(3)
+    print(data.iloc[0])
+    print(data.iloc[0].shape)
+    print(data.shape)
+    print(label)
+    print(label.dtype)
