@@ -119,10 +119,10 @@ class Model:
         """
         path = os.path.join(KERAS_MODEL_SAVE_PATH, f'model-{name}-weights.h5')
         self.model.save_weights(path)
-        model_name = f'model-{name}.h5'
-        path = os.path.join(KERAS_MODEL_SAVE_PATH, model_name)
+        name = f'model-{name}.h5'
+        path = os.path.join(KERAS_MODEL_SAVE_PATH, name)
         self.model.save(path)
-        return model_name
+        return name
 
     def __save_history__(self, name, history):
         print(history)
@@ -168,9 +168,13 @@ class Model:
 
         history = self.model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, workers=10, verbose=1)
 
-        name = f'{time.strftime("%m%d%H%M")}-e{epochs}-b{batch_size}-eta{learning_rate}'
+        name = f'CST-{time.strftime("%m%d%H%M")}-e({epochs})-b({batch_size})-eta({learning_rate})'
         self.__save_history__(name, history)
         return self.save(name)
+
+    def predict(self, X):
+        y = self.model.predict(X)
+        return y
 
 
 if __name__ == '__main__':
@@ -178,4 +182,4 @@ if __name__ == '__main__':
     print(train_data.shape)
     model_name = 'model-09201112-e100-b64-eta0.0001.h5'
     for epo in range(5):
-        model_name = Model(input_shape=(500, 764, 3), load_model_name=model_name).fit(train_data, label, epochs=100, learning_rate=1e-4)
+        model_name = Model(load_model_name=model_name).fit(train_data, label, epochs=100, learning_rate=1e-4)

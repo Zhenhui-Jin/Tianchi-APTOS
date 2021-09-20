@@ -13,29 +13,25 @@ np.random.seed(1)
 
 class DataLoad:
     def __init__(self, train_path: str, test_path: str):
+        self.train_path = train_path
+        self.test_path = test_path
+
         train_images = []  # [{'patient ID': id, 'ImgNumber': number, 'ImgPath': path}]
         test_images = []  # [{'patient ID': id, 'ImgNumber': number, 'ImgPath': path}]
         self.__load_all_image_path__(train_path, train_images)
         self.__load_all_image_path__(test_path, test_images)
 
-        self.train_images = pd.DataFrame(train_images)
-        self.test_images = pd.DataFrame(test_images)
+        self.train_images = pd.DataFrame(train_images, columns=['patient ID', 'ImgNumber', 'ImgPath'])
+        self.test_images = pd.DataFrame(test_images, columns=['patient ID', 'ImgNumber', 'ImgPath'])
 
-        self.train_csv: DataFrame = self.load_csv(train_path)
-        self.test_csv: DataFrame = self.load_csv(test_path)
+        self.train_data: DataFrame = pd.merge(self.get_train_csv(), self.train_images, on='patient ID')
+        self.test_data: DataFrame = pd.merge(self.get_test_csv(), self.test_images, on='patient ID')
 
-        self.train_data: DataFrame = None
-        self.test_data: DataFrame = None
+    def get_train_csv(self):
+        return self.load_csv(self.train_path)
 
-        self.merge_csv_image()
-
-    def merge_csv_image(self):
-        """
-        将CSV数据和对应图像路径合并
-        :return:
-        """
-        self.train_data: DataFrame = pd.merge(self.train_csv, pd.DataFrame(self.train_images), on='patient ID')
-        self.test_data: DataFrame = pd.merge(self.test_csv, pd.DataFrame(self.test_images), on='patient ID')
+    def get_test_csv(self):
+        return self.load_csv(self.test_path)
 
     @staticmethod
     def load_csv(path) -> DataFrame:
@@ -47,7 +43,7 @@ class DataLoad:
         files = os.listdir(path)
         for file in files:
             if file.endswith('.csv'):
-                data = pd.read_csv(os.path.join(path, file))
+                data = pd.read_csv(os.path.join(path, file), header=0)
                 return data
 
     def __load_all_image_path__(self, path: str, images: list):
@@ -88,8 +84,6 @@ class DataLoad:
         :param size: 获取样本数量，None为获取全部
         :return: data, label
         """
-        if self.train_data is None:
-            raise Exception("先调用 merge_csv_image()")
 
         def numberF(x):
             return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
@@ -112,26 +106,23 @@ class DataLoad:
         """
         获取治疗前的预测数据 preCST
         :param size: 获取样本数量，None为获取全部
-        :return: data, label
+        :return: patient_id, data
         """
-        if self.test_data is None:
-            raise Exception("先调用 merge_csv_image()")
+        test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
+        img_number = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
+        img_number = img_number.astype(int)
 
         def numberF(x):
-            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
+            return img_number[x.loc['patient ID']] == int(x.loc['ImgNumber'])
 
-        test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
-        imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
-        imgNumber = imgNumber.astype(int)
         test_data = test_data[test_data.apply(numberF, axis=1)]
-        test_data.loc[test_data['preCST'].isna(), 'preCST'] = test_data['preCST'].mean()
         if size is not None:
             test_data = test_data.head(size)
 
         data = np.array([self.read_image(path) for path in test_data['ImgPath']])
-        label = test_data['preCST'].values
+        patient_id = test_data['patient ID'].values
 
-        return data, label
+        return patient_id, data
 
     def get_cst_test_data(self, size=None):
         """
