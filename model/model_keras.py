@@ -125,6 +125,7 @@ class Model:
         return model_name
 
     def __save_history__(self, name, history):
+        print(history)
         history_path = os.path.join(KERAS_MODEL_SAVE_PATH, 'history')
         os.makedirs(history_path, exist_ok=True)
 
@@ -165,8 +166,7 @@ class Model:
         adam = Adam(learning_rate=learning_rate)
         self.model.compile(loss='mean_squared_error', optimizer=adam, metrics=['mse'])
 
-        history = self.model.fit(x_train, y_train,
-                                 validation_split=0.2, epochs=epochs, batch_size=batch_size, workers=10, verbose=1)
+        history = self.model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size, workers=10, verbose=1)
 
         name = f'{time.strftime("%m%d%H%M")}-e{epochs}-b{batch_size}-eta{learning_rate}'
         self.__save_history__(name, history)
@@ -176,6 +176,6 @@ class Model:
 if __name__ == '__main__':
     train_data, label = dataLoad.get_pre_cst_train_data()
     print(train_data.shape)
-    model_name = 'model-09201013-e100-b64-eta0.0001.h5'
+    model_name = 'model-09201112-e100-b64-eta0.0001.h5'
     for epo in range(5):
         model_name = Model(input_shape=(500, 764, 3), load_model_name=model_name).fit(train_data, label, epochs=100, learning_rate=1e-4)

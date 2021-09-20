@@ -98,7 +98,8 @@ class DataLoad:
         imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
         imgNumber = imgNumber.astype(int)
         train_data = train_data[train_data.apply(numberF, axis=1)]
-        train_data.loc[train_data['preCST'].isna(), 'preCST'] = train_data['preCST'].mean()
+        # train_data.loc[train_data['preCST'].isna(), 'preCST'] = train_data['preCST'].mean()
+        train_data.dropna(subset=['preCST'], inplace=True, axis=0)
         if size is not None:
             train_data = train_data.head(size)
 
