@@ -8,6 +8,8 @@ from pandas import DataFrame
 
 import config
 
+np.random.seed(1)
+
 
 class DataLoad:
     def __init__(self, train_path: str, test_path: str):
@@ -24,6 +26,8 @@ class DataLoad:
 
         self.train_data: DataFrame = None
         self.test_data: DataFrame = None
+
+        self.merge_csv_image()
 
     def merge_csv_image(self):
         """
@@ -74,37 +78,11 @@ class DataLoad:
         img: np.ndarray = cv2.imread(path)
         # 裁剪
         img = img[:500, 500:, :]
+        img = img.astype('float32')
+        img = img / 255
         return img
 
-    def get_pre_cst_test_data(self, size=None):
-        """
-        获取治疗前的预测数据 preCST
-        :param size: 获取样本数量，None为获取全部
-        :return: data, label
-        """
-        if self.test_data is None:
-            raise Exception("先调用 merge_csv_image()")
-
-        def numberF(x):
-            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
-
-        test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
-        imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
-        imgNumber = imgNumber.astype(int)
-        test_data = test_data[test_data.apply(numberF, axis=1)]
-
-        if size is not None:
-            test_data = test_data.head(size)
-
-        test_data['Img'] = test_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
-
-        data = test_data['Img']
-
-        label = test_data['preCST']
-
-        return data, label
-
-    def get_pre_cst_train_data(self, size=None):
+    def get_pre_cst_train_data(self, size=None) -> (np.ndarray, np.ndarray):
         """
         获取治疗前的训练数据 preCST
         :param size: 获取样本数量，None为获取全部
@@ -120,13 +98,37 @@ class DataLoad:
         imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
         imgNumber = imgNumber.astype(int)
         train_data = train_data[train_data.apply(numberF, axis=1)]
+        train_data.loc[train_data['preCST'].isna(), 'preCST'] = train_data['preCST'].mean()
         if size is not None:
             train_data = train_data.head(size)
 
-        train_data['Img'] = train_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
+        data = np.array([self.read_image(path) for path in train_data['ImgPath']])
+        label = train_data['preCST'].values
 
-        data = train_data['Img']
-        label = train_data['preCST']
+        return data, label
+
+    def get_pre_cst_test_data(self, size=None) -> (np.ndarray, np.ndarray):
+        """
+        获取治疗前的预测数据 preCST
+        :param size: 获取样本数量，None为获取全部
+        :return: data, label
+        """
+        if self.test_data is None:
+            raise Exception("先调用 merge_csv_image()")
+
+        def numberF(x):
+            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
+
+        test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
+        imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
+        imgNumber = imgNumber.astype(int)
+        test_data = test_data[test_data.apply(numberF, axis=1)]
+        test_data.loc[test_data['preCST'].isna(), 'preCST'] = test_data['preCST'].mean()
+        if size is not None:
+            test_data = test_data.head(size)
+
+        data = np.array([self.read_image(path) for path in test_data['ImgPath']])
+        label = test_data['preCST'].values
 
         return data, label
 
@@ -146,7 +148,7 @@ class DataLoad:
         imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
         imgNumber = imgNumber.astype(int)
         test_data = test_data[test_data.apply(numberF, axis=1)]
-
+        test_data.loc[test_data['preCST'].isna(), 'preCST'] = test_data['preCST'].mean()
         if size is not None:
             test_data = test_data.head(size)
 
@@ -173,7 +175,7 @@ class DataLoad:
         imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
         imgNumber = imgNumber.astype(int)
         train_data = train_data[train_data.apply(numberF, axis=1)]
-
+        train_data.loc[train_data['preCST'].isna(), 'preCST'] = train_data['preCST'].mean()
         if size is not None:
             train_data = train_data.head(size)
 
@@ -188,10 +190,7 @@ class DataLoad:
 dataLoad = DataLoad(config.TRAIN_DATA_FILE, config.TEST_DATA_FILE)
 
 if __name__ == '__main__':
-    dataLoad.merge_csv_image()
     data, label, = dataLoad.get_pre_cst_train_data(3)
-    print(data.iloc[0])
-    print(data.iloc[0].shape)
     print(data.shape)
     print(label)
     print(label.dtype)
