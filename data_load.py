@@ -74,115 +74,145 @@ class DataLoad:
         img: np.ndarray = cv2.imread(path)
         # 裁剪
         img = img[:500, 500:, :]
-        img = img.astype('float32')
-        img = img / 255
+        # img = img.astype('float32')
+        # img = img / 255
         return img
 
-    def get_pre_cst_train_data(self, size=None) -> (np.ndarray, np.ndarray):
+    def get_train_data_cst_all(self, size=None, read_img=False) -> pd.DataFrame:
+        """
+        CST，获取治疗前和治疗后的训练图像，各取size个样本
+        :param size:
+        :param read_img:
+        :return:
+        """
+        pre_cst = self.get_train_data_pre_cst(size, read_img)
+        cst = self.get_train_data_cst(size, read_img)
+        pre_cst = pre_cst.rename({'preCST': 'label', 'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
+        pre_cst['type'] = 'preCST'
+        cst = cst.rename({'CST': 'label', 'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
+        cst['type'] = 'CST'
+        cst_data = pd.concat([pre_cst, cst], axis=0, ignore_index=True)
+        return cst_data[['patient ID', 'type', 'label', 'feature']]
+
+    def get_train_data_pre_cst(self, size=None, read_img=False) -> pd.DataFrame:
         """
         获取治疗前的训练数据 preCST
         :param size: 获取样本数量，None为获取全部
-        :return: data, label
+        :param read_img 是否读取图像，False：不读取，返回'ImgPath'；True：读取，返回'Img'
+        :return: ['patient ID', 'preCST', 'ImgPath'|'Img']
         """
 
-        def numberF(x):
-            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
-
         train_data = self.train_data[self.train_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
-        imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
-        imgNumber = imgNumber.astype(int)
-        train_data = train_data[train_data.apply(numberF, axis=1)]
-        # train_data.loc[train_data['preCST'].isna(), 'preCST'] = train_data['preCST'].mean()
+        img_number = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
+        img_number = img_number.astype(int)
+
+        train_data = train_data[
+            train_data.apply(lambda x: img_number[x.loc['patient ID']] == int(x.loc['ImgNumber']), axis=1)]
+        # train_data.loc[train_data['preCST'].isna(), 'preCST'] = 0
         train_data.dropna(subset=['preCST'], inplace=True, axis=0)
+
         if size is not None:
             train_data = train_data.head(size)
 
-        data = np.array([self.read_image(path) for path in train_data['ImgPath']])
-        label = train_data['preCST'].values
+        if read_img:
+            train_data['Img'] = train_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            return train_data[['patient ID', 'preCST', 'Img']]
+        else:
+            return train_data[['patient ID', 'preCST', 'ImgPath']]
 
-        return data, label
+    def get_train_data_cst(self, size=None, read_img=False) -> pd.DataFrame:
+        """
+        获取治疗后的训练数据 CST
+        :param size: 获取样本数量，None为获取全部
+        :param read_img 是否读取图像，False：不读取，返回'ImgPath'；True：读取，返回'Img'
+        :return: ['patient ID', 'CST', 'ImgPath'|'Img']
+        """
 
-    def get_pre_cst_test_data(self, size=None) -> (np.ndarray, np.ndarray):
+        train_data = self.train_data[self.train_data['ImgNumber'].apply(lambda x: x.startswith('20'))]
+        img_number = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
+        img_number = img_number.astype(int)
+
+        train_data = train_data[
+            train_data.apply(lambda x: img_number[x.loc['patient ID']] == int(x.loc['ImgNumber']), axis=1)]
+        # train_data.loc[train_data['CST'].isna(), 'preCST'] = 0
+        train_data.dropna(subset=['CST'], inplace=True, axis=0)
+        if size is not None:
+            train_data = train_data.head(size)
+
+        if read_img:
+            train_data['Img'] = train_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            return train_data[['patient ID', 'CST', 'Img']]
+        else:
+            return train_data[['patient ID', 'CST', 'ImgPath']]
+
+    def get_test_data_cst_all(self, size=None, read_img=False) -> pd.DataFrame:
+        """
+        CST，获取治疗前和治疗后的预测图像，各取size个样本
+        :param size:
+        :param read_img:
+        :return:
+        """
+        pre_cst = self.get_test_data_pre_cst(size, read_img)
+        cst = self.get_test_data_cst(size, read_img)
+        pre_cst = pre_cst.rename({'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
+        pre_cst['type'] = 'preCST'
+        cst = cst.rename({'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
+        cst['type'] = 'CST'
+        cst_data = pd.concat([pre_cst, cst], axis=0, ignore_index=True)
+        return cst_data[['patient ID', 'type', 'feature']]
+
+    def get_test_data_pre_cst(self, size=None, read_img=False) -> pd.DataFrame:
         """
         获取治疗前的预测数据 preCST
         :param size: 获取样本数量，None为获取全部
-        :return: patient_id, data
+        :param read_img 是否读取图像，False：不读取，返回'ImgPath'；True：读取，返回'Img'
+        :return: ['patient ID', 'ImgPath'|'Img']
         """
         test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('10'))]
         img_number = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 1000
         img_number = img_number.astype(int)
 
-        def numberF(x):
-            return img_number[x.loc['patient ID']] == int(x.loc['ImgNumber'])
-
-        test_data = test_data[test_data.apply(numberF, axis=1)]
+        test_data = test_data[
+            test_data.apply(lambda x: img_number[x.loc['patient ID']] == int(x.loc['ImgNumber']), axis=1)]
         if size is not None:
             test_data = test_data.head(size)
 
-        data = np.array([self.read_image(path) for path in test_data['ImgPath']])
-        patient_id = test_data['patient ID'].values
+        if read_img:
+            test_data['Img'] = test_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            return test_data[['patient ID', 'Img']]
+        else:
+            return test_data[['patient ID', 'ImgPath']]
 
-        return patient_id, data
-
-    def get_cst_test_data(self, size=None):
+    def get_test_data_cst(self, size=None, read_img=False) -> pd.DataFrame:
         """
-        获取治疗后的预测数据  CST
+        获取治疗前的预测数据 CST
         :param size: 获取样本数量，None为获取全部
-        :return: data, label
+        :param read_img 是否读取图像，False：不读取，返回'ImgPath'；True：读取，返回'Img'
+        :return: ['patient ID', 'ImgPath'|'Img']
         """
-        if self.test_data is None:
-            raise Exception("先调用 merge_csv_image()")
-
-        def numberF(x):
-            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
-
         test_data = self.test_data[self.test_data['ImgNumber'].apply(lambda x: x.startswith('20'))]
-        imgNumber = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
-        imgNumber = imgNumber.astype(int)
-        test_data = test_data[test_data.apply(numberF, axis=1)]
-        test_data.loc[test_data['preCST'].isna(), 'preCST'] = test_data['preCST'].mean()
+        img_number = test_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
+        img_number = img_number.astype(int)
+
+        test_data = test_data[
+            test_data.apply(lambda x: img_number[x.loc['patient ID']] == int(x.loc['ImgNumber']), axis=1)]
         if size is not None:
             test_data = test_data.head(size)
 
-        test_data['Img'] = test_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
-
-        data = test_data['Img']
-        label = test_data['preCST']
-
-        return data, label
-
-    def get_cst_train_data(self, size=None):
-        """
-        获取治疗后的训练数据 CST
-        :param size: 获取样本数量，None为获取全部
-        :return: data, label
-        """
-        if self.train_data is None:
-            raise Exception("先调用 merge_csv_image()")
-
-        def numberF(x):
-            return imgNumber[x.loc['patient ID']] == int(x.loc['ImgNumber'])
-
-        train_data = self.train_data[self.train_data['ImgNumber'].apply(lambda x: x.startswith('20'))]
-        imgNumber = train_data.groupby(['patient ID']).count()['ImgNumber'] / 2 + 2000
-        imgNumber = imgNumber.astype(int)
-        train_data = train_data[train_data.apply(numberF, axis=1)]
-        train_data.loc[train_data['preCST'].isna(), 'preCST'] = train_data['preCST'].mean()
-        if size is not None:
-            train_data = train_data.head(size)
-
-        train_data['Img'] = train_data.apply(lambda x: self.read_image(x['ImgPath']), axis=1)
-
-        data = train_data['Img']
-        label = train_data['preCST']
-
-        return data, label
+        if read_img:
+            test_data['Img'] = test_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            return test_data[['patient ID', 'Img']]
+        else:
+            return test_data[['patient ID', 'ImgPath']]
 
 
 dataLoad = DataLoad(config.TRAIN_DATA_FILE, config.TEST_DATA_FILE)
 
 if __name__ == '__main__':
-    data, label, = dataLoad.get_pre_cst_train_data(3)
-    print(data.shape)
-    print(label)
-    print(label.dtype)
+    train_data = dataLoad.get_train_data_cst_all(3, read_img=True)
+    print(train_data)
+    print(train_data.shape)
+
+    train_data = dataLoad.get_test_data_cst_all(3, read_img=True)
+    print(train_data)
+    print(train_data.shape)
