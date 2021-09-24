@@ -1,25 +1,24 @@
-import os
+from tensorflow.keras import Sequential
+from tensorflow.keras.layers import Dense, Flatten, Conv2D, AvgPool2D
 
-from config import MODEL_SAVE_PATH
 from model_base import BaseModel
 
-from tensorflow.keras.optimizers import SGD, Adam
-from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, AvgPool2D, BatchNormalization
-from tensorflow.keras.models import load_model
+"""
+loss 一直降不下来
+"""
 
 
 class LeNetModel(BaseModel):
 
     def __init__(self,
                  input_shape=(500, 764, 3),
+                 learning_rate=0.001,
                  load_model_name=None,
                  load_weights_name=None,
                  trainable=True):
-        super(LeNetModel, self).__init__('LeNet', input_shape, load_model_name, load_weights_name, trainable)
-
-        adam = Adam(learning_rate=self.learning_rate)
-        self.model.compile(loss='mean_squared_error', optimizer=adam, metrics=['mse'])
+        super(LeNetModel, self).__init__('LeNet', input_shape=input_shape, learning_rate=learning_rate,
+                                         load_model_name=load_model_name, load_weights_name=load_weights_name,
+                                         trainable=trainable)
 
     def create_model(self):
         """

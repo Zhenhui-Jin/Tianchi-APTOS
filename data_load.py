@@ -1,7 +1,6 @@
 import os
 
 import cv2
-
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
@@ -65,28 +64,30 @@ class DataLoad:
                 images.append({'patient ID': file_id, 'ImgNumber': file_number, 'ImgPath': file_path})
 
     @staticmethod
-    def read_image(path: str):
+    def read_image(path: str, to_float=False):
         """
         使用OpenCV加载图像数据
         :param path:
+        :param to_float:
         :return:
         """
         img: np.ndarray = cv2.imread(path)
         # 裁剪
-        img = img[:500, 500:, :]
-        # img = img.astype('float32')
-        # img = img / 255
+        # img = img[:500, 500:, :]
+        if to_float:
+            img = img.astype('float32')
+            img = img / 255
         return img
 
-    def get_train_data_cst_all(self, size=None, read_img=False) -> pd.DataFrame:
+    def get_train_data_cst_all(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
         """
         CST，获取治疗前和治疗后的训练图像，各取size个样本
         :param size:
         :param read_img:
         :return:
         """
-        pre_cst = self.get_train_data_pre_cst(size, read_img)
-        cst = self.get_train_data_cst(size, read_img)
+        pre_cst = self.get_train_data_pre_cst(size, read_img, to_float)
+        cst = self.get_train_data_cst(size, read_img, to_float)
         pre_cst = pre_cst.rename({'preCST': 'label', 'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
         pre_cst['type'] = 'preCST'
         cst = cst.rename({'CST': 'label', 'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
@@ -94,7 +95,7 @@ class DataLoad:
         cst_data = pd.concat([pre_cst, cst], axis=0, ignore_index=True)
         return cst_data[['patient ID', 'type', 'label', 'feature']]
 
-    def get_train_data_pre_cst(self, size=None, read_img=False) -> pd.DataFrame:
+    def get_train_data_pre_cst(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
         """
         获取治疗前的训练数据 preCST
         :param size: 获取样本数量，None为获取全部
@@ -115,12 +116,12 @@ class DataLoad:
             train_data = train_data.head(size)
 
         if read_img:
-            train_data['Img'] = train_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            train_data['Img'] = train_data['ImgPath'].apply(lambda path: np.array(self.read_image(path, to_float)))
             return train_data[['patient ID', 'preCST', 'Img']]
         else:
             return train_data[['patient ID', 'preCST', 'ImgPath']]
 
-    def get_train_data_cst(self, size=None, read_img=False) -> pd.DataFrame:
+    def get_train_data_cst(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
         """
         获取治疗后的训练数据 CST
         :param size: 获取样本数量，None为获取全部
@@ -140,7 +141,7 @@ class DataLoad:
             train_data = train_data.head(size)
 
         if read_img:
-            train_data['Img'] = train_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            train_data['Img'] = train_data['ImgPath'].apply(lambda path: np.array(self.read_image(path, to_float)))
             return train_data[['patient ID', 'CST', 'Img']]
         else:
             return train_data[['patient ID', 'CST', 'ImgPath']]
@@ -161,7 +162,7 @@ class DataLoad:
         cst_data = pd.concat([pre_cst, cst], axis=0, ignore_index=True)
         return cst_data[['patient ID', 'type', 'feature']]
 
-    def get_test_data_pre_cst(self, size=None, read_img=False) -> pd.DataFrame:
+    def get_test_data_pre_cst(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
         """
         获取治疗前的预测数据 preCST
         :param size: 获取样本数量，None为获取全部
@@ -178,12 +179,12 @@ class DataLoad:
             test_data = test_data.head(size)
 
         if read_img:
-            test_data['Img'] = test_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            test_data['Img'] = test_data['ImgPath'].apply(lambda path: np.array(self.read_image(path, to_float)))
             return test_data[['patient ID', 'Img']]
         else:
             return test_data[['patient ID', 'ImgPath']]
 
-    def get_test_data_cst(self, size=None, read_img=False) -> pd.DataFrame:
+    def get_test_data_cst(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
         """
         获取治疗前的预测数据 CST
         :param size: 获取样本数量，None为获取全部
@@ -200,7 +201,7 @@ class DataLoad:
             test_data = test_data.head(size)
 
         if read_img:
-            test_data['Img'] = test_data['ImgPath'].apply(lambda path: np.array(self.read_image(path)))
+            test_data['Img'] = test_data['ImgPath'].apply(lambda path: np.array(self.read_image(path, to_float)))
             return test_data[['patient ID', 'Img']]
         else:
             return test_data[['patient ID', 'ImgPath']]

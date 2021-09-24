@@ -4,6 +4,8 @@
 .idea
 data/Train_set/TrainingSet*
 data/Test_set/PreliminaryValidationSet*
+data/train/*
+data/test/*
 
 
 
