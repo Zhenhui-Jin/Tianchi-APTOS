@@ -1,11 +1,7 @@
 from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Flatten, Conv2D, AvgPool2D
+from tensorflow.keras.layers import InputLayer, Dense, Flatten, Conv2D, AvgPool2D
 
 from model_base import BaseModel
-
-"""
-loss 一直降不下来
-"""
 
 
 class LeNetModel(BaseModel):
@@ -26,14 +22,14 @@ class LeNetModel(BaseModel):
         :return:
         """
         model = Sequential()
-        model.add(Conv2D(filters=2, kernel_size=2, input_shape=self.input_shape, activation='sigmoid', padding='same'))
-        model.add(Conv2D(filters=6, kernel_size=5, activation='sigmoid', padding='same'))
+        model.add(InputLayer(input_shape=self.input_shape))
+        model.add(Conv2D(filters=6, kernel_size=5, activation='relu', padding='same'))
         model.add(AvgPool2D(pool_size=2, strides=2))
-        model.add(Conv2D(filters=16, kernel_size=5, activation='sigmoid'))
+        model.add(Conv2D(filters=16, kernel_size=5, activation='relu'))
         model.add(AvgPool2D(pool_size=2, strides=2))
         model.add(Flatten())
-        model.add(Dense(120, activation='sigmoid'))
-        model.add(Dense(84, activation='sigmoid'))
+        model.add(Dense(120, activation='relu'))
+        model.add(Dense(84, activation='relu'))
         model.add(Dense(1))
 
         return model

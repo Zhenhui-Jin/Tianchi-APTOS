@@ -14,23 +14,19 @@ class CSTModel(BaseModel):
 
     def __init__(self,
                  input_shape=(500, 764, 3),
-                 kernel_size=(3, 3),
-                 strides=(2, 2),
-                 pool_size=(2, 2),
                  learning_rate=1e-3,
-                 padding='same',
                  load_model_name=None,
                  load_weights_name=None,
                  trainable=True):
         super(CSTModel, self).__init__('CSTModel',
                                        input_shape=input_shape,
-                                       kernel_size=kernel_size,
-                                       strides=strides,
-                                       pool_size=pool_size,
-                                       padding=padding,
                                        learning_rate=learning_rate,
                                        load_model_name=load_model_name, load_weights_name=load_weights_name,
                                        trainable=trainable)
+        self.padding = 'same'
+        self.pool_size = (2, 2)
+        self.strides = (2, 2)
+        self.kernel_size = (3, 3)
 
     def create_model(self):
         """

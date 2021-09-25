@@ -207,7 +207,7 @@ class DataLoad:
             return test_data[['patient ID', 'ImgPath']]
 
 
-dataLoad = DataLoad(config.TRAIN_DATA_FILE, config.TEST_DATA_FILE)
+dataLoad = DataLoad(config.TRAIN_DATA_FILE_NEW, config.TEST_DATA_FILE_NEW)
 
 if __name__ == '__main__':
     train_data = dataLoad.get_train_data_cst_all(3, read_img=True)

@@ -18,13 +18,10 @@ MODEL_SAVE_PATH = os.path.join(root_path, 'model', 'file')
 
 # keras 模型保存路径
 KERAS_MODEL_SAVE_PATH = os.path.join(MODEL_SAVE_PATH, 'keras')
-# keras 模型训练结果保存路径
-KERAS_MODEL_RESULT_SAVE_PATH = os.path.join(KERAS_MODEL_SAVE_PATH, 'result')
-os.makedirs(KERAS_MODEL_RESULT_SAVE_PATH, exist_ok=True)
-# keras 模型训练记录保存路径
-KERAS_MODEL_HISTORY_SAVE_PATH = os.path.join(KERAS_MODEL_SAVE_PATH, 'history')
-os.makedirs(KERAS_MODEL_HISTORY_SAVE_PATH, exist_ok=True)
+# 模型训练结果保存路径
+MODEL_RESULT_SAVE_PATH = os.path.join(MODEL_SAVE_PATH, 'result')
+os.makedirs(MODEL_RESULT_SAVE_PATH, exist_ok=True)
 
-# keras 模型预测结果保存路径
-KERAS_PREDICT_SAVE_PATH = os.path.join(root_path, 'project', 'result', 'keras')
-os.makedirs(KERAS_PREDICT_SAVE_PATH, exist_ok=True)
+# 模型预测结果保存路径
+PREDICT_SAVE_PATH = os.path.join(root_path, 'predict', 'result')
+os.makedirs(PREDICT_SAVE_PATH, exist_ok=True)

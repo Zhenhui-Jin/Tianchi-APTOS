@@ -1,27 +1,19 @@
 import abc
 import os
-import json
 import time
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
-from tqdm import tqdm
-
-from config import MODEL_SAVE_PATH, KERAS_MODEL_RESULT_SAVE_PATH
-from data_load import dataLoad
-
-from tensorflow.keras.optimizers import SGD, Adam
 from tensorflow.keras.models import load_model
+from tensorflow.keras.optimizers import Adam
+
+from config import MODEL_SAVE_PATH
+from data_load import dataLoad
 
 
 class BaseModel:
     def __init__(self, model_name, input_shape,
-                 kernel_size=(3, 3),
-                 strides=(2, 2),
-                 pool_size=(2, 2),
-                 padding='same',
                  learning_rate=0.001,
                  load_model_name=None,
                  load_weights_name=None,
@@ -33,10 +25,6 @@ class BaseModel:
         self.trainable = trainable
         self.model_name = model_name
         self.learning_rate = learning_rate
-        self.kernel_size = kernel_size
-        self.strides = strides
-        self.padding = padding
-        self.pool_size = pool_size
 
         self.model_save_name = None
 
@@ -61,8 +49,9 @@ class BaseModel:
         self.model.trainable = trainable
         self.model.summary()
 
-        self.optimizer = Adam(learning_rate=self.learning_rate)
-        self.model.compile(loss='mean_squared_error', optimizer=self.optimizer, metrics=['mse'])
+        if trainable:
+            loss, metrics = self.create_loss()
+            self.model.compile(loss=loss, optimizer=Adam(learning_rate=self.learning_rate), metrics=metrics)
 
     def save(self, name):
         """
@@ -78,8 +67,9 @@ class BaseModel:
     def __save_history__(self, name, loss_list):
         path = os.path.join(self.model_save_path, f'{self.model_name}-{name}.png')
         fig = plt.figure()
-        plt.plot(loss_list, label='Loss')
-        plt.title('CSTModel Loss')
+        epochs = range(1, len(loss_list) + 1)
+        plt.plot(epochs, loss_list, label='Loss')
+        plt.title(f'{self.model_name} Model Loss')
         plt.xlabel('Epoch')
         plt.ylabel('Loss')
         plt.legend()
@@ -102,7 +92,7 @@ class BaseModel:
 
         mse_list = []
         loss_list = []
-        loss = 0
+        name = ''
         for epoch in range(epochs):
             mse_sum = 0
             loss_sum = 0
@@ -126,7 +116,12 @@ class BaseModel:
             end_time = time.perf_counter()
             print(f'{epoch + 1}/{epochs}\tloss:{loss:.4f}\tmse:{mse:.4f}\ttime:{end_time - start_time:.4f}')
 
-        name = f'{time.strftime("%m%d%H%M")}-e({epochs})-b({batch_size})-eta({self.learning_rate})-loss({loss:.4f})'
+            name = f'{time.strftime("%m%d%H%M")}-e({epochs})-b({batch_size})-eta({self.learning_rate})-loss({loss:.4f})'
+            if (epoch + 1) % 10 == 0 and epoch < epochs - 1:
+                # 每10轮保存模型
+                self.__save_history__(name, loss_list)
+                self.save(name)
+
         self.__save_history__(name, loss_list)
         return self.save(name)
 
@@ -166,4 +161,18 @@ class BaseModel:
 
     @abc.abstractmethod
     def create_model(self):
+        """
+        创建深度神经网络模型
+        :return:
+        """
         pass
+
+    @abc.abstractmethod
+    def create_loss(self):
+        """
+        定义模型使用的损失函数
+        :return: loss, metrics
+        """
+        loss = 'mean_squared_error'
+        metrics = ['mse']
+        return loss, metrics
