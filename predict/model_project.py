@@ -3,21 +3,18 @@ import os
 import numpy as np
 import pandas as pd
 
-from data_load import dataLoad
-
-from config import PREDICT_SAVE_PATH
-from model.model_LeNet import LeNetModel
+from config import PREDICT_SAVE_PATH, CST_TRAIN_DATA_FILE, CST_TEST_DATA_FILE
+from data_load import DataLoad
+from model.model_VGGNet import VGGNet11
 
 
 class Predict:
-    def __init__(self, model):
-        self.model = model
 
-    def predict_pre_cst(self):
-        test_data = dataLoad.get_test_data_cst_all(read_img=True)
+    def predict_pre_cst(self, model):
+        test_data = model.dataLoad.get_test_data_cst_all(read_img=False)
         X = np.array(test_data['feature'].tolist())
 
-        predict_y = self.model.predict_img_array(X)
+        predict_y = model.predict_img_path(X)
         predict_data = pd.concat([test_data.drop('feature', axis=1), predict_y], axis=1)
 
         pre_cst_data = predict_data[predict_data['type'] == 'preCST'].copy()
@@ -36,14 +33,17 @@ class Predict:
 
 
 if __name__ == '__main__':
+    dataLoad = DataLoad(CST_TRAIN_DATA_FILE, CST_TEST_DATA_FILE)
     # model = CSTModel(load_model_name=self.cst_model_name, trainable=False)
-    net_model = LeNetModel(load_model_name='LeNet-09252222-e(50)-b(64)-eta(1e-05)-loss(4.2496).h5', trainable=False)
+    # net_model = LeNetModel(load_model_name='VGGNet11-09281646-e(100)-b(16)-eta(1e-05)-loss(6.3234).h5', trainable=False)
+    net_model = VGGNet11(load_model_name='CST-VGGNet11-10050604-e(50)-b(16)-eta(1e-07)-loss(0.2738).h5',
+                         trainable=False, dataLoad=dataLoad)
 
-    predict = Predict(model=net_model)
+    predict = Predict()
 
     # patient ID,preCST,VA,continue injection,CST,IRF,SRF,HRF
 
-    predict_data = predict.predict_pre_cst()
+    predict_data = predict.predict_pre_cst(net_model)
     predict_data.loc[predict_data['preCST'].isna(), 'preCST'] = 0
 
     predict_data['VA'] = 0

@@ -5,8 +5,8 @@ import pandas as pd
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D, BatchNormalization
 
-from config import KERAS_MODEL_RESULT_SAVE_PATH
-from data_load import dataLoad
+from config import TRAIN_DATA_FILE_NEW, TEST_DATA_FILE_NEW, MODEL_RESULT_SAVE_PATH
+from data_load import DataLoad
 from model_base import BaseModel
 
 
@@ -94,6 +94,8 @@ class CSTModel(BaseModel):
 
 
 def cst_model_fit(model_name, epochs=10):
+    dataLoad = DataLoad(TRAIN_DATA_FILE_NEW, TEST_DATA_FILE_NEW)
+
     train_data = dataLoad.get_train_data_cst_all(read_img=True)
     X = np.array(train_data['feature'].tolist())
     print('train:', X.shape)
@@ -105,7 +107,7 @@ def cst_model_fit(model_name, epochs=10):
 
     predict_y = model.predict_img_array(X)
     predict_data = pd.concat([train_data.drop('feature', axis=1), predict_y], axis=1)
-    predict_data.to_csv(os.path.join(KERAS_MODEL_RESULT_SAVE_PATH, f'train-{model_name}.csv'), index=False)
+    predict_data.to_csv(os.path.join(MODEL_RESULT_SAVE_PATH, f'train-{model_name}.csv'), index=False)
 
     test_data = dataLoad.get_test_data_cst_all(read_img=True)
     X_test = np.array(test_data['feature'].tolist())
@@ -113,7 +115,7 @@ def cst_model_fit(model_name, epochs=10):
 
     predict_y = model.predict_img_array(X_test)
     predict_data = pd.concat([test_data.drop('feature', axis=1), predict_y], axis=1)
-    predict_data.to_csv(os.path.join(KERAS_MODEL_RESULT_SAVE_PATH, f'test-{model_name}.csv'), index=False)
+    predict_data.to_csv(os.path.join(MODEL_RESULT_SAVE_PATH, f'test-{model_name}.csv'), index=False)
 
 
 if __name__ == '__main__':

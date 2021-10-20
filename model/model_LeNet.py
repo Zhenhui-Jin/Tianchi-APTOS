@@ -2,19 +2,23 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.layers import InputLayer, Dense, Flatten, Conv2D, AvgPool2D
 
 from model_base import BaseModel
+from data_load import DataLoad
 
 
 class LeNetModel(BaseModel):
 
     def __init__(self,
+                 model_name='LeNet',
                  input_shape=(500, 764, 3),
                  learning_rate=0.001,
                  load_model_name=None,
                  load_weights_name=None,
-                 trainable=True):
-        super(LeNetModel, self).__init__('LeNet', input_shape=input_shape, learning_rate=learning_rate,
+                 trainable=True,
+                 dataLoad: DataLoad = None,
+                 ):
+        super(LeNetModel, self).__init__(model_name=model_name, input_shape=input_shape, learning_rate=learning_rate,
                                          load_model_name=load_model_name, load_weights_name=load_weights_name,
-                                         trainable=trainable)
+                                         trainable=trainable, dataLoad=dataLoad)
 
     def create_model(self):
         """
