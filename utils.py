@@ -28,8 +28,12 @@ def load_all_image_path(path: str, images: list):
                 file_number = split[1] + split[2]
             else:
                 file_number = split[1]
+            if file_id[-1] == 'L':
+                L0R1 = 0
+            else:
+                L0R1 = 1
             images.append({'patient ID': file_id,
-                           'LR': file_id[-1],
+                           'L0R1': L0R1,
                            'ImgNumber': file_number,
                            'ImgPath': file_path.replace(config.root_path + '\\', '').replace('\\', '/')})
 
@@ -42,7 +46,7 @@ def read_image(path: str):
     """
     img = cv2.imread(path)
     # 裁剪
-    img = img[:500, 500:, :]
+    img = img[:500, 500:1264, :]
     return img
 
 
@@ -129,20 +133,20 @@ def before_after_to_csv(train_path, test_path, save_path):
     test_images = []
     load_all_image_path(test_path, test_images)
 
-    train_images = pd.DataFrame(train_images, columns=['patient ID', 'LR', 'ImgNumber', 'ImgPath'])
-    test_images = pd.DataFrame(test_images, columns=['patient ID', 'LR', 'ImgNumber', 'ImgPath'])
+    train_images = pd.DataFrame(train_images, columns=['patient ID', 'L0R1', 'ImgNumber', 'ImgPath'])
+    test_images = pd.DataFrame(test_images, columns=['patient ID', 'L0R1', 'ImgNumber', 'ImgPath'])
 
     train_data: pd.DataFrame = pd.merge(load_csv(train_path), train_images, on='patient ID')
     test_data: pd.DataFrame = pd.merge(load_csv(test_path), test_images, on='patient ID')
 
-    number = train_data.train_data['ImgNumber'].apply(lambda num: int(num[0]))
+    number = train_data['ImgNumber'].apply(lambda num: int(num[0]))
     train_data_before = train_data[number == 1]
     train_data_after = train_data[number == 2]
 
     train_data_before.to_csv(os.path.join(save_path, 'train_data_before.csv'), index=False)
     train_data_after.to_csv(os.path.join(save_path, 'train_data_after.csv'), index=False)
 
-    number = test_data.train_data['ImgNumber'].apply(lambda num: int(num[0]))
+    number = test_data['ImgNumber'].apply(lambda num: int(num[0]))
     test_data_before = test_data[number == 1]
     test_data_after = test_data[number == 2]
 
