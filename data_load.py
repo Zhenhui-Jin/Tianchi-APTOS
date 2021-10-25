@@ -20,8 +20,8 @@ class DataLoad:
         self.__load_all_image_path__(train_path, train_images)
         self.__load_all_image_path__(test_path, test_images)
 
-        self.train_images = pd.DataFrame(train_images, columns=['patient ID', 'ImgNumber', 'ImgPath'])
-        self.test_images = pd.DataFrame(test_images, columns=['patient ID', 'ImgNumber', 'ImgPath'])
+        self.train_images = pd.DataFrame(train_images, columns=['patient ID', 'LR', 'ImgNumber', 'ImgPath'])
+        self.test_images = pd.DataFrame(test_images, columns=['patient ID', 'LR', 'ImgNumber', 'ImgPath'])
 
         self.train_data: DataFrame = pd.merge(self.get_train_csv(), self.train_images, on='patient ID')
         self.test_data: DataFrame = pd.merge(self.get_test_csv(), self.test_images, on='patient ID')
@@ -60,8 +60,15 @@ class DataLoad:
             elif file.endswith('.jpg'):
                 split = file.replace('.jpg', '').split('_')
                 file_id = split[0]
-                file_number = split[1]
-                images.append({'patient ID': file_id, 'ImgNumber': file_number, 'ImgPath': file_path})
+                if len(split) > 2:
+                    file_number = split[1] + split[2][-3:]
+                else:
+                    file_number = split[1]
+                # _1_000000
+                images.append({'patient ID': file_id,
+                               'LR': file_id[-1],
+                               'ImgNumber': file_number,
+                               'ImgPath': file_path.replace(config.root_path + '\\', '').replace('\\', '/')})
 
     @staticmethod
     def read_image(path: str, to_float=False):
@@ -76,7 +83,7 @@ class DataLoad:
         # img = img[:500, 500:, :]
         if to_float:
             img = img.astype('float32')
-            img = img / 255
+            img = img / 255.0
         return img
 
     def get_train_data_cst_all(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
@@ -146,15 +153,16 @@ class DataLoad:
         else:
             return train_data[['patient ID', 'CST', 'ImgPath']]
 
-    def get_test_data_cst_all(self, size=None, read_img=False) -> pd.DataFrame:
+    def get_test_data_cst_all(self, size=None, read_img=False, to_float=False) -> pd.DataFrame:
         """
         CST，获取治疗前和治疗后的预测图像，各取size个样本
         :param size:
         :param read_img:
+        :param to_float:
         :return:
         """
-        pre_cst = self.get_test_data_pre_cst(size, read_img)
-        cst = self.get_test_data_cst(size, read_img)
+        pre_cst = self.get_test_data_pre_cst(size, read_img, to_float)
+        cst = self.get_test_data_cst(size, read_img, to_float)
         pre_cst = pre_cst.rename({'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
         pre_cst['type'] = 'preCST'
         cst = cst.rename({'Img': 'feature', 'ImgPath': 'feature'}, axis=1)
@@ -207,9 +215,9 @@ class DataLoad:
             return test_data[['patient ID', 'ImgPath']]
 
 
-dataLoad = DataLoad(config.TRAIN_DATA_FILE_NEW, config.TEST_DATA_FILE_NEW)
-
 if __name__ == '__main__':
+    dataLoad = DataLoad(config.TRAIN_DATA_FILE_NEW, config.TEST_DATA_FILE_NEW)
+
     train_data = dataLoad.get_train_data_cst_all(3, read_img=True)
     print(train_data)
     print(train_data.shape)

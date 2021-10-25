@@ -2,8 +2,8 @@ import os
 import numpy as np
 import pandas as pd
 
-from config import MODEL_RESULT_SAVE_PATH
-from data_load import dataLoad
+from config import MODEL_RESULT_SAVE_PATH, CST_TRAIN_DATA_FILE, CST_TEST_DATA_FILE
+from data_load import DataLoad
 
 from model_base import BaseModel
 from model_LeNet import LeNetModel
@@ -11,7 +11,7 @@ from model_VGGNet import VGGNet11
 
 
 def model_fit_cst(model: BaseModel, epochs=10, batch_size=64, read_img=False, to_float=False):
-    train_data = dataLoad.get_train_data_cst_all(read_img=read_img)
+    train_data = model.dataLoad.get_train_data_cst_all(read_img=read_img)
     X = np.array(train_data['feature'].tolist())
     print('train:', X.shape)
     Y = train_data['label']
@@ -31,8 +31,13 @@ def model_fit_cst(model: BaseModel, epochs=10, batch_size=64, read_img=False, to
     return model_name
 
 
+
 if __name__ == '__main__':
-    model_name = 'LeNet-09252222-e(50)-b(64)-eta(1e-05)-loss(4.2496).h5'
-    model_name = model_fit_cst(LeNetModel(learning_rate=1e-6, load_model_name=model_name), epochs=500)
+    dataLoad = DataLoad(CST_TRAIN_DATA_FILE, CST_TEST_DATA_FILE)
+    # model_name = 'LeNet-09252354-e(50)-b(64)-eta(1e-06)-loss(59.7677).h5'
+    # model_name = model_fit_cst(LeNetModel(learning_rate=1e-6, load_model_name=model_name), epochs=500)
     #
-    # model_fit_cst(VGGNet11(learning_rate=1e-3, load_model_name=model_name), epochs=50, batch_size=16)
+    model_name = 'CST-VGGNet11-10050604-e(50)-b(16)-eta(1e-07)-loss(0.2738).h5'
+    for eta in [1e-8, 1e-8]:
+        model = VGGNet11(model_name='CST-VGGNet11', learning_rate=eta, load_model_name=model_name, dataLoad=dataLoad)
+        model_name = model_fit_cst(model, epochs=50, batch_size=16)

@@ -9,7 +9,7 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.optimizers import Adam
 
 from config import MODEL_SAVE_PATH
-from data_load import dataLoad
+from data_load import DataLoad
 
 
 class BaseModel:
@@ -17,7 +17,8 @@ class BaseModel:
                  learning_rate=0.001,
                  load_model_name=None,
                  load_weights_name=None,
-                 trainable=True):
+                 trainable=True,
+                 dataLoad: DataLoad = None):
 
         self.input_shape = input_shape
         self.load_model_name = load_model_name
@@ -25,6 +26,7 @@ class BaseModel:
         self.trainable = trainable
         self.model_name = model_name
         self.learning_rate = learning_rate
+        self.dataLoad = dataLoad
 
         self.model_save_name = None
 
@@ -103,7 +105,7 @@ class BaseModel:
                 x_train = X[start_size: end_size]
                 y_train = Y[start_size: end_size]
                 # 边训练边读取图像
-                x_train = np.array([dataLoad.read_image(path, to_float) for path in x_train])
+                x_train = np.array([self.dataLoad.read_image(path, to_float) for path in x_train])
 
                 history = self.model.fit(x_train, y_train, workers=10, verbose=0)
                 mse_sum += history.history['mse'][0]
@@ -147,7 +149,8 @@ class BaseModel:
         :param to_float:
         :return:
         """
-        predict_y = np.array([self.model.predict(np.array([dataLoad.read_image(x, to_float)])).squeeze() for x in X])
+        predict_y = np.array(
+                [self.model.predict(np.array([self.dataLoad.read_image(x, to_float)])).squeeze() for x in X])
         return pd.DataFrame(predict_y, columns=['predict'])
 
     def predict_img_array(self, X) -> pd.DataFrame:
