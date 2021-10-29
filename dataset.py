@@ -19,7 +19,7 @@ class APTOSDataset(Dataset):
         :param label_regression: 做回归训练的标签名称
         :param label_classify: 做分类训练的标签名称
         """
-        self.data = pd.read_csv(csv_path)
+        self.data = pd.read_csv(csv_path).iloc[:50, :]
         self.img_column = img_column
         self.label_regression = label_regression
         self.label_classify = label_classify
@@ -32,13 +32,13 @@ class APTOSDataset(Dataset):
         返回一条数据：
         image:图像，regression_label:回归的label，classify_label:分类的label
         :param index:
-        :return: image, regression_label, classify_label
+        :return: image, (regression_label, classify_label)
         """
         data = self.data.iloc[index]
         image = read_image(data[self.img_column]).float()
         regression_label = None
         if self.label_regression:
-            regression_label = data[self.label_regression].array
+            regression_label = data[[self.label_regression]].array
             regression_label = regression_label.astype('float32')
             regression_label = torch.Tensor(regression_label).float()
 
@@ -47,7 +47,7 @@ class APTOSDataset(Dataset):
             classify_label = data[self.label_classify].array
             classify_label = classify_label.astype('float32')
             classify_label = torch.Tensor(classify_label).float()
-        return image, regression_label, classify_label
+        return image, (regression_label, classify_label)
 
 
 class APTOSModel:
@@ -57,13 +57,13 @@ class APTOSModel:
     def fit(self, epochs=5, batch_size=16):
         dataLoader = DataLoader(self.dataset, batch_size=batch_size, shuffle=False, num_workers=0)
         after_module = AfterModule()
-        after_loss = AfterLoss()
+        loss = AfterLoss()
         for epoch in range(epochs):
             print(f'{epoch + 1}/{epochs}')
-            for images, regression_labels, classify_labels in tqdm(dataLoader):
-                y_regression, y_classify = after_module(images)
-                # loss = after_loss(y, labels)
-                print(y_regression, y_classify)
+            for images, (regression_labels, classify_labels) in tqdm(dataLoader):
+                y_regressions, y_classifys = after_module(images)
+                loss = loss(regression_labels, classify_labels, y_regressions, y_classifys)
+                print(loss)
 
 
 class AfterModule(nn.Module):
@@ -75,13 +75,16 @@ class AfterModule(nn.Module):
             nn.MaxPool2d(2, 2, padding=0),
             nn.Conv2d(10, 16, kernel_size=(3, 3), stride=(1, 1), padding=0),
             nn.ReLU(),
+            nn.MaxPool2d(2, 2, padding=0),
             nn.Conv2d(16, 5, kernel_size=(3, 3), stride=(1, 1), padding=0),
             nn.ReLU(),
-            nn.Flatten()
+            nn.MaxPool2d(2, 2, padding=0),
+            nn.Flatten(),
+            nn.ReLU()
         )
 
-        self.regression = nn.Linear(3 * 3 * 32, 1)
-        self.classify = nn.Linear(3 * 3 * 32, 7)
+        self.regression = nn.Linear(16*3*16*3*10*3, 1)
+        self.classify = nn.Linear(918555, 7)
 
     def forward(self, X):
         X = self.layers(X)
@@ -93,8 +96,11 @@ class AfterModule(nn.Module):
 class AfterLoss(nn.Module):
     def __init__(self):
         super(AfterLoss, self).__init__()
+        self.mse_loss = nn.MSELoss()
+        self.cross_loss = nn.CrossEntropyLoss()
 
     def forward(self, input, target):
+        print(target)
         print(input.shape, target.shape)
 
         mse_loss = nn.MSELoss(input, target)
