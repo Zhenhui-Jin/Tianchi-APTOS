@@ -14,9 +14,9 @@ PED = '1028/PED_pred.txt'
 SRF = '1028/SRF_pred.txt'
 VA = '1028/VA_pred.csv'
 
-# data = np.loadtxt(continue_injection)
-# data = pd.Series(data, name='continue injection', dtype=np.int)
-# submit = pd.concat([submit, data], axis=1)
+data = np.loadtxt(continue_injection)
+data = pd.Series(data, name='continue injection', dtype=np.int)
+submit = pd.concat([submit, data], axis=1)
 
 # data = np.loadtxt(HRF)
 # data = pd.Series(data, name='HRF', dtype=np.int)
@@ -44,12 +44,16 @@ submit = pd.concat([submit, data], axis=1)
 
 data = pd.read_csv('1029/VA_pred.csv', index_col=0)
 
-data1 = data[['continue injection', 'VA_1']].rename(columns={'VA_1': 'VA'})
-data2 = data[['continue injection', 'VA_2']].rename(columns={'VA_2': 'VA'})
-data3 = data[['continue injection', 'VA_3']].rename(columns={'VA_3': 'VA'})
-data4 = data[['continue injection', 'VA']]
+# data1 = data[['continue injection', 'VA_1']].rename(columns={'VA_1': 'VA'})
+# data2 = data[['continue injection', 'VA_2']].rename(columns={'VA_2': 'VA'})
+# data3 = data[['continue injection', 'VA_3']].rename(columns={'VA_3': 'VA'})
+# data4 = data[['continue injection', 'VA']]
+data5 = data[['VA_1']].rename(columns={'VA_1': 'VA'})
+data6 = data[['VA_2']].rename(columns={'VA_2': 'VA'})
+data7 = data[['VA_3']].rename(columns={'VA_3': 'VA'})
+data8 = data[['VA']]
 
-submit = pd.concat([submit, data4], axis=1)
+submit = pd.concat([submit, data8], axis=1)
 
 submit = submit[['patient ID', 'continue injection', 'IRF', 'SRF', 'HRF', 'VA']]
 result = result[['patient ID', 'preCST', 'CST']]
