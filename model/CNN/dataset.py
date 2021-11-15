@@ -1,8 +1,13 @@
-import pandas as pd
+import os
 
+import pandas as pd
 import torch
 from torch.utils.data import Dataset
 from torchvision.io import read_image
+
+from config import root_path
+
+pd.set_option('display.max_columns', None)
 
 
 class APTOSDataset(Dataset):
@@ -40,7 +45,7 @@ class APTOSDataset(Dataset):
         :return: image, (regression_label, classify_label); training=True 只有 image
         """
         data = self.data.iloc[index]
-        path = data[self.img_column]
+        path = os.path.join(root_path, data[self.img_column])
         image = read_image(path).float()
         regression_label = None
         columns = self.data.columns.tolist()
@@ -62,3 +67,109 @@ class APTOSDataset(Dataset):
             return image, (regression_label / 100, classify_label)
         else:
             return image
+
+
+class CSVDataset(Dataset):
+    def __init__(self, csv_path: str, index_column: str, feature_columns: list, label_regression: str,
+                 label_classify: list,
+                 training=True):
+        """
+        数据加载器
+        :param csv_path: 整理好的csv数据文件路径
+        :param index_column: ID 标识
+        :param feature_columns: 特征名称
+        :param label_regression: 做回归训练的标签名称
+        :param label_classify: 做二分类训练的标签名称
+        :param training: 是否是训练
+        """
+        self.index_column = index_column
+        self.feature_columns = feature_columns
+        self.label_regression = label_regression
+        self.label_classify = label_classify
+        self.training = training
+
+        self.data: pd.DataFrame = pd.read_csv(csv_path)
+
+        columns = self.data.columns
+
+        if self.index_column in columns:
+            self.data.set_index(self.data[self.index_column], inplace=True)
+
+        if 'preVA' in columns:
+            self.data.loc[self.data['preVA'].isna(), 'preVA'] = self.data['preVA'].mean()
+            self.data.loc[self.data['preVA'] < 0, 'preVA'] = 0
+
+        if 'preCST' in columns:
+            self.data.loc[self.data['preCST'].isna(), 'preCST'] = self.data['preCST'].mean()
+
+        if 'preIRF' in columns:
+            self.data.loc[self.data['preIRF'].isna(), 'preIRF'] = 0
+
+        if 'preSRF' in columns:
+            self.data.loc[self.data['preSRF'].isna(), 'preSRF'] = 0
+
+        if 'prePED' in columns:
+            self.data.loc[self.data['prePED'].isna(), 'prePED'] = 0
+
+        if 'preHRF' in columns:
+            self.data.loc[self.data['preHRF'].isna(), 'preHRF'] = 0
+
+        if 'VA' in columns:
+            self.data.loc[self.data['VA'].isna(), 'VA'] = self.data['VA'].mean()
+
+        if 'continue injection' in columns:
+            self.data.loc[self.data['continue injection'].isna(), 'continue injection'] = 0
+            self.data.loc[self.data['continue injection'] > 1, 'continue injection'] = 0
+
+        if 'CST' in columns:
+            self.data.loc[self.data['CST'].isna(), 'CST'] = self.data['CST'].mean()
+
+        if 'IRF' in columns:
+            self.data.loc[self.data['IRF'].isna(), 'IRF'] = 0
+
+        if 'SRF' in columns:
+            self.data.loc[self.data['SRF'].isna(), 'SRF'] = 0
+
+        if 'PED' in columns:
+            self.data.loc[self.data['PED'].isna(), 'PED'] = 0
+
+        if 'HRF' in columns:
+            self.data.loc[self.data['HRF'].isna(), 'HRF'] = 0
+
+        print(self.data.info())
+        print(self.data.describe())
+
+    def __len__(self):
+        return len(self.data)
+
+    def __getitem__(self, index):
+        """
+        返回一条数据：
+        image:图像，regression_label:回归的label，classify_label:分类的label
+        :param index:
+        :return: image, (regression_label, classify_label); training=True 只有 image
+        """
+        data = self.data.iloc[index]
+
+        regression_label = None
+        columns = self.data.columns.tolist()
+        if self.label_regression and self.label_regression in columns:
+            regression_label = data[[self.label_regression]].array
+            regression_label = torch.Tensor(regression_label).float()
+
+        classify_label = None
+        label_names = []
+        for name in self.label_classify:
+            if name in columns:
+                label_names.append(name)
+
+        if self.label_classify and label_names:
+            classify_label = data[self.label_classify].array
+            classify_label = torch.Tensor(classify_label).float()
+
+        features = torch.Tensor(data[self.feature_columns].array).float()
+
+        if self.training:
+            return features, (regression_label, classify_label)
+        else:
+            return features
