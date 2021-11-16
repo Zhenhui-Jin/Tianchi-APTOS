@@ -136,7 +136,7 @@ class CSVModel:
         dataset = CSVDataset(csv_path=data_csv_path, index_column=self.index_column,
                              feature_columns=self.feature_columns, label_regression=self.label_regression,
                              label_classify=self.label_classify, training=True)
-        dataLoader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=1)
+        dataLoader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=5)
 
         model = CSVModule(in_features=len(self.feature_columns), classify_sum=2)
         model.train()

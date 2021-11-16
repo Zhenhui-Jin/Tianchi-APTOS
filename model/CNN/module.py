@@ -84,33 +84,28 @@ class CSVModule(nn.Module):
         super(CSVModule, self).__init__()
 
         self.layers = nn.Sequential(
-            nn.Linear(in_features, 64),
+            nn.Linear(in_features, 32),
             nn.ReLU(),
-            nn.Linear(64, 256),
+            nn.Linear(32, 64),
             nn.ReLU(),
-            nn.Linear(256, 1024),
+            nn.Linear(64, 128),
             nn.ReLU(),
-            nn.Linear(1024, 512),
+            nn.Linear(128, 32),
             nn.ReLU(),
-            nn.Linear(512, 64),
-            nn.ReLU(),
-            nn.Linear(64, 32),
-            nn.ReLU(),
-            nn.Linear(32, 16),
+            nn.Linear(32, 8),
             nn.ReLU(),
         )
 
         self.regression = nn.Sequential(
-            nn.Linear(16, 8),
+            nn.Linear(8, 4),
             nn.ReLU(),
-            nn.Linear(8, 1)
+            nn.Linear(4, 1)
         )
 
         self.classify = nn.Sequential(
-            nn.Linear(16, 8),
+            nn.Linear(8, 4),
             nn.ReLU(),
-            nn.Linear(8, classify_sum),
-            nn.Sigmoid()
+            nn.Linear(4, classify_sum)
         )
 
     def forward(self, x):

@@ -136,9 +136,6 @@ class CSVDataset(Dataset):
         if 'HRF' in columns:
             self.data.loc[self.data['HRF'].isna(), 'HRF'] = 0
 
-        print(self.data.info())
-        print(self.data.describe())
-
     def __len__(self):
         return len(self.data)
 

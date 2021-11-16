@@ -10,7 +10,7 @@ from model.CNN.aptos_model import APTOSModel, CSVModel
 def eval_after():
     TEST_DATA_AFTER_PATH = os.path.join(config.DATA_PATH, 'test_data_after.csv')
 
-    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN')
+    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'AfterModel.pt')
 
     model = APTOSModel('AfterModel', 'ImgPath', 'preCST',
@@ -24,7 +24,7 @@ def eval_after():
 def eval_before():
     TEST_DATA_BEFORE_PATH = os.path.join(config.DATA_PATH, 'test_data_before.csv')
 
-    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN')
+    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'BeforeModel.pt')
 
     model = APTOSModel('BeforeModel', 'ImgPath', 'CST',
@@ -41,7 +41,7 @@ def eval_csv(test_data_path):
     label_regression = 'VA'
     label_classify = ['continue injection']
 
-    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN')
+    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'CSVModel.pt')
 
     model = CSVModel(model_name='CSVModel', index_column='patient ID',
@@ -56,9 +56,12 @@ def eval_csv(test_data_path):
 if __name__ == '__main__':
     TEST_DATA_PATH = os.path.join(config.TEST_DATA_FILE_NEW, 'PreliminaryValidationSet_Info.csv')
     test_data = pd.read_csv(TEST_DATA_PATH)
-    test_data_path = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'predict-{time.strftime("%m%d%H%M")}.csv')
-    submit_data_path = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'predict-{time.strftime("%m%d%H%M")}-submit.csv')
     # test_data_path = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'predict.csv')
+    test_data_path = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}',
+                                  f'predict-{time.strftime("%H%M")}.csv')
+    submit_data_path = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}',
+                                    f'predict-{time.strftime("%H%M")}-submit.csv')
+
     test_data.to_csv(test_data_path, index=False)
     print(test_data.info())
     print(test_data)
