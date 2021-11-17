@@ -66,7 +66,7 @@ class APTOSModel:
                 # if save_path:
                 #     torch.save(model.state_dict(), save_path)
             loss_mean = np.mean(loss_batchs)
-            print(f'{epoch + 1}/{epochs} loss: {loss_mean} eta：{learning_rate}\n')
+            print(f'{self.model_name} {epoch + 1}/{epochs} loss: {loss_mean} eta：{learning_rate}\n')
             loss_epochs.append(loss_mean)
             if save_path:
                 torch.save(model.state_dict(), save_path)
@@ -136,7 +136,7 @@ class CSVModel:
         dataset = CSVDataset(csv_path=data_csv_path, index_column=self.index_column,
                              feature_columns=self.feature_columns, label_regression=self.label_regression,
                              label_classify=self.label_classify, training=True)
-        dataLoader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=5)
+        dataLoader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=10, prefetch_factor=20)
 
         model = CSVModule(in_features=len(self.feature_columns), classify_sum=2)
         model.train()
@@ -173,9 +173,9 @@ class CSVModel:
                 # if save_path:
                 #     torch.save(model.state_dict(), save_path)
             loss_mean = np.mean(loss_batchs)
-            print(f'{epoch + 1}/{epochs} loss: {loss_mean} eta：{learning_rate}\n')
+            print(f'{self.model_name} {epoch + 1}/{epochs} loss: {loss_mean} eta：{learning_rate}\n')
             loss_epochs.append(loss_mean)
-            if save_path:
+            if save_path and epoch % 10 == 0:
                 torch.save(model.state_dict(), save_path)
         return loss_epochs
 
