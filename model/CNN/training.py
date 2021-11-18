@@ -14,8 +14,8 @@ def train_after():
                        ['preIRF', 'preSRF', 'prePED', 'preHRF'],
                        save_model_path=SAVE_MODEL_PATH)
 
-    for eta in [1e-4, 1e-4, 1e-5, 1e-5, 1e-6]:
-        model.train(epochs=50, batch_size=50, learning_rate=eta,
+    for eta in [1e-4, 1e-4, 1e-4, 1e-4, 1e-4]:
+        model.train(epochs=100, batch_size=50, learning_rate=eta,
                     device='cuda',
                     data_csv_path=TRAIN_DATA_AFTER_PATH,
                     load_model_path=LOAD_MODEL_PATH)
@@ -31,8 +31,8 @@ def train_before():
                        ['IRF', 'SRF', 'PED', 'HRF'],
                        save_model_path=SAVE_MODEL_PATH)
 
-    for eta in [1e-4, 1e-4, 1e-5, 1e-5, 1e-6]:
-        model.train(epochs=50, batch_size=50, learning_rate=eta,
+    for eta in [1e-4, 1e-4, 1e-4, 1e-4, 1e-4]:
+        model.train(epochs=100, batch_size=50, learning_rate=eta,
                     device='cuda',
                     data_csv_path=TRAIN_DATA_BEFORE_PATH,
                     load_model_path=LOAD_MODEL_PATH)
@@ -53,7 +53,7 @@ def train_csv():
                      label_regression=label_regression,
                      label_classify=label_classify, save_model_path=SAVE_MODEL_PATH)
 
-    for eta in [1e-3, 1e-3, 1e-4, 1e-4, 1e-4, 1e-5, 1e-5, 1e-5]:
+    for eta in [1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5]:
         model.train(epochs=100, batch_size=64, learning_rate=eta,
                     device='cuda',
                     data_csv_path=data_csv_path,
@@ -62,5 +62,5 @@ def train_csv():
 
 if __name__ == '__main__':
     train_csv()
-    # train_before()
-    # train_after()
+    train_before()
+    train_after()
