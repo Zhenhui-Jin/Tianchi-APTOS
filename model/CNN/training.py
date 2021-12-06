@@ -10,8 +10,8 @@ def train_after():
     SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'AfterModel.pt')
 
-    model = APTOSModel('AfterModel', 'ImgPath', 'preCST',
-                       ['preIRF', 'preSRF', 'prePED', 'preHRF'],
+    model = APTOSModel('AfterModel', 'ImgPath', 'CST',
+                       ['IRF', 'SRF', 'PED', 'HRF'],
                        save_model_path=SAVE_MODEL_PATH)
 
     for eta in [1e-4, 1e-4, 1e-4, 1e-4, 1e-4]:
@@ -27,8 +27,8 @@ def train_before():
     SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'BeforeModel.pt')
 
-    model = APTOSModel('BeforeModel', 'ImgPath', 'CST',
-                       ['IRF', 'SRF', 'PED', 'HRF'],
+    model = APTOSModel('BeforeModel', 'ImgPath', 'preCST',
+                       ['preIRF', 'preSRF', 'prePED', 'preHRF'],
                        save_model_path=SAVE_MODEL_PATH)
 
     for eta in [1e-4, 1e-4, 1e-4, 1e-4, 1e-4]:

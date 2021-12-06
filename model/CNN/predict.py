@@ -13,8 +13,8 @@ def eval_after():
     SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'AfterModel.pt')
 
-    model = APTOSModel('AfterModel', 'ImgPath', 'preCST',
-                       ['preIRF', 'preSRF', 'prePED', 'preHRF'],
+    model = APTOSModel('AfterModel', 'ImgPath', 'CST',
+                       ['IRF', 'SRF', 'PED', 'HRF'],
                        save_model_path=SAVE_MODEL_PATH)
 
     data = model.eval(index_column='patient ID', data_csv_path=TEST_DATA_AFTER_PATH, load_model_path=LOAD_MODEL_PATH)
@@ -27,8 +27,8 @@ def eval_before():
     SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN', f'{time.strftime("%Y%m%d")}')
     LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'BeforeModel.pt')
 
-    model = APTOSModel('BeforeModel', 'ImgPath', 'CST',
-                       ['IRF', 'SRF', 'PED', 'HRF'],
+    model = APTOSModel('BeforeModel', 'ImgPath', 'preCST',
+                       ['preIRF', 'preSRF', 'prePED', 'preHRF'],
                        save_model_path=SAVE_MODEL_PATH)
 
     data = model.eval(index_column='patient ID', data_csv_path=TEST_DATA_BEFORE_PATH, load_model_path=LOAD_MODEL_PATH)
