@@ -42,21 +42,17 @@ os.makedirs(PROCESSED_TEST_IMG_PATH, exist_ok=True)
 os.makedirs(PROCESSED_TRAIN_IMG_PATH, exist_ok=True)
 os.makedirs(PROCESSED_CSV_PATH, exist_ok=True)
 
-PROCESSED_TEST_CSV_PATH_PRELIMINARY = os.path.join(PROCESSED_CSV_PATH, 'test_preliminary.csv')
-PROCESSED_TEST_CSV_PATH_FINAL = os.path.join(PROCESSED_CSV_PATH, 'test_final.csv')
-PROCESSED_TRAIN_CSV_PATH_PRELIMINARY = os.path.join(PROCESSED_CSV_PATH, 'test_preliminary.csv')
-PROCESSED_TRAIN_CSV_PATH_FINAL = os.path.join(PROCESSED_CSV_PATH, 'test_final.csv')
+PROCESSED_TRAIN_CSV_PATH = os.path.join(PROCESSED_CSV_PATH, 'train.csv')
+PROCESSED_TEST_CSV_PATH = os.path.join(PROCESSED_CSV_PATH, 'test.csv')
 PROCESSED_IMAGE_CSV_PATH = os.path.join(PROCESSED_CSV_PATH, 'image_data.csv')
 
-# 模型文件保存路径
-MODEL_SAVE_PATH = os.path.join(root_path, 'model', 'file')
 
-# keras 模型保存路径
-KERAS_MODEL_SAVE_PATH = os.path.join(MODEL_SAVE_PATH, 'keras')
-# 模型训练结果保存路径
-MODEL_RESULT_SAVE_PATH = os.path.join(MODEL_SAVE_PATH, 'result')
-os.makedirs(MODEL_RESULT_SAVE_PATH, exist_ok=True)
+# 模型文件路径
+MODEL_FILE_PATH = os.path.join(root_path, 'model', 'ckpt')
+os.makedirs(MODEL_FILE_PATH, exist_ok=True)
+MODEL_LOG_PATH = os.path.join(root_path, 'model', 'log')
+os.makedirs(MODEL_LOG_PATH, exist_ok=True)
 
-# 模型预测结果保存路径
-PREDICT_SAVE_PATH = os.path.join(root_path, 'predict', 'result')
-os.makedirs(PREDICT_SAVE_PATH, exist_ok=True)
+# 预测结果路径
+PREDICT_RESULT_PATH = os.path.join(root_path, 'model', 'result')
+os.makedirs(PREDICT_RESULT_PATH, exist_ok=True)

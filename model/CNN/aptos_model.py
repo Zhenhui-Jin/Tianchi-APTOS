@@ -7,8 +7,8 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from dataset import APTOSDataset, CSVDataset
-from loss import APTOSLoss, CSVLoss
-from module import APTOSModule, CSVModule
+from model.loss import APTOSLoss, CSVLoss
+from model.module import APTOSModule, CSVModule
 
 
 class APTOSModel:

@@ -1,14 +1,12 @@
+from model import training
 from processing import data_factory
 
-
-def processing_data():
-    """
-    预处理数据
-    :return:
-    """
-    data_factory.crop_img()
-    data_factory.processing_data_source_preliminary()
-
-
 if __name__ == '__main__':
-    processing_data()
+    # data_factory.processing_data()
+    training.train_image()
+    training.train_image(after=0)
+    training.train_image(after=0, final=0)
+    training.train_image(after=0, final=1)
+    training.train_image(after=1)
+    training.train_image(after=1, final=0)
+    training.train_image(after=1, final=1)
