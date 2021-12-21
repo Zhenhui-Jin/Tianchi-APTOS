@@ -20,9 +20,9 @@ class BasicConv2d(nn.Module):
         return self.layers(x)
 
 
-class APTOSModule(nn.Module):
+class ImageModule(nn.Module):
     def __init__(self, input_shape=(3, 400, 650), out_features=64, classify_sum: int = 4):
-        super(APTOSModule, self).__init__()
+        super(ImageModule, self).__init__()
         self.layers = nn.Sequential(
             BasicConv2d(input_shape[0], 8),
             BasicConv2d(8, 8, stride=2),

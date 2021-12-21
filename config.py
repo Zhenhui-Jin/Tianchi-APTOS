@@ -46,12 +46,9 @@ PROCESSED_TRAIN_CSV_PATH = os.path.join(PROCESSED_CSV_PATH, 'train.csv')
 PROCESSED_TEST_CSV_PATH = os.path.join(PROCESSED_CSV_PATH, 'test.csv')
 PROCESSED_IMAGE_CSV_PATH = os.path.join(PROCESSED_CSV_PATH, 'image_data.csv')
 
-
 # 模型文件路径
 MODEL_FILE_PATH = os.path.join(root_path, 'model', 'ckpt')
 os.makedirs(MODEL_FILE_PATH, exist_ok=True)
-MODEL_LOG_PATH = os.path.join(root_path, 'model', 'log')
-os.makedirs(MODEL_LOG_PATH, exist_ok=True)
 
 # 预测结果路径
 PREDICT_RESULT_PATH = os.path.join(root_path, 'model', 'result')

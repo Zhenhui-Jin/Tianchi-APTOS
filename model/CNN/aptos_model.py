@@ -7,8 +7,8 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from dataset import APTOSDataset, CSVDataset
-from model.loss import APTOSLoss, CSVLoss
-from model.module import APTOSModule, CSVModule
+from model.loss import ImageLoss, CSVLoss
+from model.module import ImageModule, CSVModule
 
 
 class APTOSModel:
@@ -30,7 +30,7 @@ class APTOSModel:
         device = torch.device(device)
         dataset = APTOSDataset(data_csv_path, self.img_column, self.label_regression, self.label_classify)
         dataLoader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=8)
-        model = APTOSModule()
+        model = ImageModule()
         model.train()
         model.to(device)
         if load_model_path and os.path.exists(load_model_path):
@@ -42,7 +42,7 @@ class APTOSModel:
             save_path = os.path.join(self.save_model_path, f'{self.model_name}.pt')
 
         print(model)
-        lossFn = APTOSLoss()
+        lossFn = ImageLoss()
         optim = torch.optim.Adam(model.parameters(), lr=learning_rate)
         loss_epochs = []
         for epoch in range(epochs):
@@ -77,7 +77,7 @@ class APTOSModel:
                                training=False)
         dataLoader = DataLoader(dataset, batch_size=32, shuffle=False, num_workers=8)
 
-        model = APTOSModule()
+        model = ImageModule()
         model = model.cpu()
         model.eval()
 

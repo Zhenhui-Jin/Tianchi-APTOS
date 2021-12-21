@@ -10,7 +10,9 @@ import config
 def _all_img_path_source():
     images = []
     _all_img_path_final(config.SOURCE_TEST_IMG_PATH_FINAL, images, 'test')
+    print('final test', len(images))
     _all_img_path_final(config.SOURCE_TRAIN_IMG_PATH_FINAL, images, 'train')
+    print('final train', len(images))
     _all_img_path_preliminary(config.SOURCE_TEST_IMG_PATH_PRELIMINARY, images, 'test')
     _all_img_path_preliminary(config.SOURCE_TRAIN_IMG_PATH_PRELIMINARY, images, 'train')
     return images
@@ -200,25 +202,24 @@ def _processing_data_source_final_train():
     train_case.loc[train_case['anti-VEGF'] == 'Ozurdex', 'anti-VEGF'] = 10
     train_case.loc[train_case['anti-VEGF'] == 'Pagenax', 'anti-VEGF'] = 0
 
+    train_case.loc[train_case['preVA'] == 'NLP', 'preVA'] = 1
+
     train_final = pd.read_csv(config.SOURCE_TRAIN_PIC_CSV_PATH_FINAL)
     train_final = train_final.merge(train_case, on='patient ID', sort=True)
 
-    train_pre = train_final[
-        ['patient ID', 'injection', 'image name', 'preVA', 'preCST', 'IRF', 'SRF', 'PED', 'HRF', 'anti-VEGF', 'gender',
-         'age', 'continue injection', 'diagnosis']].copy()
-    train_pre.rename(columns={'preVA': 'VA', 'preCST': 'CST'}, inplace=True)
+    train_pre = train_final[['patient ID', 'injection', 'image name', 'preVA', 'VA', 'preCST', 'IRF', 'SRF', 'PED',
+                             'HRF', 'anti-VEGF', 'gender', 'age', 'continue injection', 'diagnosis']].copy()
+    train_pre.rename(columns={'preCST': 'CST'}, inplace=True)
     train_pre = train_pre_image_data.merge(train_pre, on=['patient ID', 'injection', 'image name'], sort=True)
 
-    train_post = train_final[
-        ['patient ID', 'injection', 'image name', 'VA', 'CST', 'IRF', 'SRF', 'PED', 'HRF', 'anti-VEGF', 'gender', 'age',
-         'continue injection', 'diagnosis']].copy()
+    train_post = train_final[['patient ID', 'injection', 'image name', 'preVA', 'VA', 'CST', 'IRF', 'SRF', 'PED',
+                              'HRF', 'anti-VEGF', 'gender', 'age', 'continue injection', 'diagnosis']].copy()
     train_post = train_post_image_data.merge(train_post, on=['patient ID', 'injection', 'image name'], sort=True)
 
     train_final = pd.concat([train_pre, train_post], sort=True)
-    train_final = train_final[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'VA', 'CST',
+    train_final = train_final[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA', 'CST',
                                'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection', 'image name',
-                               'after',
-                               'final', 'data_type', 'processed_path', 'source_path']]
+                               'after', 'final', 'data_type', 'processed_path', 'source_path']]
     return train_final
 
 
@@ -236,41 +237,113 @@ def _processing_data_source_preliminary_train():
 
     train_preliminary = pd.read_csv(config.SOURCE_TRAIN_CSV_PATH_PRELIMINARY)
 
-    for column in ['preVA', 'preCST', 'preIRF', 'preSRF', 'prePED', 'preHRF',
-                   'VA', 'continue injection', 'CST', 'IRF', 'SRF', 'PED', 'HRF']:
+    for column in ['preVA', 'preCST', 'VA', 'CST']:
         train_preliminary.loc[train_preliminary[column].isna(), column] = train_preliminary[column].mean()
+    for column in ['preIRF', 'preSRF', 'prePED', 'preHRF', 'continue injection', 'IRF', 'SRF', 'PED', 'HRF']:
+        train_preliminary.loc[train_preliminary[column].isna(), column] = 0
 
-    train_case = train_preliminary[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'continue injection']]
+    train_preliminary.loc[train_preliminary['continue injection'] > 1.0, 'continue injection'] = 1.0
+    train_preliminary.loc[train_preliminary['continue injection'] < 0.0, 'continue injection'] = 0.0
 
-    train_pre = train_preliminary[['patient ID', 'preVA', 'preCST', 'preIRF', 'preSRF', 'prePED', 'preHRF']].copy()
+    train_case = train_preliminary[
+        ['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'continue injection']].copy()
+
+    train_pre = train_preliminary[
+        ['patient ID', 'preVA', 'VA', 'preCST', 'preIRF', 'preSRF', 'prePED', 'preHRF']].copy()
     train_pre.rename(
-        columns={'preVA': 'VA', 'preCST': 'CST', 'preIRF': 'IRF', 'preSRF': 'SRF', 'prePED': 'PED', 'preHRF': 'HRF'},
+        columns={'preCST': 'CST', 'preIRF': 'IRF', 'preSRF': 'SRF', 'prePED': 'PED', 'preHRF': 'HRF'},
         inplace=True)
     train_pre = train_pre.merge(train_case, on='patient ID', sort=True)
     train_pre = train_pre_image_data.merge(train_pre, on='patient ID', sort=True)
 
-    train_post = train_preliminary[['patient ID', 'VA', 'CST', 'IRF', 'SRF', 'PED', 'HRF']].copy()
+    train_post = train_preliminary[['patient ID', 'preVA', 'VA', 'CST', 'IRF', 'SRF', 'PED', 'HRF']].copy()
     train_post = train_post.merge(train_case, on='patient ID', sort=True)
     train_post = train_post_image_data.merge(train_post, on='patient ID', sort=True)
 
     train_preliminary = pd.concat([train_pre, train_post], sort=True)
-    train_preliminary = train_preliminary[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'VA', 'CST',
-                                           'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection',
-                                           'image name', 'after',
-                                           'final', 'data_type', 'processed_path', 'source_path']]
+    train_preliminary = train_preliminary[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA',
+                                           'CST', 'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection',
+                                           'image name', 'after', 'final', 'data_type', 'processed_path',
+                                           'source_path']]
     return train_preliminary
+
+
+def _processing_data_source_final_test():
+    """
+    处理复赛数据
+    :return:
+    """
+    print('_processing_data_source_final_test')
+    image_data = pd.read_csv(config.PROCESSED_IMAGE_CSV_PATH)
+    test_image_data = image_data.loc[(image_data['data_type'] == 'test') & (image_data['final'] == 1)].copy()
+
+    test_case = pd.read_csv(config.SOURCE_TEST_CSV_PATH_FINAL)
+
+    test_case.loc[test_case['gender'] == 'Male', 'gender'] = 1
+    test_case.loc[test_case['gender'] == 'Male ', 'gender'] = 1
+    test_case.loc[test_case['gender'] == 'Female', 'gender'] = 2
+
+    test_case.loc[test_case['diagnosis'] == 'CNVM', 'diagnosis'] = 1
+    test_case.loc[test_case['diagnosis'] == 'PCV', 'diagnosis'] = 2
+    test_case.loc[test_case['diagnosis'] == 'DME', 'diagnosis'] = 3
+    test_case.loc[test_case['diagnosis'] == 'RVO', 'diagnosis'] = 4
+    test_case.loc[test_case['diagnosis'] == 'CME', 'diagnosis'] = 5
+
+    test_case.loc[test_case['anti-VEGF'] == 'Avastin', 'anti-VEGF'] = 1
+    test_case.loc[test_case['anti-VEGF'] == 'Razumab', 'anti-VEGF'] = 2
+    test_case.loc[test_case['anti-VEGF'] == 'Accentrix', 'anti-VEGF'] = 2
+    test_case.loc[test_case['anti-VEGF'] == 'Eylea', 'anti-VEGF'] = 3
+    test_case.loc[test_case['anti-VEGF'] == 'Tricort', 'anti-VEGF'] = 5
+    test_case.loc[test_case['anti-VEGF'] == 'Ozrudex', 'anti-VEGF'] = 10
+    test_case.loc[test_case['anti-VEGF'] == 'Ozurdex', 'anti-VEGF'] = 10
+    test_case.loc[test_case['anti-VEGF'] == 'Pagenax', 'anti-VEGF'] = 0
+
+    test_final = test_image_data.merge(test_case, on='patient ID', sort=True)
+
+    test = test_final[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'L0R1', 'injection',
+                       'image name', 'after', 'final', 'data_type', 'processed_path', 'source_path']]
+
+    return test
+
+
+def _processing_data_source_preliminary_test():
+    """
+    处理初赛数据
+    :return:
+    """
+    print('_processing_data_source_preliminary_test')
+    image_data = pd.read_csv(config.PROCESSED_IMAGE_CSV_PATH)
+    test_image_data = image_data.loc[(image_data['data_type'] == 'test') & (image_data['final'] == 0)].copy()
+    test_preliminary = pd.read_csv(config.SOURCE_TEST_CSV_PATH_PRELIMINARY)
+
+    for column in ['gender', 'age', 'diagnosis', 'preVA', 'anti-VEGF']:
+        test_preliminary.loc[test_preliminary[column].isna(), column] = test_preliminary[column].mean()
+
+    test_preliminary = test_image_data.merge(test_preliminary, on='patient ID', sort=True)
+
+    test = test_preliminary[
+        ['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'L0R1', 'injection', 'image name', 'after',
+         'final', 'data_type', 'processed_path', 'source_path']]
+
+    return test
 
 
 def processing_data():
     crop_img()
 
+    test_preliminary = _processing_data_source_preliminary_test()
+    test_final = _processing_data_source_final_test()
+    test = pd.concat([test_preliminary, test_final], sort=True)
+    test = test[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'L0R1', 'injection',
+                 'image name', 'after', 'final', 'data_type', 'processed_path', 'source_path']]
+    test.to_csv(config.PROCESSED_TEST_CSV_PATH, index=False)
+
     train_preliminary = _processing_data_source_preliminary_train()
     train_final = _processing_data_source_final_train()
     train = pd.concat([train_preliminary, train_final], sort=True)
-    train = train[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'VA', 'CST',
-                   'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection',
-                   'image name', 'after',
-                   'final', 'data_type', 'processed_path', 'source_path']]
+    train = train[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA', 'CST', 'IRF', 'SRF', 'PED',
+                   'HRF', 'continue injection', 'L0R1', 'injection', 'image name', 'after', 'final', 'data_type',
+                   'processed_path', 'source_path']]
     train.to_csv(config.PROCESSED_TRAIN_CSV_PATH, index=False)
 
 

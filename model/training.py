@@ -28,8 +28,13 @@ def train_image(after: int = -1, final: int = -1, **kwargs):
     else:
         name += '-all'
 
-    image_model = ImageModel(ImageConfig(name=name, **kwargs))
+    print('train', name)
+
+    image_config = ImageConfig(name=name, **kwargs)
+    image_model = ImageModel(image_config)
     image_model.train(train)
+
+    return image_config.model_save_path
 
 
 def train_csv():
