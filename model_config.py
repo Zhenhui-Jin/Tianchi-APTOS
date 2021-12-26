@@ -56,13 +56,15 @@ class BaseConfig:
         else:
             self.device = torch.device('cpu')
 
-    def set_features(self, features: list, use_label=True):
+    def set_features(self, features: list):
         self.features = features.copy()
-        # for no_train in no_train_features:
-        #     if no_train in self.features:
-        #         self.features.remove(no_train)
-        # if not use_label and self.target in self.features:
-        #     self.features.remove(self.target)
+
+        if self.label_regression in self.features:
+            self.features.remove(self.label_regression)
+
+        for label_classify in self.label_classify:
+            if label_classify in self.features:
+                self.features.remove(label_classify)
 
 
 class ImageConfig(BaseConfig):
@@ -112,5 +114,5 @@ class CSVConfig(BaseConfig):
             label_regression='VA',
             label_classify=['continue injection'])
 
-        self.feature_columns = ['gender', 'age', 'diagnosis', 'anti-VEGF', 'L0R1', 'preVA', 'preCST',
-                                'preIRF', 'preSRF', 'prePED', 'preHRF', 'CST', 'IRF', 'SRF', 'PED', 'HRF']
+        self.set_features(['gender', 'age', 'diagnosis', 'anti-VEGF', 'L0R1', 'preVA', 'preCST',
+                           'preIRF', 'preSRF', 'prePED', 'preHRF', 'CST', 'IRF', 'SRF', 'PED', 'HRF'])

@@ -18,8 +18,8 @@ def train_image():
 def train_csv():
     eta = 0.0001
     epochs = 500
-    model_load_path = 'model/ckpt/Model-CSV/202112260818/Model-CSV.pt'
-
+    # model_load_path = 'model/ckpt/Model-CSV/202112260818/Model-CSV.pt'
+    model_load_path=''
     model_load_path = training.train_csv(
         epochs=epochs,
         learning_rate=eta,
