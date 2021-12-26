@@ -14,6 +14,8 @@ from model.module import ImageModule, CSVModule
 from model_config import ImageConfig, CSVConfig
 from processing import data_factory
 
+from sklearn.utils import resample
+
 
 class ImageModel:
     def __init__(self, config: ImageConfig):
@@ -26,13 +28,13 @@ class ImageModel:
         data_loader = DataLoader(ImageDataset(self.config, train_data), batch_size=self.config.batch_size, shuffle=True,
                                  num_workers=5)
         model = ImageModule()
-        model = model.to(device)
-        model.train()
         if self.config.model_load_path and os.path.exists(self.config.model_load_path):
             print('load model')
-            model.load_state_dict(torch.load(self.config.model_load_path))
+            model = torch.load(self.config.model_load_path)
 
-        # print(model)
+        model = model.to(device)
+        model.train()
+
         lossFn = ImageLoss()
         optim = torch.optim.Adam(model.parameters(), lr=self.config.learning_rate)
         loss_epochs = []
@@ -51,12 +53,12 @@ class ImageModel:
                     loss_batch = loss.detach().cpu().numpy()
                     loss_batchs.append(loss_batch)
 
-                # if len(loss_batchs) % 100 == 0:
-                #     torch.save(model.state_dict(), self.config.model_save_path)
             loss_epochs.append(np.mean(loss_batchs))
             print(f'{epoch + 1}/{self.config.epochs}\tloss:{np.mean(loss_batchs)}')
 
-            torch.save(model.state_dict(), self.config.model_save_path)
+            torch.save(model, self.config.model_save_path)
+
+        torch.save(model.cpu(), self.config.model_save_path)
 
         log_name = f'{self.config.model_name}-loss-epoch({self.config.epochs})-eta({self.config.learning_rate})-{time.strftime("%Y%m%d%H%M")}'
         data_factory.plot_log(log_name, 'epoch', 'loss', loss_epochs, 'train_loss', log_path=self.config.model_log_path)
@@ -71,11 +73,15 @@ class ImageModel:
                                  num_workers=5)
 
         model = ImageModule()
+        if self.config.model_load_path and os.path.exists(self.config.model_load_path):
+            print('load model')
+            model = torch.load(self.config.model_load_path)
+
         model = model.to(device)
         model.eval()
 
-        if self.config.model_load_path and os.path.exists(self.config.model_load_path):
-            model.load_state_dict(torch.load(self.config.model_load_path))
+        # if self.config.model_load_path and os.path.exists(self.config.model_load_path):
+        #     model.load_state_dict(torch.load(self.config.model_load_path))
 
         eval_data: pd.DataFrame = None
         for images, index_data in tqdm(data_loader):
@@ -106,6 +112,8 @@ class CSVModel:
         self.config = config
 
     def train(self, train_data):
+        train_data = resample(train_data, replace=False, random_state=2021)
+
         self.config.training = True
         device = torch.device(self.config.device)
 
@@ -116,11 +124,13 @@ class CSVModel:
             batch_count += 1
 
         model = CSVModule(len(self.config.features))
-        model = model.to(device)
-        model.train()
+
         if self.config.model_load_path and os.path.exists(self.config.model_load_path):
             print('load model')
-            model.load_state_dict(torch.load(self.config.model_load_path))
+            model = torch.load(self.config.model_load_path)
+
+        model = model.to(device)
+        model.train()
 
         lossFn = CSVLoss()
         optim = torch.optim.Adam(model.parameters(), lr=self.config.learning_rate)
@@ -152,8 +162,10 @@ class CSVModel:
 
             print(f'{epoch + 1}/{self.config.epochs}\tloss:{np.mean(loss_batchs)}')
 
-            if (epoch + 1) % 10 == 0:
-                torch.save(model.state_dict(), self.config.model_save_path)
+            if (epoch + 1) % 100 == 0:
+                torch.save(model, self.config.model_save_path)
+
+        torch.save(model.cpu(), self.config.model_save_path)
 
         log_name = f'{self.config.model_name}-loss-epoch({self.config.epochs})-eta({self.config.learning_rate})-{time.strftime("%Y%m%d%H%M")}'
         data_factory.plot_log(log_name, 'epoch', 'loss', loss_epochs, 'train_loss', log_path=self.config.model_log_path)
@@ -165,11 +177,13 @@ class CSVModel:
         device = torch.device(self.config.device)
 
         model = CSVModule(len(self.config.features))
-        model = model.to(device)
-        model.eval()
 
         if self.config.model_load_path and os.path.exists(self.config.model_load_path):
-            model.load_state_dict(torch.load(self.config.model_load_path))
+            print('load model')
+            model = torch.load(self.config.model_load_path)
+
+        model = model.to(device)
+        model.eval()
 
         features = torch.Tensor(data[self.config.features].values).float().to(device)
 
@@ -182,5 +196,5 @@ class CSVModel:
         y_classify = pd.DataFrame(y_classify, columns=[*self.config.label_classify], index=data.index)
 
         eval_data = pd.concat([data, y_regression, y_classify], axis=1)
-
+        eval_data.reset_index(inplace=True)
         return eval_data

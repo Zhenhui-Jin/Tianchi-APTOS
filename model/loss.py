@@ -12,7 +12,7 @@ class ImageLoss(nn.Module):
         regression_labels, classify_labels = targets
         mse_loss = self.mse_loss(y_regression, regression_labels)
         bce_log_loss = self.bce_log_loss(y_classify, classify_labels)
-        return mse_loss * 0.5 + bce_log_loss * 2
+        return mse_loss + bce_log_loss * 2
 
 
 class CSVLoss(nn.Module):
@@ -28,4 +28,4 @@ class CSVLoss(nn.Module):
         classify_labels = classify_labels.long()
         mse_loss = self.mse_loss(y_regression, regression_labels)
         ce_loss = self.ce_loss(y_classify, classify_labels)
-        return mse_loss * 0.5 + ce_loss
+        return mse_loss + ce_loss

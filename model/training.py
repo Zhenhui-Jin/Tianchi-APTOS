@@ -10,22 +10,26 @@ def _get_train_data(data):
     return train
 
 
-def train_image(**kwargs):
+def train_image(after: int = None, **kwargs):
     train_data = pd.read_csv(config.PROCESSED_TRAIN_CSV_PATH)
     train = _get_train_data(train_data)
 
     print('train_image')
+    if after is not None:
 
-    train_before = train.loc[train['after'] == 0].copy()
-    train_before.drop('CST', axis=1, inplace=True)
-    train_before.rename(columns={'preCST': 'CST'}, inplace=True)
+        if after == 1:
+            train = train.loc[train['after'] == 1].copy()
+            train.drop('preCST', axis=1, inplace=True)
+            name = 'Model-Image-After'
+        else:
+            train = train.loc[train['after'] == 0].copy()
+            train.drop('CST', axis=1, inplace=True)
+            train.rename(columns={'preCST': 'CST'}, inplace=True)
+            name = 'Model-Image-Before'
+    else:
+        name = 'Model-Image-All'
 
-    train_after = train.loc[train['after'] == 1].copy()
-    train_after.drop('preCST', axis=1, inplace=True)
-
-    train = pd.concat([train_before, train_after])
-
-    image_config = ImageConfig(**kwargs)
+    image_config = ImageConfig(name=name, **kwargs)
     image_model = ImageModel(image_config)
     image_model.train(train)
 
