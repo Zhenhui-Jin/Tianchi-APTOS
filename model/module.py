@@ -91,7 +91,8 @@ class CSVModule(nn.Module):
         self.classify = nn.Sequential(
             nn.Linear(8, 4),
             nn.ReLU(),
-            nn.Linear(4, classify_sum)
+            nn.Linear(4, classify_sum),
+            nn.Sigmoid()
         )
 
     def forward(self, x):

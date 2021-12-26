@@ -1,59 +1,57 @@
-import os
 import pandas as pd
+
 import config
-from model.model import ImageModel
-from model_config import ImageConfig
+from model.model import ImageModel, CSVModel
+from model_config import ImageConfig, CSVConfig
 
 
-def train_image(after: int = -1, final: int = -1, **kwargs):
+def _get_train_data(data):
+    train = data.loc[data['data_type'] == 'train'].copy()
+    return train
+
+
+def train_image(**kwargs):
     train_data = pd.read_csv(config.PROCESSED_TRAIN_CSV_PATH)
-    name = 'Model'
-    train = train_data.loc[train_data['data_type'] == 'train'].copy()
+    train = _get_train_data(train_data)
 
-    if after == 0 or after == 1:
-        train = train_data.loc[train_data['after'] == after].copy()
-        if after == 1:
-            name += 'After'
-        else:
-            name += 'Before'
-    else:
-        name += 'All'
+    print('train_image')
 
-    if final == 0 or final == 1:
-        train = train.loc[train['final'] == final].copy()
-        if final == 1:
-            name += '-final'
-        else:
-            name += '-preliminary'
-    else:
-        name += '-all'
+    train_before = train.loc[train['after'] == 0].copy()
+    train_before.drop('CST', axis=1, inplace=True)
+    train_before.rename(columns={'preCST': 'CST'}, inplace=True)
 
-    print('train', name)
+    train_after = train.loc[train['after'] == 1].copy()
+    train_after.drop('preCST', axis=1, inplace=True)
 
-    image_config = ImageConfig(name=name, **kwargs)
+    train = pd.concat([train_before, train_after])
+
+    image_config = ImageConfig(**kwargs)
     image_model = ImageModel(image_config)
     image_model.train(train)
 
     return image_config.model_save_path
 
 
-def train_csv():
-    data_csv_path = os.path.join(config.TRAIN_DATA_FILE_NEW, 'TrainingAnnotation.csv')
-    feature_columns = ['gender', 'age', 'diagnosis', 'preVA', 'anti-VEGF', 'preCST',
-                       'preIRF', 'preSRF', 'prePED', 'preHRF', 'CST', 'IRF', 'SRF', 'PED', 'HRF']
-    label_regression = 'VA'
-    label_classify = ['continue injection']
+def train_csv(**kwargs):
+    print('train_csv')
+    train_data = pd.read_csv(config.PROCESSED_TRAIN_CSV_PATH)
+    train = _get_train_data(train_data)
 
-    SAVE_MODEL_PATH = os.path.join(config.MODEL_SAVE_PATH, 'CNN')
-    LOAD_MODEL_PATH = os.path.join(SAVE_MODEL_PATH, 'CSVModel.pt')
+    data = train[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'continue injection', 'L0R1']]
+    data = data.groupby(['patient ID']).mean()
 
-    model = CSVModel(model_name='CSVModel', index_column='patient ID',
-                     feature_columns=feature_columns,
-                     label_regression=label_regression,
-                     label_classify=label_classify, save_model_path=SAVE_MODEL_PATH)
+    train_before = train.loc[train['after'] == 0][['patient ID', 'preVA', 'preCST', 'IRF', 'SRF', 'PED', 'HRF']]
 
-    for eta in [1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5]:
-        model.train(epochs=100, batch_size=64, learning_rate=eta,
-                    device='cuda',
-                    data_csv_path=data_csv_path,
-                    load_model_path=LOAD_MODEL_PATH)
+    train_before: pd.DataFrame = train_before.groupby(['patient ID']).mean()
+    train_before.rename(columns={'IRF': 'preIRF', 'SRF': 'preSRF', 'PED': 'prePED', 'HRF': 'preHRF'}, inplace=True)
+    data = data.merge(train_before, on=['patient ID'])
+
+    train_after = train.loc[train['after'] == 1][['patient ID', 'VA', 'CST', 'IRF', 'SRF', 'PED', 'HRF']]
+    train_after = train_after.groupby(['patient ID']).mean()
+    train = data.merge(train_after, on='patient ID')
+
+    csv_config = CSVConfig(**kwargs)
+    csv_model = CSVModel(csv_config)
+    csv_model.train(train)
+
+    return csv_config.model_save_path

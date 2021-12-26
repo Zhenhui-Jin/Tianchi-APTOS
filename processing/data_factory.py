@@ -207,17 +207,17 @@ def _processing_data_source_final_train():
     train_final = pd.read_csv(config.SOURCE_TRAIN_PIC_CSV_PATH_FINAL)
     train_final = train_final.merge(train_case, on='patient ID', sort=True)
 
-    train_pre = train_final[['patient ID', 'injection', 'image name', 'preVA', 'VA', 'preCST', 'IRF', 'SRF', 'PED',
-                             'HRF', 'anti-VEGF', 'gender', 'age', 'continue injection', 'diagnosis']].copy()
-    train_pre.rename(columns={'preCST': 'CST'}, inplace=True)
+    train_pre = train_final[['patient ID', 'injection', 'image name', 'preVA', 'VA', 'preCST', 'CST', 'IRF', 'SRF',
+                             'PED', 'HRF', 'anti-VEGF', 'gender', 'age', 'continue injection', 'diagnosis']].copy()
+    # train_pre.rename(columns={'preCST': 'CST'}, inplace=True)
     train_pre = train_pre_image_data.merge(train_pre, on=['patient ID', 'injection', 'image name'], sort=True)
 
-    train_post = train_final[['patient ID', 'injection', 'image name', 'preVA', 'VA', 'CST', 'IRF', 'SRF', 'PED',
-                              'HRF', 'anti-VEGF', 'gender', 'age', 'continue injection', 'diagnosis']].copy()
+    train_post = train_final[['patient ID', 'injection', 'image name', 'preVA', 'VA', 'preCST', 'CST', 'IRF', 'SRF',
+                              'PED', 'HRF', 'anti-VEGF', 'gender', 'age', 'continue injection', 'diagnosis']].copy()
     train_post = train_post_image_data.merge(train_post, on=['patient ID', 'injection', 'image name'], sort=True)
 
     train_final = pd.concat([train_pre, train_post], sort=True)
-    train_final = train_final[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA', 'CST',
+    train_final = train_final[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA', 'preCST', 'CST',
                                'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection', 'image name',
                                'after', 'final', 'data_type', 'processed_path', 'source_path']]
     return train_final
@@ -249,21 +249,21 @@ def _processing_data_source_preliminary_train():
         ['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'continue injection']].copy()
 
     train_pre = train_preliminary[
-        ['patient ID', 'preVA', 'VA', 'preCST', 'preIRF', 'preSRF', 'prePED', 'preHRF']].copy()
+        ['patient ID', 'preVA', 'VA', 'preCST', 'CST', 'preIRF', 'preSRF', 'prePED', 'preHRF']].copy()
     train_pre.rename(
-        columns={'preCST': 'CST', 'preIRF': 'IRF', 'preSRF': 'SRF', 'prePED': 'PED', 'preHRF': 'HRF'},
+        columns={'preIRF': 'IRF', 'preSRF': 'SRF', 'prePED': 'PED', 'preHRF': 'HRF'},
         inplace=True)
     train_pre = train_pre.merge(train_case, on='patient ID', sort=True)
     train_pre = train_pre_image_data.merge(train_pre, on='patient ID', sort=True)
 
-    train_post = train_preliminary[['patient ID', 'preVA', 'VA', 'CST', 'IRF', 'SRF', 'PED', 'HRF']].copy()
+    train_post = train_preliminary[['patient ID', 'preVA', 'VA', 'preCST', 'CST', 'IRF', 'SRF', 'PED', 'HRF']].copy()
     train_post = train_post.merge(train_case, on='patient ID', sort=True)
     train_post = train_post_image_data.merge(train_post, on='patient ID', sort=True)
 
     train_preliminary = pd.concat([train_pre, train_post], sort=True)
     train_preliminary = train_preliminary[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA',
-                                           'CST', 'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection',
-                                           'image name', 'after', 'final', 'data_type', 'processed_path',
+                                           'preCST', 'CST', 'IRF', 'SRF', 'PED', 'HRF', 'continue injection', 'L0R1',
+                                           'injection', 'image name', 'after', 'final', 'data_type', 'processed_path',
                                            'source_path']]
     return train_preliminary
 
@@ -341,9 +341,9 @@ def processing_data():
     train_preliminary = _processing_data_source_preliminary_train()
     train_final = _processing_data_source_final_train()
     train = pd.concat([train_preliminary, train_final], sort=True)
-    train = train[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA', 'CST', 'IRF', 'SRF', 'PED',
-                   'HRF', 'continue injection', 'L0R1', 'injection', 'image name', 'after', 'final', 'data_type',
-                   'processed_path', 'source_path']]
+    train = train[['patient ID', 'gender', 'age', 'diagnosis', 'anti-VEGF', 'preVA', 'VA', 'preCST', 'CST', 'IRF',
+                   'SRF', 'PED', 'HRF', 'continue injection', 'L0R1', 'injection', 'image name', 'after', 'final',
+                   'data_type', 'processed_path', 'source_path']]
     train.to_csv(config.PROCESSED_TRAIN_CSV_PATH, index=False)
 
 
