@@ -16,13 +16,11 @@ def train_image(after: int = None, **kwargs):
 
     print('train_image')
     if after is not None:
-
+        train = train.loc[train['after'] == after].copy()
         if after == 1:
-            train = train.loc[train['after'] == 1].copy()
             train.drop('preCST', axis=1, inplace=True)
             name = 'Model-Image-After'
         else:
-            train = train.loc[train['after'] == 0].copy()
             train.drop('CST', axis=1, inplace=True)
             train.rename(columns={'preCST': 'CST'}, inplace=True)
             name = 'Model-Image-Before'

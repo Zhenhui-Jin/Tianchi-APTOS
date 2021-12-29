@@ -102,11 +102,11 @@ def _all_img_path_preliminary(path: str, images: list, data_type: str):
                 file_number = split[1]
 
             if file_number.startswith('1'):
-                injection = 'Post injection'
-                after = 1
-            else:
                 injection = 'Pre injection'
                 after = 0
+            else:
+                injection = 'Post injection'
+                after = 1
 
             if file_id.endswith('L'):
                 L0R1 = 0

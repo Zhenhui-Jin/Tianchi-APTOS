@@ -3,14 +3,13 @@ from processing import data_factory
 
 
 def train_image():
-    eta = 0.001
-    epochs = 100
 
     model_path = {
-        'Model-Image-After': (1, ''),
-        'Model-Image-Before': (0, ''),
         'Model-Image-All': (None, ''),
+        'Model-Image-After': (1, ''),
+        'Model-Image-Before': (0, '')
     }
+
     for eta, epochs in zip([0.001, 0.001, 0.001], [100, 100, 100]):
         for key, (after, path), in model_path.items():
             path = training.train_image(
@@ -24,10 +23,9 @@ def train_image():
 
 
 def train_csv():
-    # model_load_path = 'model/ckpt/Model-CSV/202112262210/Model-CSV.pt'
     model_load_path = ''
-    # for eta, epochs in zip([0.0001, 0.0001], [2000, 5000]):
-    for eta, epochs in zip([0.0001, 0.0001], [4000, 5000]):
+
+    for eta, epochs in zip([1e-2, 1e-2, 1e-3, 1e-3, 1e-3, 1e-4], [1000, 2000, 3000, 5000, 5000, 5000]):
         model_load_path = training.train_csv(
             epochs=epochs,
             learning_rate=eta,
@@ -36,28 +34,43 @@ def train_csv():
         print(model_load_path)
 
 
+def train_csv_image():
+    train_csv()
+    train_image()
+
+
 def start_process():
-    select = ['请输入数字:\n',
-              ' (0).processing_data \n',
-              ' (1).train_image\n',
-              ' (2).train_csv\n',
-              ' (3).predict\n',
-              ' (4).train_csv+train_image\n']
-    item = input("".join(select))
-    if item == '0':
-        data_factory.processing_data()
-    elif item == '1':
-        train_image()
-    elif item == '2':
-        train_csv()
-    elif item == '3':
-        model_image_path = 'model/ckpt/Model-Image/202112260010/Model-Image.pt'
-        model_csv_path = 'model/ckpt/Model-CSV/202112262235/Model-CSV.pt'
-        predict.predict(model_image_path, model_csv_path)
-    elif item == '4':
-        train_csv()
-        train_image()
-    else:
+    fn = [('processing_data', data_factory.processing_data),
+          ('train_image', train_image),
+          ('train_csv', train_csv),
+          ('train_csv + train_image', train_csv_image),
+          ('predict_before_after', predict.predict_before_after),
+          ('predict_all', predict.predict_all),
+          ]
+
+    select = ['请输入数字']
+
+    for index, (key, f) in zip(range(len(fn)), fn):
+        select.append(f'{index} -> {key}')
+
+    item = input('\n'.join(select) + '\n')
+
+    model_csv_path = 'model/ckpt/Model-CSV/202112262322/Model-CSV.pt'
+    model_image_path_before = 'model/ckpt/Model-Image-Before/202112291620/Model-Image-Before.pt'
+    model_image_path_after = 'model/ckpt/Model-Image-After/202112291525/Model-Image-After.pt'
+    model_image_path_all = 'model/ckpt/Model-Image-All/202112291714/Model-Image-All.pt'
+
+    try:
+        index = int(item)
+        key = fn[index][0]
+        F = fn[index][1]
+        if key == 'predict_all':
+            F(model_image_path_all, model_csv_path)
+        elif key == 'predict_before_after':
+            F(model_image_path_before, model_image_path_after, model_csv_path)
+        else:
+            F()
+    except:
         start_process()
 
 

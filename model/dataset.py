@@ -53,6 +53,7 @@ class ImageDataset(Dataset):
 
         if self.config.training:
             return image, (regression_label / 100.0, classify_label)
+            # return image, (regression_label, classify_label)
         else:
             index_data = torch.Tensor([index]).int()
             return image, index_data

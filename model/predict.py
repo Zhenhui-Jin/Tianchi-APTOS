@@ -8,18 +8,21 @@ from model.model import ImageModel, CSVModel
 from model_config import ImageConfig, CSVConfig
 
 
-def _predict_image(before_model_load_path, after_model_load_path, **kwargs):
-    print('predict_image')
+def _predict_image_before_after(before_model_load_path, after_model_load_path, **kwargs):
+    print('predict_image_before_after')
     test_data = pd.read_csv(config.PROCESSED_TEST_CSV_PATH)
-    test_before = test_data.loc[test_data['after'] == 0].copy()
-    test_after = test_data.loc[test_data['after'] == 1].copy()
+    test_before: pd.DataFrame = test_data.loc[test_data['after'] == 0].copy()
+    test_after: pd.DataFrame = test_data.loc[test_data['after'] == 1].copy()
+    test_before.reset_index(drop=True, inplace=True)
+    test_after.reset_index(drop=True, inplace=True)
 
-    before_config = ImageConfig(name='ModelBefore-all', training=False, model_load_path=before_model_load_path,
+    before_config = ImageConfig(name='Model-Image-Before', training=False, model_load_path=before_model_load_path,
                                 **kwargs)
     before_model = ImageModel(before_config)
     predict_before = before_model.eval(test_before)
 
-    after_config = ImageConfig(name='ModelAfter-all', training=False, model_load_path=after_model_load_path, **kwargs)
+    after_config = ImageConfig(name='Model-Image-After', training=False, model_load_path=after_model_load_path,
+                               **kwargs)
     after_model = ImageModel(after_config)
     predict_after = after_model.eval(test_after)
 
@@ -49,7 +52,7 @@ def _predict_image(before_model_load_path, after_model_load_path, **kwargs):
 
 
 def _predict_image_all(model_load_path, **kwargs):
-    print('predict_image')
+    print('predict_image_all')
     test_data = pd.read_csv(config.PROCESSED_TEST_CSV_PATH)
 
     image_config = ImageConfig(training=False, model_load_path=model_load_path, **kwargs)
@@ -87,7 +90,7 @@ def predict_csv(test_data, model_load_path, **kwargs):
     return predict_data
 
 
-def predict(model_image_path, model_csv_path):
+def predict_all(model_image_path, model_csv_path):
     result_path = os.path.join(config.PREDICT_RESULT_PATH, f'{time.strftime("%Y%m%d%H%M")}')
     os.makedirs(result_path, exist_ok=True)
 
@@ -95,13 +98,37 @@ def predict(model_image_path, model_csv_path):
     result_stage2_case = os.path.join(result_path, 'submit_stage2_case.csv')
     result_stage2_pic = os.path.join(result_path, 'submit_stage2_pic.csv')
 
-    # stage2_pic, predict_data, = _predict_image('model/ckpt/ModelBefore-all/202112231512/ModelBefore-all.pt',
-    #                                            'model/ckpt/ModelAfter-all/202112231855/ModelAfter-all.pt')
     stage2_pic, predict_data, = _predict_image_all(model_image_path)
     stage2_pic.to_csv(result_stage2_pic, index=False)
 
     predict_data = predict_csv(predict_data, model_csv_path)
+    predict_data['VA'] = abs(predict_data['VA'])
+    submit_stage1 = pd.read_csv('data/submit/submit_stage1.csv')
+    submit_stage1 = submit_stage1[['patient ID']]
+    submit_stage1 = submit_stage1.merge(predict_data, on='patient ID')
+    submit_stage1 = submit_stage1[['patient ID', 'preCST', 'VA', 'continue injection', 'CST', 'IRF', 'SRF', 'HRF']]
+    submit_stage1.to_csv(result_stage1, index=False)
 
+    stage2_case = pd.read_csv('data/submit/submit_stage2_case.csv')
+    stage2_case = stage2_case[['patient ID']]
+    stage2_case = stage2_case.merge(predict_data, on='patient ID')
+    stage2_case = stage2_case[['patient ID', 'VA', 'continue injection', 'preCST', 'CST']]
+    stage2_case.to_csv(result_stage2_case, index=False)
+
+
+def predict_before_after(before_model_load_path, after_model_load_path, model_csv_path):
+    result_path = os.path.join(config.PREDICT_RESULT_PATH, f'{time.strftime("%Y%m%d%H%M")}')
+    os.makedirs(result_path, exist_ok=True)
+
+    result_stage1 = os.path.join(result_path, 'submit_stage1.csv')
+    result_stage2_case = os.path.join(result_path, 'submit_stage2_case.csv')
+    result_stage2_pic = os.path.join(result_path, 'submit_stage2_pic.csv')
+
+    stage2_pic, predict_data, = _predict_image_before_after(before_model_load_path, after_model_load_path)
+    stage2_pic.to_csv(result_stage2_pic, index=False)
+
+    predict_data = predict_csv(predict_data, model_csv_path)
+    predict_data['VA'] = abs(predict_data['VA'])
     submit_stage1 = pd.read_csv('data/submit/submit_stage1.csv')
     submit_stage1 = submit_stage1[['patient ID']]
     submit_stage1 = submit_stage1.merge(predict_data, on='patient ID')
