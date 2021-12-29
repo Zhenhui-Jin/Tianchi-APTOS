@@ -3,7 +3,6 @@ from processing import data_factory
 
 
 def train_image():
-
     model_path = {
         'Model-Image-All': (None, ''),
         'Model-Image-After': (1, ''),
@@ -25,7 +24,7 @@ def train_image():
 def train_csv():
     model_load_path = ''
 
-    for eta, epochs in zip([1e-2, 1e-2, 1e-3, 1e-3, 1e-3, 1e-4], [1000, 2000, 3000, 5000, 5000, 5000]):
+    for eta, epochs in zip([1e-3, 1e-4], [5000, 5000]):
         model_load_path = training.train_csv(
             epochs=epochs,
             learning_rate=eta,
