@@ -3,11 +3,12 @@ from processing import data_factory
 
 
 def train_image():
-    model_path = {'Model-Image-All': (None, 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'),
-                  'Model-Image-After': (1, 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'),
-                  'Model-Image-Before': (0, 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt')}
+    model_path = {
+        # 'Model-Image-All': (None, 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'),
+        'Model-Image-After': (1, 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'),
+        'Model-Image-Before': (0, 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt')}
 
-    for eta, epochs in zip([0.001, 0.001, 0.001], [100, 100, 100]):
+    for eta, epochs in zip([0.0001, 0.0001, 0.0001], [50, 50, 50]):
         for key, (after, path), in model_path.items():
             path = training.train_image(
                 after=after,
@@ -19,16 +20,15 @@ def train_image():
         print(model_path)
 
 
-
 def train_csv():
     model_load_path = 'model/ckpt/Model-CSV/202112302045/Model-CSV.pt'
 
     # model_load_path = ''
     for eta, epochs in zip([1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5], [2000, 5000, 10000, 20000, 30000, 40000]):
         model_load_path = training.train_csv(
-                epochs=epochs,
-                learning_rate=eta,
-                model_load_path=model_load_path)
+            epochs=epochs,
+            learning_rate=eta,
+            model_load_path=model_load_path)
 
         print(model_load_path)
         break
@@ -55,7 +55,7 @@ def start_process():
 
     item = input('\n'.join(select) + '\n')
 
-    model_csv_path = 'model/ckpt/Model-CSV/202112262322/Model-CSV.pt'
+    model_csv_path = 'model/ckpt/Model-CSV/202112302328/Model-CSV.pt'
     model_image_path_before = 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt'
     model_image_path_after = 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'
     model_image_path_all = 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'
