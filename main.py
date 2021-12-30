@@ -3,11 +3,9 @@ from processing import data_factory
 
 
 def train_image():
-    model_path = {
-        'Model-Image-All': (None, ''),
-        'Model-Image-After': (1, ''),
-        'Model-Image-Before': (0, '')
-    }
+    model_path = {'Model-Image-All': (None, 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'),
+                  'Model-Image-After': (1, 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'),
+                  'Model-Image-Before': (0, 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt')}
 
     for eta, epochs in zip([0.001, 0.001, 0.001], [100, 100, 100]):
         for key, (after, path), in model_path.items():
@@ -19,6 +17,7 @@ def train_image():
             model_path[key] = (after, path)
 
         print(model_path)
+
 
 
 def train_csv():
@@ -55,9 +54,9 @@ def start_process():
     item = input('\n'.join(select) + '\n')
 
     model_csv_path = 'model/ckpt/Model-CSV/202112262322/Model-CSV.pt'
-    model_image_path_before = 'model/ckpt/Model-Image-Before/202112291620/Model-Image-Before.pt'
-    model_image_path_after = 'model/ckpt/Model-Image-After/202112291525/Model-Image-After.pt'
-    model_image_path_all = 'model/ckpt/Model-Image-All/202112291714/Model-Image-All.pt'
+    model_image_path_before = 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt'
+    model_image_path_after = 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'
+    model_image_path_all = 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'
 
     try:
         index = int(item)
