@@ -96,7 +96,7 @@ class CSVConfig(BaseConfig):
     def __init__(self,
                  name: str = 'Model-CSV',
                  epochs=100,
-                 batch_size=256,
+                 batch_size=100,
                  learning_rate=0.01,
                  training=True,
                  gpu=True,

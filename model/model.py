@@ -120,8 +120,8 @@ class CSVModel:
         data_size = len(train_data)
         batch_size = self.config.batch_size
         batch_count = int(data_size / batch_size)
-        if data_size % batch_size != 0:
-            batch_count += 1
+        # if data_size % batch_size != 0:
+        #     batch_count += 1
 
         model = CSVModule(len(self.config.features))
 

@@ -21,15 +21,17 @@ def train_image():
 
 
 def train_csv():
-    model_load_path = ''
+    model_load_path = 'model/ckpt/Model-CSV/202112302045/Model-CSV.pt'
 
-    for eta, epochs in zip([1e-3, 1e-4], [5000, 5000]):
+    # model_load_path = ''
+    for eta, epochs in zip([1e-5, 1e-5, 1e-5, 1e-5, 1e-5, 1e-5], [2000, 5000, 10000, 20000, 30000, 40000]):
         model_load_path = training.train_csv(
-            epochs=epochs,
-            learning_rate=eta,
-            model_load_path=model_load_path)
+                epochs=epochs,
+                learning_rate=eta,
+                model_load_path=model_load_path)
 
         print(model_load_path)
+        break
 
 
 def train_csv_image():
