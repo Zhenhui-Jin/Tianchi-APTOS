@@ -4,8 +4,8 @@ import cv2
 import pandas as pd
 
 import config
-from config import TRAIN_DATA_FILE, DATA_PATH, TEST_DATA_FILE, TRAIN_DATA_FILE_NEW, TEST_DATA_FILE_NEW, \
-    CST_TRAIN_DATA_FILE, CST_TEST_DATA_FILE
+from config import TRAIN_DATA_FILE, DATA_PATH, TEST_DATA_FILE, TRAIN_DATA_FILE_NEW, TEST_DATA_FILE_NEW
+
 
 
 def load_all_image_path(path: str, images: list):
@@ -75,35 +75,6 @@ def crop_all(train_path, test_path, new_train_path, new_test_path):
     for image in images:
         path = image['ImgPath']
         write_image(os.path.join(new_test_path, os.path.split(path)[-1]), read_image(path))
-
-
-def processing_all():
-    """
-    边缘检测
-    :return:
-    """
-    from processing import Processing
-
-    process = Processing()
-
-    images = []
-    load_all_image_path(TRAIN_DATA_FILE_NEW, images)
-    for image in images:
-        path = image['ImgPath']
-        print(path)
-        img = process.blur_canny_cst(path)
-        save_path = os.path.join(CST_TRAIN_DATA_FILE, os.path.split(path)[-1])
-        cv2.imwrite(save_path, img)
-
-    print('*' * 50)
-    images = []
-    load_all_image_path(TEST_DATA_FILE_NEW, images)
-    for image in images:
-        path = image['ImgPath']
-        print(path)
-        img = process.blur_canny_cst(path)
-        save_path = os.path.join(CST_TEST_DATA_FILE, os.path.split(path)[-1])
-        cv2.imwrite(save_path, img)
 
 
 def load_csv(path) -> pd.DataFrame:

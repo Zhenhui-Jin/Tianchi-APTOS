@@ -1,0 +1,2876 @@
+patient ID,injection,image name,IRF,SRF,PED,HRF
+2L,Pre injection,10,0.0,0.0,0.0,1.0
+2L,Pre injection,11,1.0,0.0,1.0,1.0
+2L,Pre injection,13,1.0,0.0,0.0,1.0
+2L,Pre injection,15,1.0,0.0,1.0,1.0
+2L,Pre injection,20,0.0,1.0,1.0,1.0
+2L,Pre injection,21,0.0,1.0,1.0,1.0
+2L,Post injection,10,0.0,0.0,0.0,1.0
+2L,Post injection,14,1.0,1.0,0.0,1.0
+2L,Post injection,16,1.0,0.0,1.0,1.0
+2L,Post injection,18,1.0,1.0,1.0,1.0
+2L,Post injection,22,1.0,1.0,0.0,1.0
+2L,Post injection,23,0.0,1.0,0.0,1.0
+2L,Post injection,24,0.0,0.0,0.0,1.0
+5L,Pre injection,6_001005,0.0,1.0,0.0,1.0
+5L,Pre injection,6_001010,0.0,1.0,0.0,1.0
+5L,Pre injection,6_001012,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001013,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001014,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001015,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001018,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001020,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001021,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001022,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001026,1.0,1.0,1.0,1.0
+5L,Pre injection,6_001028,1.0,1.0,0.0,1.0
+5L,Post injection,6_001008,0.0,1.0,0.0,1.0
+5L,Post injection,6_001012,1.0,1.0,1.0,1.0
+5L,Post injection,6_001013,1.0,1.0,1.0,1.0
+5L,Post injection,6_001015,1.0,1.0,1.0,1.0
+5L,Post injection,6_001017,1.0,1.0,1.0,1.0
+5L,Post injection,6_001019,1.0,1.0,1.0,1.0
+5L,Post injection,6_001020,1.0,1.0,1.0,1.0
+5L,Post injection,6_001021,1.0,1.0,1.0,1.0
+5L,Post injection,6_001022,1.0,1.0,1.0,1.0
+5L,Post injection,6_001023,1.0,1.0,1.0,1.0
+5L,Post injection,6_001024,1.0,1.0,1.0,1.0
+5L,Post injection,6_001025,0.0,0.0,1.0,1.0
+5L,Post injection,6_001026,0.0,0.0,0.0,1.0
+7R,Pre injection,8_002015,0.0,0.0,1.0,1.0
+7R,Pre injection,8_002016,0.0,0.0,1.0,1.0
+7R,Pre injection,8_002018,1.0,1.0,1.0,1.0
+7R,Pre injection,8_002020,1.0,1.0,1.0,1.0
+7R,Pre injection,8_002021,1.0,1.0,1.0,1.0
+7R,Pre injection,8_002022,1.0,1.0,1.0,1.0
+7R,Pre injection,8_002023,1.0,1.0,1.0,1.0
+7R,Post injection,8_001013,0.0,0.0,1.0,1.0
+7R,Post injection,8_001015,0.0,0.0,1.0,1.0
+7R,Post injection,8_001017,1.0,0.0,1.0,1.0
+7R,Post injection,8_001018,1.0,1.0,1.0,1.0
+7R,Post injection,8_001019,1.0,1.0,1.0,1.0
+7R,Post injection,8_001020,1.0,1.0,1.0,1.0
+7R,Post injection,8_001022,1.0,1.0,1.0,1.0
+7R,Post injection,8_001023,1.0,1.0,1.0,1.0
+7R,Post injection,8_001024,0.0,0.0,0.0,1.0
+9L,Pre injection,10_001006,0.0,0.0,1.0,1.0
+9L,Pre injection,10_001007,1.0,1.0,1.0,1.0
+9L,Pre injection,10_001009,1.0,1.0,1.0,1.0
+9L,Pre injection,10_001011,1.0,1.0,1.0,1.0
+9L,Pre injection,10_001012,1.0,1.0,1.0,1.0
+9L,Pre injection,10_001013,1.0,1.0,1.0,1.0
+9L,Post injection,10_001005,0.0,0.0,1.0,1.0
+9L,Post injection,10_001008,1.0,1.0,1.0,1.0
+9L,Post injection,10_001010,1.0,1.0,1.0,1.0
+9L,Post injection,10_001011,1.0,1.0,1.0,1.0
+9L,Post injection,10_001012,1.0,1.0,1.0,1.0
+9L,Post injection,10_001013,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001008,1.0,1.0,0.0,1.0
+11L,Pre injection,12_001012,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001013,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001014,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001015,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001020,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001021,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001023,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001024,1.0,1.0,1.0,1.0
+11L,Pre injection,12_001026,1.0,1.0,0.0,1.0
+11L,Pre injection,12_001028,1.0,1.0,0.0,1.0
+11L,Post injection,12_001000,1.0,1.0,0.0,1.0
+11L,Post injection,12_001013,1.0,1.0,0.0,1.0
+11L,Post injection,12_001015,1.0,1.0,1.0,1.0
+11L,Post injection,12_001016,1.0,1.0,1.0,1.0
+11L,Post injection,12_001021,1.0,1.0,1.0,1.0
+11L,Post injection,12_001022,1.0,1.0,1.0,1.0
+11L,Post injection,12_001023,1.0,1.0,1.0,1.0
+11L,Post injection,12_001026,1.0,1.0,1.0,1.0
+11L,Post injection,12_001029,0.0,0.0,1.0,1.0
+12R,Pre injection,13_001013,1.0,1.0,1.0,1.0
+12R,Pre injection,13_001014,1.0,1.0,1.0,1.0
+12R,Pre injection,13_001016,1.0,1.0,1.0,1.0
+12R,Pre injection,13_001017,1.0,1.0,1.0,1.0
+12R,Pre injection,13_001019,1.0,1.0,1.0,1.0
+12R,Pre injection,13_001021,1.0,1.0,1.0,1.0
+12R,Pre injection,13_001022,1.0,1.0,1.0,1.0
+12R,Post injection,13_002011,1.0,1.0,0.0,1.0
+12R,Post injection,13_002014,1.0,1.0,1.0,1.0
+12R,Post injection,13_002015,1.0,1.0,1.0,1.0
+12R,Post injection,13_002017,1.0,1.0,1.0,1.0
+12R,Post injection,13_002020,1.0,1.0,1.0,1.0
+12R,Post injection,13_002021,1.0,1.0,1.0,1.0
+12R,Post injection,13_002022,1.0,0.0,0.0,1.0
+12R,Post injection,13_002023,1.0,0.0,0.0,1.0
+12R,Post injection,13_002024,1.0,0.0,0.0,1.0
+13L,Pre injection,14_001001,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001005,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001008,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001014,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001016,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001021,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001023,0.0,0.0,1.0,1.0
+13L,Pre injection,14_001027,0.0,0.0,1.0,1.0
+13L,Post injection,14_001022,1.0,0.0,1.0,1.0
+13L,Post injection,14_001024,1.0,0.0,1.0,1.0
+13L,Post injection,14_001025,0.0,0.0,1.0,1.0
+13L,Post injection,14_001026,0.0,0.0,1.0,1.0
+13L,Post injection,14_001030,0.0,0.0,1.0,1.0
+15L,Pre injection,16_001016,1.0,0.0,0.0,1.0
+15L,Pre injection,16_001017,1.0,0.0,0.0,1.0
+15L,Pre injection,16_001018,1.0,0.0,0.0,1.0
+15L,Pre injection,16_001020,1.0,0.0,0.0,1.0
+15L,Post injection,16_001015,1.0,0.0,0.0,1.0
+15L,Post injection,16_001016,1.0,0.0,0.0,1.0
+15L,Post injection,16_001018,1.0,0.0,0.0,1.0
+15L,Post injection,16_001020,1.0,0.0,0.0,1.0
+15L,Post injection,16_001021,1.0,0.0,0.0,1.0
+15L,Post injection,16_001023,1.0,0.0,0.0,1.0
+15L,Post injection,16_001024,1.0,0.0,0.0,1.0
+17R,Pre injection,18_001010,0.0,1.0,1.0,1.0
+17R,Pre injection,18_001012,0.0,1.0,1.0,1.0
+17R,Pre injection,18_001014,1.0,1.0,1.0,1.0
+17R,Pre injection,18_001016,0.0,1.0,1.0,1.0
+17R,Pre injection,18_001019,0.0,1.0,1.0,1.0
+17R,Pre injection,18_001020,1.0,1.0,1.0,1.0
+17R,Pre injection,18_001023,0.0,1.0,1.0,1.0
+17R,Pre injection,18_001024,0.0,1.0,1.0,1.0
+17R,Post injection,18_002011,0.0,1.0,1.0,1.0
+17R,Post injection,18_002013,1.0,1.0,1.0,1.0
+17R,Post injection,18_002015,1.0,1.0,1.0,1.0
+17R,Post injection,18_002017,1.0,1.0,1.0,1.0
+17R,Post injection,18_002019,0.0,1.0,1.0,1.0
+17R,Post injection,18_002022,0.0,0.0,1.0,1.0
+17R,Post injection,18_002024,0.0,1.0,1.0,1.0
+17R,Post injection,18_002025,1.0,1.0,1.0,1.0
+19L,Pre injection,20._001011,1.0,1.0,1.0,1.0
+19L,Pre injection,20._001012,1.0,1.0,1.0,1.0
+19L,Pre injection,20._001013,1.0,1.0,1.0,1.0
+19L,Pre injection,20._001014,1.0,1.0,1.0,1.0
+19L,Post injection,20_001012,1.0,1.0,1.0,1.0
+19L,Post injection,20_001013,1.0,1.0,1.0,1.0
+19L,Post injection,20_001014,1.0,1.0,1.0,1.0
+19L,Post injection,20_001015,0.0,1.0,0.0,1.0
+20R,Pre injection,21_001013,0.0,1.0,1.0,1.0
+20R,Pre injection,21_001014,1.0,1.0,1.0,1.0
+20R,Pre injection,21_001015,1.0,1.0,1.0,1.0
+20R,Pre injection,21_001016,1.0,1.0,1.0,1.0
+20R,Post injection,21_001012,0.0,0.0,1.0,1.0
+20R,Post injection,21_001013,0.0,0.0,1.0,1.0
+20R,Post injection,21_001015,1.0,0.0,1.0,1.0
+20R,Post injection,21_001018,1.0,0.0,1.0,1.0
+20R,Post injection,21_001020,0.0,1.0,1.0,1.0
+22R,Pre injection,23_001006,1.0,0.0,1.0,1.0
+22R,Pre injection,23_001007,1.0,0.0,1.0,1.0
+22R,Pre injection,23_001009,1.0,0.0,1.0,1.0
+22R,Pre injection,23_001011,1.0,0.0,1.0,1.0
+22R,Pre injection,23_001014,0.0,1.0,1.0,1.0
+22R,Post injection,23_001008,1.0,1.0,1.0,1.0
+22R,Post injection,23_001009,1.0,1.0,1.0,1.0
+22R,Post injection,23_001010,1.0,1.0,1.0,1.0
+22R,Post injection,23_001012,1.0,1.0,1.0,1.0
+22R,Post injection,23_001013,1.0,0.0,1.0,1.0
+22R,Post injection,23_001014,1.0,0.0,1.0,1.0
+22R,Post injection,23_001015,1.0,0.0,1.0,1.0
+25L,Pre injection,26_001005,0.0,1.0,1.0,1.0
+25L,Pre injection,26_001006,0.0,1.0,1.0,1.0
+25L,Pre injection,26_001010,0.0,1.0,1.0,1.0
+25L,Pre injection,26_001012,0.0,1.0,1.0,1.0
+25L,Pre injection,26_001013,1.0,1.0,1.0,1.0
+25L,Pre injection,26_001014,1.0,1.0,1.0,1.0
+25L,Pre injection,26_001015,1.0,1.0,1.0,1.0
+25L,Pre injection,26_001016,1.0,1.0,1.0,1.0
+25L,Post injection,26_001007,0.0,0.0,1.0,1.0
+25L,Post injection,26_001008,0.0,0.0,1.0,1.0
+25L,Post injection,26_001009,0.0,0.0,1.0,1.0
+25L,Post injection,26_001010,1.0,0.0,1.0,1.0
+25L,Post injection,26_001011,1.0,0.0,1.0,1.0
+25L,Post injection,26_001012,1.0,0.0,1.0,1.0
+25L,Post injection,26_001013,0.0,0.0,1.0,1.0
+27R,Pre injection,28_001008,0.0,1.0,1.0,1.0
+27R,Pre injection,28_001009,1.0,1.0,1.0,1.0
+27R,Pre injection,28_001010,1.0,1.0,1.0,1.0
+27R,Pre injection,28_001011,1.0,1.0,1.0,1.0
+27R,Pre injection,28_001013,1.0,0.0,1.0,1.0
+27R,Pre injection,28_001016,1.0,0.0,1.0,1.0
+27R,Pre injection,28_001018,0.0,0.0,1.0,1.0
+27R,Pre injection,28_001020,0.0,0.0,1.0,1.0
+27R,Pre injection,28_001021,0.0,0.0,1.0,1.0
+27R,Pre injection,28_001022,0.0,1.0,1.0,1.0
+27R,Post injection,28_001007,0.0,0.0,1.0,1.0
+27R,Post injection,28_001009,1.0,0.0,1.0,1.0
+27R,Post injection,28_001011,1.0,0.0,1.0,1.0
+27R,Post injection,28_001012,1.0,0.0,1.0,1.0
+27R,Post injection,28_001013,1.0,0.0,1.0,1.0
+27R,Post injection,28_001015,1.0,0.0,1.0,1.0
+27R,Post injection,28_001016,1.0,0.0,1.0,1.0
+27R,Post injection,28_001017,1.0,0.0,1.0,1.0
+27R,Post injection,28_001018,1.0,0.0,1.0,1.0
+27R,Post injection,28_001019,1.0,0.0,1.0,1.0
+27R,Post injection,28_001020,1.0,0.0,1.0,1.0
+29R,Pre injection,2 (6),0.0,1.0,1.0,1.0
+29R,Pre injection,2 (7),0.0,1.0,1.0,1.0
+29R,Pre injection,2 (9),0.0,1.0,1.0,1.0
+29R,Pre injection,2 (10),0.0,1.0,1.0,1.0
+29R,Pre injection,2 (13),0.0,1.0,1.0,1.0
+29R,Pre injection,2 (15),1.0,0.0,1.0,1.0
+29R,Pre injection,2 (17),1.0,1.0,1.0,1.0
+29R,Post injection,2 (22),0.0,1.0,1.0,1.0
+29R,Post injection,2 (24),0.0,1.0,1.0,1.0
+29R,Post injection,2 (26),0.0,1.0,1.0,1.0
+29R,Post injection,2 (29),1.0,0.0,1.0,1.0
+29R,Post injection,2 (31),1.0,0.0,1.0,1.0
+29R,Post injection,2 (32),1.0,0.0,1.0,1.0
+32R,Pre injection,5 (12),1.0,0.0,1.0,1.0
+32R,Pre injection,5 (14),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (15),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (16),1.0,0.0,1.0,1.0
+32R,Pre injection,5 (17),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (18),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (19),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (20),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (22),1.0,0.0,0.0,1.0
+32R,Pre injection,5 (23),1.0,0.0,0.0,1.0
+32R,Post injection,5 (12),1.0,0.0,0.0,1.0
+32R,Post injection,5 (13),1.0,0.0,1.0,1.0
+32R,Post injection,5 (14),1.0,0.0,0.0,1.0
+32R,Post injection,5 (15),1.0,0.0,1.0,1.0
+32R,Post injection,5 (17),1.0,0.0,0.0,1.0
+32R,Post injection,5 (18),1.0,0.0,0.0,1.0
+32R,Post injection,5 (19),1.0,0.0,0.0,1.0
+32R,Post injection,5 (20),1.0,0.0,0.0,1.0
+32R,Post injection,5 (21),1.0,0.0,0.0,1.0
+32R,Post injection,5 (22),1.0,0.0,0.0,1.0
+33R,Pre injection,6 (10),1.0,1.0,0.0,1.0
+33R,Pre injection,6 (12),1.0,1.0,0.0,1.0
+33R,Pre injection,6 (13),1.0,1.0,0.0,1.0
+33R,Pre injection,6 (15),1.0,0.0,0.0,1.0
+33R,Pre injection,6 (16),1.0,0.0,0.0,1.0
+33R,Pre injection,6 (17),1.0,0.0,0.0,1.0
+33R,Pre injection,6 (18),1.0,0.0,0.0,1.0
+33R,Post injection,6 (13),1.0,0.0,0.0,1.0
+33R,Post injection,6 (14),1.0,0.0,0.0,1.0
+33R,Post injection,6 (15),1.0,0.0,0.0,1.0
+33R,Post injection,6 (16),1.0,0.0,0.0,1.0
+33R,Post injection,6 (17),1.0,0.0,0.0,1.0
+33R,Post injection,6 (18),1.0,0.0,0.0,1.0
+33R,Post injection,6 (19),1.0,0.0,0.0,1.0
+33R,Post injection,6 (20),1.0,0.0,0.0,1.0
+36R,Pre injection,9 (7),0.0,1.0,1.0,1.0
+36R,Pre injection,9 (8),1.0,1.0,1.0,1.0
+36R,Pre injection,9 (9),1.0,1.0,1.0,1.0
+36R,Pre injection,9 (10),1.0,1.0,0.0,1.0
+36R,Pre injection,9 (15),1.0,1.0,1.0,1.0
+36R,Pre injection,9 (16),1.0,1.0,1.0,1.0
+36R,Pre injection,9 (17),1.0,1.0,1.0,1.0
+36R,Pre injection,9 (21),1.0,1.0,1.0,1.0
+36R,Post injection,9 (10),1.0,1.0,1.0,1.0
+36R,Post injection,9 (11),1.0,1.0,1.0,1.0
+36R,Post injection,9 (13),1.0,1.0,1.0,1.0
+36R,Post injection,9 (16),1.0,0.0,1.0,1.0
+36R,Post injection,9 (26),1.0,0.0,1.0,1.0
+43R,Pre injection,16 (5),0.0,1.0,1.0,1.0
+43R,Pre injection,16 (6),1.0,1.0,1.0,1.0
+43R,Pre injection,16 (7),1.0,1.0,1.0,1.0
+43R,Pre injection,16 (8),1.0,1.0,1.0,1.0
+43R,Pre injection,16 (9),1.0,0.0,1.0,1.0
+43R,Pre injection,16 (10),1.0,1.0,1.0,1.0
+43R,Pre injection,16 (11),1.0,0.0,1.0,1.0
+43R,Pre injection,16 (12),1.0,0.0,1.0,1.0
+43R,Pre injection,16 (13),1.0,0.0,1.0,1.0
+43R,Post injection,16 (8),1.0,1.0,1.0,1.0
+43R,Post injection,16 (9),1.0,1.0,1.0,1.0
+43R,Post injection,16 (10),1.0,1.0,1.0,1.0
+43R,Post injection,16 (12),1.0,0.0,1.0,1.0
+43R,Post injection,16 (13),1.0,0.0,1.0,1.0
+44R,Pre injection,17 (17),0.0,1.0,1.0,1.0
+44R,Pre injection,17 (18),0.0,1.0,0.0,1.0
+44R,Pre injection,17 (19),0.0,1.0,0.0,1.0
+44R,Post injection,17 (18),0.0,1.0,1.0,1.0
+44R,Post injection,17 (19),0.0,1.0,0.0,1.0
+45L,Pre injection,18 (13),1.0,0.0,1.0,1.0
+45L,Pre injection,18 (14),1.0,1.0,0.0,1.0
+45L,Pre injection,18 (15),1.0,1.0,0.0,1.0
+45L,Pre injection,18 (16),1.0,0.0,0.0,1.0
+45L,Pre injection,18 (17),1.0,0.0,0.0,1.0
+45L,Post injection,18 (13),1.0,1.0,0.0,1.0
+45L,Post injection,18 (14),1.0,1.0,0.0,1.0
+45L,Post injection,18 (15),1.0,1.0,0.0,1.0
+45L,Post injection,18 (16),0.0,1.0,0.0,1.0
+45L,Post injection,18 (17),1.0,1.0,0.0,1.0
+45L,Post injection,18 (18),1.0,1.0,0.0,1.0
+45L,Post injection,18 (19),1.0,1.0,0.0,1.0
+46L,Pre injection,19 (4),1.0,0.0,1.0,1.0
+46L,Pre injection,19 (6),1.0,0.0,1.0,1.0
+46L,Pre injection,19 (7),1.0,0.0,1.0,1.0
+46L,Pre injection,19 (9),1.0,1.0,1.0,1.0
+46L,Pre injection,19 (11),1.0,1.0,1.0,1.0
+46L,Pre injection,19 (12),1.0,0.0,0.0,1.0
+46L,Post injection,19 (5),1.0,0.0,1.0,1.0
+46L,Post injection,19 (6),1.0,0.0,0.0,1.0
+46L,Post injection,19 (9),1.0,0.0,0.0,1.0
+46L,Post injection,19 (10),1.0,0.0,1.0,1.0
+46L,Post injection,19 (11),1.0,0.0,1.0,1.0
+47R,Pre injection,20 (8),1.0,0.0,0.0,1.0
+47R,Pre injection,20 (10),1.0,0.0,0.0,1.0
+47R,Pre injection,20 (12),1.0,0.0,1.0,1.0
+47R,Pre injection,20 (13),1.0,0.0,1.0,1.0
+47R,Post injection,20 (8),1.0,0.0,0.0,1.0
+47R,Post injection,20 (9),1.0,0.0,0.0,1.0
+47R,Post injection,20 (10),1.0,0.0,0.0,1.0
+47R,Post injection,20 (11),1.0,0.0,0.0,1.0
+47R,Post injection,20 (12),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (8),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (9),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (10),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (12),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (13),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (14),1.0,0.0,1.0,1.0
+50R,Pre injection,23 (15),1.0,0.0,0.0,1.0
+50R,Pre injection,23 (16),1.0,0.0,1.0,1.0
+50R,Pre injection,23 (17),1.0,0.0,1.0,1.0
+50R,Post injection,23 (10),1.0,0.0,0.0,1.0
+50R,Post injection,23 (11),1.0,0.0,0.0,1.0
+50R,Post injection,23 (13),1.0,0.0,0.0,1.0
+50R,Post injection,23 (14),1.0,0.0,0.0,1.0
+50R,Post injection,23 (15),1.0,0.0,0.0,1.0
+50R,Post injection,23 (16),1.0,0.0,0.0,1.0
+50R,Post injection,23 (17),1.0,0.0,1.0,1.0
+51L,Pre injection,24 (14),0.0,0.0,0.0,1.0
+51L,Pre injection,24 (15),1.0,0.0,1.0,1.0
+51L,Pre injection,24 (16),1.0,0.0,1.0,1.0
+51L,Pre injection,24 (18),1.0,0.0,1.0,1.0
+51L,Pre injection,24 (19),1.0,0.0,1.0,1.0
+51L,Pre injection,24 (20),1.0,0.0,1.0,1.0
+51L,Pre injection,24 (21),1.0,0.0,1.0,1.0
+51L,Post injection,24 (14),1.0,0.0,0.0,1.0
+51L,Post injection,24 (15),1.0,0.0,1.0,1.0
+51L,Post injection,24 (16),1.0,0.0,1.0,1.0
+51L,Post injection,24 (17),1.0,0.0,1.0,1.0
+51L,Post injection,24 (18),1.0,0.0,1.0,1.0
+53R,Pre injection,26 (15),1.0,1.0,1.0,1.0
+53R,Pre injection,26 (16),1.0,1.0,1.0,1.0
+53R,Pre injection,26 (17),1.0,1.0,1.0,1.0
+53R,Pre injection,26 (18),1.0,1.0,1.0,1.0
+53R,Pre injection,26 (19),1.0,1.0,1.0,1.0
+53R,Pre injection,26 (20),1.0,1.0,1.0,1.0
+53R,Pre injection,26 (21),1.0,1.0,1.0,1.0
+53R,Post injection,26 (11),1.0,0.0,0.0,1.0
+54R,Pre injection,27 (15),1.0,1.0,1.0,1.0
+54R,Pre injection,27 (16),1.0,1.0,1.0,1.0
+54R,Pre injection,27 (18),1.0,1.0,1.0,1.0
+54R,Pre injection,27 (19),1.0,1.0,1.0,1.0
+54R,Pre injection,27 (20),1.0,1.0,1.0,1.0
+54R,Pre injection,27 (21),1.0,0.0,1.0,1.0
+54R,Post injection,27 (14),1.0,1.0,1.0,1.0
+54R,Post injection,27 (17),1.0,1.0,1.0,1.0
+54R,Post injection,27 (18),1.0,1.0,1.0,1.0
+54R,Post injection,27 (20),1.0,1.0,1.0,1.0
+54R,Post injection,27 (21),0.0,0.0,1.0,1.0
+54R,Post injection,27 (25),0.0,0.0,1.0,1.0
+57R,Pre injection,30 (13),0.0,1.0,0.0,1.0
+57R,Pre injection,30 (14),0.0,1.0,1.0,1.0
+57R,Pre injection,30 (15),1.0,1.0,1.0,1.0
+57R,Pre injection,30 (16),0.0,1.0,1.0,1.0
+57R,Pre injection,30 (17),1.0,1.0,1.0,1.0
+57R,Pre injection,30 (18),1.0,1.0,1.0,1.0
+57R,Post injection,30 (13),0.0,1.0,0.0,1.0
+57R,Post injection,30 (14),0.0,1.0,0.0,1.0
+57R,Post injection,30 (15),0.0,1.0,1.0,1.0
+57R,Post injection,30 (16),0.0,1.0,1.0,1.0
+57R,Post injection,30 (17),0.0,1.0,1.0,1.0
+63R,Pre injection,37 (14),0.0,1.0,0.0,1.0
+63R,Pre injection,37 (15),0.0,1.0,0.0,1.0
+63R,Pre injection,37 (16),1.0,1.0,0.0,1.0
+63R,Pre injection,37 (17),1.0,1.0,0.0,1.0
+63R,Post injection,37 (16),1.0,1.0,1.0,1.0
+63R,Post injection,37 (17),1.0,1.0,1.0,1.0
+63R,Post injection,37 (18),1.0,1.0,1.0,1.0
+63R,Post injection,37 (19),1.0,1.0,1.0,1.0
+63R,Post injection,37 (20),1.0,1.0,1.0,1.0
+69R,Pre injection,43 (9),1.0,1.0,1.0,1.0
+69R,Pre injection,43 (11),1.0,1.0,1.0,1.0
+69R,Pre injection,43 (12),1.0,1.0,1.0,1.0
+69R,Pre injection,43 (13),1.0,1.0,0.0,1.0
+69R,Pre injection,43 (14),1.0,1.0,0.0,1.0
+69R,Post injection,43 (10),1.0,0.0,1.0,1.0
+69R,Post injection,43 (11),1.0,1.0,1.0,1.0
+69R,Post injection,43 (13),1.0,1.0,0.0,1.0
+69R,Post injection,43 (14),1.0,1.0,0.0,1.0
+71R,Pre injection,45 (18),1.0,1.0,1.0,1.0
+71R,Pre injection,45 (19),1.0,1.0,1.0,1.0
+71R,Pre injection,45 (21),1.0,0.0,1.0,1.0
+71R,Pre injection,45 (23),0.0,0.0,1.0,1.0
+71R,Post injection,45 (18),0.0,0.0,1.0,1.0
+71R,Post injection,45 (19),0.0,0.0,1.0,1.0
+71R,Post injection,45 (20),1.0,0.0,1.0,1.0
+71R,Post injection,45 (21),1.0,0.0,1.0,1.0
+77L,Pre injection,51 (11),0.0,0.0,1.0,1.0
+77L,Pre injection,51 (12),0.0,0.0,1.0,1.0
+77L,Pre injection,51 (14),0.0,0.0,0.0,1.0
+77L,Pre injection,51 (16),0.0,0.0,0.0,1.0
+77L,Post injection,51 (11),0.0,0.0,1.0,1.0
+77L,Post injection,51 (12),0.0,0.0,1.0,1.0
+77L,Post injection,51 (13),1.0,0.0,0.0,1.0
+79L,Pre injection,53 (5),1.0,0.0,0.0,0.0
+79L,Pre injection,53 (6),1.0,0.0,0.0,1.0
+79L,Pre injection,53 (8),1.0,0.0,0.0,0.0
+79L,Pre injection,53 (9),0.0,0.0,0.0,0.0
+79L,Post injection,53 (6),1.0,0.0,0.0,1.0
+79L,Post injection,53 (7),1.0,0.0,0.0,1.0
+79L,Post injection,53 (8),1.0,0.0,0.0,1.0
+79L,Post injection,53 (9),1.0,0.0,0.0,0.0
+80R,Pre injection,54 (10),0.0,1.0,1.0,1.0
+80R,Pre injection,54 (11),0.0,1.0,1.0,1.0
+80R,Pre injection,54 (12),1.0,1.0,1.0,1.0
+80R,Pre injection,54 (13),1.0,1.0,1.0,1.0
+80R,Post injection,54 (10),0.0,1.0,1.0,1.0
+80R,Post injection,54 (12),1.0,1.0,1.0,1.0
+80R,Post injection,54 (13),0.0,1.0,1.0,1.0
+80R,Post injection,54 (14),1.0,1.0,1.0,1.0
+83L,Pre injection,57 (16),1.0,1.0,1.0,1.0
+83L,Pre injection,57 (17),1.0,1.0,1.0,1.0
+83L,Pre injection,57 (18),0.0,0.0,0.0,1.0
+83L,Pre injection,57 (19),0.0,1.0,0.0,1.0
+83L,Post injection,57 (24),1.0,1.0,1.0,1.0
+83L,Post injection,57 (25),1.0,0.0,1.0,1.0
+83L,Post injection,57 (26),1.0,0.0,0.0,1.0
+83L,Post injection,57 (27),1.0,1.0,0.0,1.0
+84L,Pre injection,58 (20),1.0,0.0,0.0,1.0
+84L,Pre injection,58 (21),1.0,0.0,0.0,1.0
+84L,Pre injection,58 (22),1.0,0.0,0.0,1.0
+84L,Pre injection,58 (23),1.0,1.0,0.0,1.0
+84L,Post injection,58 (31),1.0,0.0,0.0,1.0
+84L,Post injection,58 (32),1.0,0.0,0.0,1.0
+84L,Post injection,58 (33),1.0,0.0,0.0,1.0
+84L,Post injection,58 (34),1.0,0.0,0.0,1.0
+86R,Pre injection,60 (13),1.0,0.0,0.0,1.0
+86R,Pre injection,60 (14),1.0,1.0,0.0,1.0
+86R,Pre injection,60 (15),1.0,1.0,0.0,1.0
+86R,Pre injection,60 (16),1.0,1.0,1.0,1.0
+86R,Post injection,60 (13),1.0,0.0,0.0,1.0
+86R,Post injection,60 (14),0.0,1.0,0.0,1.0
+86R,Post injection,60 (15),1.0,0.0,0.0,1.0
+86R,Post injection,60 (16),0.0,0.0,1.0,1.0
+102R,Pre injection,76 (15),1.0,0.0,0.0,1.0
+102R,Pre injection,76 (16),1.0,0.0,0.0,1.0
+102R,Pre injection,76 (17),0.0,0.0,0.0,1.0
+102R,Post injection,76 (15),1.0,0.0,0.0,1.0
+102R,Post injection,76 (16),0.0,0.0,0.0,1.0
+102R,Post injection,76 (17),0.0,0.0,0.0,1.0
+105L,Pre injection,79 (11),1.0,1.0,0.0,1.0
+105L,Pre injection,79 (12),0.0,1.0,0.0,1.0
+105L,Pre injection,79 (14),0.0,0.0,1.0,1.0
+105L,Post injection,79 (10),0.0,0.0,0.0,1.0
+105L,Post injection,79 (11),0.0,0.0,0.0,1.0
+105L,Post injection,79 (12),0.0,0.0,0.0,1.0
+105L,Post injection,79 (13),0.0,0.0,0.0,1.0
+108L,Pre injection,82 (13),1.0,1.0,0.0,1.0
+108L,Pre injection,82 (15),1.0,1.0,0.0,1.0
+108L,Pre injection,82 (16),1.0,1.0,1.0,1.0
+108L,Pre injection,82 (17),1.0,1.0,1.0,1.0
+108L,Pre injection,82 (18),0.0,1.0,1.0,1.0
+108L,Pre injection,82 (19),1.0,1.0,1.0,1.0
+108L,Post injection,82 (13),0.0,0.0,0.0,1.0
+108L,Post injection,82 (14),1.0,0.0,1.0,1.0
+108L,Post injection,82 (15),1.0,0.0,1.0,1.0
+108L,Post injection,82 (16),0.0,0.0,1.0,1.0
+110R,Pre injection,84 (12),1.0,1.0,1.0,1.0
+110R,Pre injection,84 (13),1.0,1.0,1.0,1.0
+110R,Pre injection,84 (14),1.0,1.0,1.0,1.0
+110R,Pre injection,84 (15),1.0,1.0,1.0,1.0
+110R,Post injection,84 (11),1.0,1.0,1.0,1.0
+110R,Post injection,84 (12),1.0,1.0,1.0,1.0
+110R,Post injection,84 (13),1.0,1.0,1.0,1.0
+110R,Post injection,84 (14),1.0,1.0,1.0,1.0
+110R,Post injection,84 (15),1.0,1.0,1.0,1.0
+111L,Pre injection,85 (15),1.0,0.0,0.0,1.0
+111L,Pre injection,85 (16),1.0,1.0,0.0,1.0
+111L,Pre injection,85 (17),1.0,0.0,1.0,1.0
+111L,Pre injection,85 (18),1.0,0.0,1.0,1.0
+111L,Pre injection,85 (19),1.0,0.0,1.0,1.0
+111L,Post injection,85 (13),1.0,0.0,0.0,1.0
+111L,Post injection,85 (14),0.0,0.0,0.0,1.0
+111L,Post injection,85 (15),1.0,0.0,0.0,1.0
+111L,Post injection,85 (16),1.0,0.0,0.0,1.0
+111L,Post injection,85 (17),1.0,0.0,1.0,1.0
+112R,Pre injection,86 (11),0.0,0.0,1.0,0.0
+112R,Pre injection,86 (12),1.0,0.0,1.0,0.0
+112R,Pre injection,86 (13),1.0,0.0,0.0,1.0
+112R,Pre injection,86 (14),1.0,0.0,0.0,1.0
+112R,Post injection,86 (10),0.0,0.0,0.0,1.0
+112R,Post injection,86 (11),0.0,0.0,0.0,1.0
+112R,Post injection,86 (12),1.0,0.0,1.0,1.0
+112R,Post injection,86 (13),1.0,0.0,0.0,1.0
+114R,Pre injection,88 (18),0.0,0.0,0.0,0.0
+114R,Pre injection,88 (19),0.0,0.0,0.0,1.0
+114R,Pre injection,88 (20),0.0,0.0,0.0,0.0
+114R,Post injection,88 (18),0.0,0.0,0.0,1.0
+114R,Post injection,88 (19),0.0,0.0,0.0,1.0
+114R,Post injection,88 (20),0.0,0.0,0.0,1.0
+114R,Post injection,88 (21),0.0,0.0,0.0,1.0
+115R,Pre injection,89 (11),1.0,1.0,0.0,1.0
+115R,Pre injection,89 (12),1.0,1.0,1.0,1.0
+115R,Pre injection,89 (13),1.0,1.0,1.0,1.0
+115R,Pre injection,89 (14),1.0,1.0,1.0,1.0
+115R,Post injection,89 (13),1.0,1.0,1.0,1.0
+115R,Post injection,89 (14),1.0,1.0,1.0,1.0
+115R,Post injection,89 (15),0.0,1.0,1.0,1.0
+115R,Post injection,89 (16),0.0,1.0,0.0,1.0
+116R,Pre injection,90 (11),1.0,1.0,1.0,1.0
+116R,Pre injection,90 (12),1.0,1.0,1.0,1.0
+116R,Pre injection,90 (13),1.0,1.0,1.0,1.0
+116R,Pre injection,90 (14),1.0,0.0,1.0,1.0
+116R,Pre injection,90 (15),0.0,0.0,1.0,1.0
+116R,Post injection,90 (13),1.0,1.0,1.0,1.0
+116R,Post injection,90 (14),1.0,0.0,0.0,1.0
+116R,Post injection,90 (15),0.0,1.0,0.0,1.0
+116R,Post injection,90 (16),1.0,1.0,0.0,1.0
+117R,Pre injection,91 (2),0.0,1.0,1.0,1.0
+117R,Pre injection,91 (3),0.0,1.0,1.0,1.0
+117R,Pre injection,91 (4),0.0,1.0,0.0,1.0
+117R,Pre injection,91 (5),0.0,1.0,0.0,1.0
+117R,Post injection,91 (2),0.0,0.0,1.0,1.0
+117R,Post injection,91 (3),0.0,0.0,1.0,1.0
+117R,Post injection,91 (4),0.0,0.0,0.0,1.0
+117R,Post injection,91 (5),0.0,0.0,0.0,1.0
+120R,Pre injection,94 (12),0.0,1.0,1.0,1.0
+120R,Pre injection,94 (14),0.0,1.0,1.0,1.0
+120R,Pre injection,94 (16),0.0,1.0,1.0,1.0
+120R,Pre injection,94 (17),0.0,1.0,1.0,1.0
+120R,Post injection,94 (12),0.0,1.0,1.0,1.0
+120R,Post injection,94 (14),0.0,1.0,1.0,1.0
+120R,Post injection,94 (15),0.0,1.0,1.0,1.0
+120R,Post injection,94 (16),0.0,1.0,1.0,1.0
+122R,Pre injection,96 (11),0.0,1.0,0.0,1.0
+122R,Pre injection,96 (13),1.0,1.0,0.0,1.0
+122R,Pre injection,96 (14),1.0,1.0,0.0,1.0
+122R,Pre injection,96 (15),1.0,1.0,0.0,1.0
+122R,Pre injection,96 (16),1.0,0.0,0.0,1.0
+122R,Post injection,96 (11),0.0,1.0,0.0,1.0
+122R,Post injection,96 (12),0.0,1.0,0.0,1.0
+122R,Post injection,96 (13),0.0,1.0,0.0,1.0
+122R,Post injection,96 (14),0.0,1.0,0.0,1.0
+128R,Pre injection,102 (10),0.0,1.0,1.0,1.0
+128R,Pre injection,102 (11),0.0,1.0,1.0,1.0
+128R,Pre injection,102 (12),0.0,1.0,1.0,1.0
+128R,Pre injection,102 (13),0.0,1.0,1.0,1.0
+128R,Post injection,102 (12),1.0,1.0,1.0,1.0
+128R,Post injection,102 (13),1.0,1.0,1.0,1.0
+128R,Post injection,102 (14),1.0,0.0,1.0,1.0
+129L,Pre injection,103 (15),0.0,0.0,1.0,1.0
+129L,Pre injection,103 (16),0.0,0.0,1.0,1.0
+129L,Pre injection,103 (17),0.0,0.0,1.0,1.0
+129L,Post injection,103 (14),0.0,0.0,0.0,1.0
+129L,Post injection,103 (15),0.0,0.0,0.0,1.0
+129L,Post injection,103 (16),1.0,0.0,1.0,1.0
+129L,Post injection,103 (17),0.0,0.0,1.0,1.0
+133R,Pre injection,107 (8),0.0,0.0,1.0,1.0
+133R,Pre injection,107 (9),1.0,0.0,1.0,1.0
+133R,Pre injection,107 (10),1.0,0.0,1.0,1.0
+133R,Pre injection,107 (11),1.0,0.0,1.0,1.0
+133R,Post injection,107 (10),1.0,0.0,1.0,1.0
+133R,Post injection,107 (11),1.0,0.0,1.0,1.0
+133R,Post injection,107 (14),1.0,0.0,1.0,1.0
+133R,Post injection,107 (15),1.0,0.0,0.0,1.0
+134L,Pre injection,108 (14),1.0,1.0,0.0,1.0
+134L,Pre injection,108 (15),1.0,0.0,1.0,1.0
+134L,Pre injection,108 (16),1.0,0.0,1.0,1.0
+134L,Pre injection,108 (17),1.0,1.0,0.0,1.0
+134L,Post injection,108 (15),0.0,0.0,1.0,1.0
+134L,Post injection,108 (16),0.0,0.0,1.0,1.0
+134L,Post injection,108 (17),0.0,0.0,0.0,1.0
+136L,Pre injection,110 (8),0.0,0.0,1.0,1.0
+136L,Pre injection,110 (9),0.0,0.0,1.0,1.0
+136L,Pre injection,110 (11),0.0,0.0,1.0,1.0
+136L,Pre injection,110 (12),0.0,0.0,1.0,1.0
+136L,Pre injection,110 (13),0.0,1.0,1.0,1.0
+136L,Post injection,110 (10),0.0,1.0,1.0,1.0
+136L,Post injection,110 (11),0.0,0.0,1.0,1.0
+136L,Post injection,110 (12),0.0,0.0,1.0,1.0
+136L,Post injection,110 (14),0.0,0.0,1.0,1.0
+136L,Post injection,110 (15),0.0,0.0,1.0,1.0
+139R,Pre injection,113 (11),1.0,0.0,1.0,1.0
+139R,Pre injection,113 (13),1.0,0.0,1.0,1.0
+139R,Pre injection,113 (14),1.0,0.0,1.0,1.0
+139R,Pre injection,113 (15),1.0,0.0,1.0,1.0
+139R,Pre injection,113 (16),1.0,0.0,1.0,1.0
+139R,Post injection,113 (10),1.0,0.0,1.0,1.0
+139R,Post injection,113 (11),1.0,0.0,1.0,1.0
+139R,Post injection,113 (13),1.0,0.0,1.0,1.0
+139R,Post injection,113 (14),1.0,0.0,1.0,1.0
+143L,Pre injection,119 (21),1.0,0.0,1.0,1.0
+143L,Pre injection,119 (22),1.0,0.0,1.0,1.0
+143L,Pre injection,119 (23),1.0,0.0,1.0,1.0
+143L,Pre injection,119 (24),1.0,0.0,1.0,1.0
+143L,Post injection,119 (21),1.0,0.0,1.0,1.0
+143L,Post injection,119 (22),1.0,0.0,1.0,1.0
+143L,Post injection,119 (23),1.0,0.0,1.0,1.0
+143L,Post injection,119 (24),1.0,0.0,1.0,1.0
+143L,Post injection,119 (25),1.0,0.0,1.0,1.0
+147L,Pre injection,123 (15),1.0,0.0,0.0,1.0
+147L,Pre injection,123 (16),1.0,0.0,1.0,1.0
+147L,Pre injection,123 (17),1.0,0.0,1.0,1.0
+147L,Pre injection,123 (18),1.0,0.0,1.0,1.0
+147L,Post injection,123 (14),1.0,0.0,0.0,1.0
+147L,Post injection,123 (15),1.0,0.0,1.0,1.0
+147L,Post injection,123 (16),1.0,0.0,1.0,1.0
+147L,Post injection,123 (17),1.0,0.0,1.0,1.0
+147L,Post injection,123 (18),1.0,0.0,1.0,1.0
+149R,Pre injection,125 (16),0.0,1.0,1.0,1.0
+149R,Pre injection,125 (17),0.0,1.0,1.0,1.0
+149R,Pre injection,125 (18),0.0,1.0,1.0,1.0
+149R,Pre injection,125 (19),0.0,1.0,1.0,1.0
+149R,Pre injection,125 (20),0.0,1.0,1.0,1.0
+149R,Post injection,125 (14),0.0,1.0,1.0,1.0
+149R,Post injection,125 (15),0.0,1.0,1.0,1.0
+149R,Post injection,125 (16),1.0,1.0,1.0,1.0
+149R,Post injection,125 (17),0.0,1.0,1.0,1.0
+149R,Post injection,125 (18),1.0,1.0,1.0,1.0
+152R,Pre injection,129 (16),0.0,1.0,1.0,1.0
+152R,Pre injection,129 (17),0.0,1.0,1.0,1.0
+152R,Pre injection,129 (18),1.0,1.0,1.0,1.0
+152R,Pre injection,129 (19),0.0,1.0,1.0,1.0
+152R,Post injection,129 (17),0.0,0.0,1.0,1.0
+152R,Post injection,129 (18),1.0,0.0,1.0,1.0
+152R,Post injection,129 (19),0.0,0.0,1.0,1.0
+155L,Pre injection,133 (14),0.0,0.0,1.0,1.0
+155L,Pre injection,133 (15),0.0,0.0,1.0,1.0
+155L,Pre injection,133 (16),0.0,0.0,1.0,1.0
+155L,Pre injection,133 (17),0.0,0.0,0.0,1.0
+155L,Post injection,133 (14),0.0,0.0,1.0,1.0
+155L,Post injection,133 (15),0.0,0.0,1.0,1.0
+155L,Post injection,133 (16),0.0,0.0,0.0,1.0
+157L,Pre injection,135 (18),1.0,0.0,0.0,1.0
+157L,Pre injection,135 (19),1.0,0.0,0.0,1.0
+157L,Pre injection,135 (20),1.0,0.0,0.0,1.0
+157L,Post injection,135 (16),1.0,0.0,0.0,1.0
+157L,Post injection,135 (17),1.0,0.0,0.0,1.0
+157L,Post injection,135 (18),1.0,0.0,0.0,1.0
+157L,Post injection,135 (19),1.0,0.0,0.0,1.0
+163L,Pre injection,141 (8),1.0,0.0,0.0,1.0
+163L,Pre injection,141 (9),1.0,0.0,0.0,1.0
+163L,Pre injection,141 (10),1.0,0.0,0.0,1.0
+163L,Pre injection,141 (11),1.0,1.0,0.0,1.0
+163L,Pre injection,141 (12),1.0,1.0,0.0,1.0
+163L,Post injection,141 (10),1.0,0.0,0.0,1.0
+163L,Post injection,141 (11),1.0,0.0,0.0,1.0
+163L,Post injection,141 (12),0.0,0.0,0.0,1.0
+163L,Post injection,141 (13),1.0,0.0,0.0,1.0
+163L,Post injection,141 (15),1.0,0.0,0.0,1.0
+167R,Pre injection,145 (8),1.0,0.0,0.0,1.0
+167R,Pre injection,145 (9),1.0,0.0,0.0,1.0
+167R,Pre injection,145 (10),1.0,0.0,0.0,1.0
+167R,Pre injection,145 (11),1.0,0.0,1.0,1.0
+167R,Post injection,145 (14),1.0,0.0,0.0,1.0
+167R,Post injection,145 (15),1.0,0.0,0.0,1.0
+167R,Post injection,145 (16),1.0,0.0,1.0,1.0
+167R,Post injection,145 (17),1.0,0.0,1.0,1.0
+169R,Pre injection,147 (14),0.0,0.0,0.0,1.0
+169R,Pre injection,147 (15),0.0,1.0,0.0,1.0
+169R,Pre injection,147 (16),0.0,0.0,1.0,1.0
+169R,Pre injection,147 (17),0.0,0.0,1.0,1.0
+169R,Post injection,147 (11),1.0,1.0,0.0,1.0
+169R,Post injection,147 (12),1.0,1.0,0.0,1.0
+169R,Post injection,147 (13),1.0,1.0,0.0,1.0
+169R,Post injection,147 (14),1.0,1.0,1.0,1.0
+169R,Post injection,147 (15),1.0,0.0,0.0,1.0
+169R,Post injection,147 (16),1.0,1.0,1.0,1.0
+183R,Pre injection,161 (14),1.0,0.0,0.0,1.0
+183R,Pre injection,161 (15),1.0,0.0,0.0,1.0
+183R,Pre injection,161 (16),1.0,0.0,0.0,1.0
+183R,Pre injection,161 (17),1.0,1.0,0.0,1.0
+183R,Post injection,161 (12),0.0,0.0,0.0,1.0
+183R,Post injection,161 (13),0.0,0.0,1.0,1.0
+183R,Post injection,161 (14),1.0,0.0,1.0,1.0
+183R,Post injection,161 (15),1.0,0.0,0.0,1.0
+183R,Post injection,161 (16),1.0,0.0,0.0,1.0
+184R,Pre injection,162 (15),0.0,1.0,0.0,1.0
+184R,Pre injection,162 (16),0.0,1.0,0.0,1.0
+184R,Pre injection,162 (17),1.0,0.0,0.0,1.0
+184R,Pre injection,162 (18),1.0,0.0,1.0,1.0
+184R,Pre injection,162 (19),1.0,1.0,1.0,1.0
+184R,Post injection,162 (14),0.0,0.0,0.0,1.0
+184R,Post injection,162 (15),1.0,0.0,0.0,1.0
+184R,Post injection,162 (16),1.0,0.0,1.0,1.0
+184R,Post injection,162 (17),1.0,0.0,0.0,1.0
+188L,Pre injection,166_001010,0.0,1.0,1.0,1.0
+188L,Pre injection,166_001011,0.0,1.0,1.0,1.0
+188L,Pre injection,166_001012,1.0,1.0,1.0,1.0
+188L,Pre injection,166_001013,1.0,1.0,1.0,1.0
+188L,Pre injection,166_001014,0.0,1.0,1.0,1.0
+188L,Pre injection,166_001015,0.0,1.0,0.0,1.0
+188L,Post injection,166 (17),1.0,1.0,1.0,1.0
+188L,Post injection,166 (18),1.0,1.0,1.0,1.0
+188L,Post injection,166 (19),0.0,1.0,1.0,1.0
+188L,Post injection,166 (20),1.0,0.0,1.0,1.0
+190L,Pre injection,168 (7),0.0,1.0,0.0,1.0
+190L,Pre injection,168 (8),0.0,1.0,0.0,1.0
+190L,Pre injection,168 (10),0.0,1.0,1.0,1.0
+190L,Post injection,168 (8),0.0,1.0,0.0,1.0
+190L,Post injection,168 (9),0.0,1.0,0.0,1.0
+190L,Post injection,168 (11),0.0,1.0,0.0,1.0
+190L,Post injection,168 (12),0.0,1.0,0.0,1.0
+191L,Pre injection,169 (15),0.0,1.0,1.0,1.0
+191L,Pre injection,169 (16),0.0,1.0,1.0,1.0
+191L,Pre injection,169 (17),0.0,0.0,1.0,1.0
+191L,Pre injection,169 (18),0.0,0.0,1.0,1.0
+191L,Post injection,169 (14),0.0,1.0,1.0,1.0
+191L,Post injection,169 (15),0.0,0.0,1.0,1.0
+191L,Post injection,169 (16),0.0,0.0,1.0,1.0
+191L,Post injection,169 (17),0.0,1.0,0.0,1.0
+193L,Pre injection,171 (9),0.0,1.0,1.0,1.0
+193L,Pre injection,171 (10),1.0,1.0,1.0,1.0
+193L,Pre injection,171 (11),1.0,0.0,1.0,1.0
+193L,Pre injection,171 (12),0.0,0.0,1.0,1.0
+193L,Post injection,171 (11),1.0,1.0,1.0,1.0
+193L,Post injection,171 (12),1.0,1.0,1.0,1.0
+193L,Post injection,171 (13),1.0,1.0,1.0,1.0
+193L,Post injection,171 (14),0.0,1.0,1.0,1.0
+195L,Pre injection,173_001008,1.0,0.0,0.0,1.0
+195L,Pre injection,173_001009,1.0,0.0,0.0,1.0
+195L,Pre injection,173_001010,1.0,0.0,0.0,1.0
+195L,Pre injection,173_001011,1.0,0.0,0.0,1.0
+195L,Post injection,173_001011,1.0,1.0,0.0,1.0
+195L,Post injection,173_001012,1.0,1.0,0.0,1.0
+195L,Post injection,173_001013,1.0,1.0,0.0,1.0
+195L,Post injection,173_001014,1.0,1.0,0.0,1.0
+196R,Post injection,174_001008,0.0,0.0,0.0,1.0
+196R,Post injection,174_001009,0.0,0.0,0.0,1.0
+196R,Post injection,174_001010,0.0,0.0,0.0,1.0
+196R,Post injection,174_001011,0.0,0.0,0.0,1.0
+198R,Pre injection,176_001015,0.0,1.0,1.0,1.0
+198R,Pre injection,176_001016,0.0,1.0,1.0,1.0
+198R,Pre injection,176_001017,0.0,1.0,1.0,1.0
+198R,Pre injection,176_001018,0.0,1.0,1.0,1.0
+198R,Post injection,176_001016,0.0,1.0,1.0,1.0
+198R,Post injection,176_001017,0.0,1.0,1.0,1.0
+198R,Post injection,176_001018,0.0,1.0,1.0,1.0
+198R,Post injection,176_001019,0.0,1.0,1.0,1.0
+198R,Post injection,176_001023,0.0,1.0,1.0,1.0
+199R,Pre injection,177_001011,1.0,1.0,0.0,1.0
+199R,Pre injection,177_001012,1.0,1.0,0.0,1.0
+199R,Pre injection,177_001013,1.0,1.0,0.0,1.0
+199R,Pre injection,177_001014,1.0,1.0,0.0,1.0
+199R,Pre injection,177_001015,0.0,1.0,0.0,1.0
+202R,Pre injection,180_001010,1.0,1.0,1.0,1.0
+202R,Pre injection,180_001011,1.0,1.0,1.0,1.0
+202R,Pre injection,180_001012,1.0,1.0,1.0,1.0
+202R,Pre injection,180_001013,1.0,1.0,1.0,1.0
+202R,Pre injection,180_001014,1.0,1.0,1.0,1.0
+202R,Post injection,180_001010,1.0,0.0,1.0,1.0
+202R,Post injection,180_001011,1.0,0.0,1.0,1.0
+202R,Post injection,180_001012,1.0,0.0,1.0,1.0
+202R,Post injection,180_001013,1.0,0.0,1.0,1.0
+202R,Post injection,180_001014,1.0,0.0,1.0,1.0
+204R,Pre injection,182_001011,0.0,1.0,0.0,1.0
+204R,Pre injection,182_001012,0.0,1.0,1.0,1.0
+204R,Pre injection,182_001013,0.0,1.0,0.0,1.0
+204R,Pre injection,182_001014,0.0,1.0,0.0,1.0
+204R,Post injection,182_001012,0.0,0.0,1.0,1.0
+204R,Post injection,182_001013,0.0,0.0,1.0,1.0
+204R,Post injection,182_001014,0.0,0.0,0.0,1.0
+206L,Pre injection,184_002010,0.0,1.0,1.0,1.0
+206L,Pre injection,184_002011,0.0,1.0,1.0,1.0
+206L,Pre injection,184_002012,0.0,1.0,1.0,1.0
+206L,Pre injection,184_002013,0.0,1.0,1.0,1.0
+207R,Pre injection,185_001017,0.0,0.0,1.0,1.0
+207R,Pre injection,185_001018,0.0,0.0,1.0,1.0
+207R,Pre injection,185_001019,0.0,0.0,1.0,1.0
+208R,Pre injection,186_001011,1.0,0.0,0.0,1.0
+208R,Pre injection,186_001012,0.0,0.0,1.0,1.0
+208R,Pre injection,186_001013,1.0,0.0,1.0,1.0
+208R,Pre injection,186_001014,1.0,0.0,1.0,1.0
+208R,Post injection,186_001011,1.0,0.0,0.0,1.0
+208R,Post injection,186_001012,1.0,0.0,0.0,1.0
+208R,Post injection,186_001013,1.0,0.0,0.0,1.0
+208R,Post injection,186_001014,1.0,0.0,0.0,1.0
+209R,Pre injection,187_001010,0.0,0.0,0.0,1.0
+209R,Pre injection,187_001011,0.0,0.0,0.0,1.0
+209R,Pre injection,187_001012,0.0,0.0,0.0,1.0
+209R,Pre injection,187_001013,0.0,0.0,0.0,1.0
+209R,Pre injection,187_001014,0.0,0.0,0.0,1.0
+209R,Post injection,187_001010,0.0,0.0,0.0,1.0
+209R,Post injection,187_001011,0.0,0.0,0.0,1.0
+209R,Post injection,187_001012,0.0,0.0,0.0,1.0
+209R,Post injection,187_001013,0.0,0.0,0.0,1.0
+209R,Post injection,187_001014,0.0,0.0,0.0,1.0
+210L,Pre injection,188_001007,0.0,1.0,0.0,1.0
+210L,Pre injection,188_001009,0.0,1.0,1.0,1.0
+210L,Pre injection,188_001010,0.0,1.0,1.0,1.0
+210L,Post injection,188_001009,1.0,1.0,1.0,1.0
+210L,Post injection,188_001010,0.0,1.0,1.0,1.0
+210L,Post injection,188_001011,0.0,1.0,1.0,1.0
+210L,Post injection,188_001012,0.0,1.0,1.0,1.0
+211R,Pre injection,189_001019 (1),1.0,1.0,1.0,1.0
+211R,Pre injection,189_001019 (2),1.0,1.0,0.0,1.0
+211R,Pre injection,189_001019 (3),1.0,1.0,0.0,1.0
+211R,Pre injection,189_001019 (4),1.0,1.0,0.0,1.0
+211R,Pre injection,189_001019,1.0,1.0,1.0,1.0
+211R,Pre injection,189_001020,1.0,1.0,1.0,1.0
+211R,Pre injection,189_001021,1.0,1.0,0.0,1.0
+211R,Pre injection,189_001022,1.0,1.0,0.0,1.0
+211R,Post injection,189_001022,1.0,1.0,0.0,1.0
+211R,Post injection,189_001023,1.0,1.0,0.0,1.0
+211R,Post injection,189_001024,1.0,1.0,0.0,1.0
+211R,Post injection,189_001025,1.0,1.0,0.0,1.0
+214R,Pre injection,3_001008,1.0,0.0,1.0,1.0
+214R,Pre injection,3_001009,1.0,0.0,1.0,1.0
+214R,Pre injection,3_001010,1.0,0.0,1.0,1.0
+214R,Pre injection,3_001011,1.0,0.0,1.0,1.0
+214R,Pre injection,3_001012,1.0,0.0,1.0,1.0
+214R,Pre injection,3_001013,1.0,0.0,1.0,1.0
+214R,Pre injection,3_001014,1.0,0.0,1.0,1.0
+214R,Post injection,3_001009,1.0,0.0,1.0,1.0
+214R,Post injection,3_001010,1.0,0.0,1.0,1.0
+214R,Post injection,3_001011,1.0,0.0,1.0,1.0
+214R,Post injection,3_001012,1.0,0.0,1.0,1.0
+214R,Post injection,3_001013,1.0,0.0,0.0,1.0
+214R,Post injection,3_001014,1.0,0.0,0.0,1.0
+214R,Post injection,3_001015,1.0,0.0,0.0,1.0
+215R,Post injection,4_001013,0.0,1.0,0.0,1.0
+215R,Post injection,4_001014,0.0,1.0,0.0,1.0
+215R,Post injection,4_001015,0.0,1.0,0.0,1.0
+215R,Post injection,4_001016,1.0,1.0,0.0,1.0
+215R,Post injection,4_001017,1.0,1.0,0.0,1.0
+215R,Post injection,4_001018,1.0,1.0,0.0,1.0
+215R,Post injection,4_001019,1.0,1.0,0.0,1.0
+217R,Pre injection,6_001009,1.0,0.0,0.0,1.0
+217R,Pre injection,6_001010,1.0,0.0,0.0,1.0
+217R,Pre injection,6_001011,1.0,0.0,0.0,1.0
+217R,Pre injection,6_001012,1.0,0.0,0.0,1.0
+217R,Post injection,6_001009,1.0,0.0,0.0,1.0
+217R,Post injection,6_001010,1.0,0.0,0.0,1.0
+217R,Post injection,6_001011,1.0,0.0,0.0,1.0
+217R,Post injection,6_001012,1.0,0.0,0.0,1.0
+220L,Pre injection,9 (10),1.0,0.0,0.0,1.0
+220L,Pre injection,9 (11),1.0,0.0,0.0,1.0
+220L,Pre injection,9 (12),1.0,0.0,0.0,1.0
+220L,Pre injection,9 (13),1.0,0.0,0.0,1.0
+220L,Post injection,9 (10),1.0,0.0,0.0,1.0
+220L,Post injection,9 (11),1.0,0.0,0.0,1.0
+220L,Post injection,9 (12),1.0,0.0,0.0,1.0
+220L,Post injection,9 (13),1.0,0.0,0.0,1.0
+221L,Pre injection,10 (14),1.0,0.0,0.0,1.0
+221L,Pre injection,10 (15),1.0,0.0,0.0,1.0
+221L,Pre injection,10 (16),1.0,0.0,0.0,1.0
+221L,Pre injection,10 (17),1.0,0.0,0.0,1.0
+221L,Post injection,10 (14),1.0,0.0,0.0,1.0
+221L,Post injection,10 (15),1.0,0.0,0.0,1.0
+221L,Post injection,10 (16),1.0,0.0,0.0,1.0
+221L,Post injection,10 (17),1.0,0.0,0.0,1.0
+222R,Pre injection,11 (13),1.0,0.0,0.0,1.0
+222R,Pre injection,11 (14),1.0,0.0,0.0,1.0
+222R,Pre injection,11 (15),1.0,0.0,0.0,1.0
+222R,Pre injection,11 (16),1.0,0.0,0.0,1.0
+222R,Post injection,11 (12),1.0,0.0,0.0,1.0
+222R,Post injection,11 (13),1.0,0.0,0.0,1.0
+222R,Post injection,11 (14),1.0,0.0,0.0,1.0
+222R,Post injection,11 (15),1.0,0.0,0.0,1.0
+224R,Pre injection,13 (14),1.0,0.0,0.0,0.0
+224R,Pre injection,13 (15),1.0,0.0,0.0,1.0
+224R,Pre injection,13 (16),1.0,0.0,0.0,0.0
+224R,Pre injection,13 (17),1.0,0.0,0.0,1.0
+224R,Post injection,13 (16),1.0,0.0,0.0,1.0
+224R,Post injection,13 (17),1.0,0.0,0.0,1.0
+224R,Post injection,13 (18),1.0,0.0,0.0,0.0
+224R,Post injection,13 (19),1.0,0.0,0.0,0.0
+226R,Pre injection,15 (13),1.0,0.0,0.0,1.0
+226R,Pre injection,15 (14),1.0,0.0,0.0,1.0
+226R,Pre injection,15 (15),1.0,0.0,0.0,1.0
+226R,Pre injection,15 (16),1.0,0.0,0.0,1.0
+226R,Post injection,15 (13),1.0,0.0,0.0,1.0
+226R,Post injection,15 (14),1.0,0.0,0.0,1.0
+226R,Post injection,15 (15),1.0,0.0,0.0,1.0
+226R,Post injection,15 (16),1.0,0.0,0.0,1.0
+229R,Pre injection,18 (11),1.0,1.0,0.0,1.0
+229R,Pre injection,18 (12),1.0,1.0,0.0,1.0
+229R,Pre injection,18 (13),1.0,1.0,0.0,1.0
+229R,Pre injection,18 (14),1.0,0.0,0.0,1.0
+230L,Pre injection,19 (17),1.0,0.0,0.0,1.0
+230L,Pre injection,19 (18),1.0,0.0,0.0,0.0
+230L,Pre injection,19 (19),1.0,0.0,0.0,0.0
+230L,Pre injection,19 (20),1.0,0.0,0.0,1.0
+230L,Post injection,19 (29),1.0,0.0,0.0,1.0
+230L,Post injection,19 (30),1.0,0.0,0.0,1.0
+230L,Post injection,19 (31),1.0,0.0,0.0,1.0
+230L,Post injection,19 (32),1.0,0.0,0.0,1.0
+262R,Pre injection,53 (12),1.0,0.0,0.0,1.0
+262R,Pre injection,53 (13),1.0,1.0,0.0,1.0
+262R,Pre injection,53 (14),1.0,1.0,0.0,1.0
+262R,Pre injection,53 (15),1.0,1.0,0.0,1.0
+262R,Post injection,53 (13),1.0,0.0,0.0,1.0
+262R,Post injection,53 (14),1.0,0.0,0.0,1.0
+262R,Post injection,53 (15),1.0,1.0,0.0,1.0
+262R,Post injection,53 (16),1.0,0.0,0.0,1.0
+264L,Pre injection,55 (12),1.0,0.0,0.0,1.0
+264L,Pre injection,55 (13),1.0,0.0,0.0,1.0
+264L,Pre injection,55 (14),0.0,0.0,0.0,1.0
+264L,Pre injection,55 (15),0.0,0.0,0.0,1.0
+264L,Post injection,55 (12),1.0,0.0,0.0,1.0
+264L,Post injection,55 (13),0.0,0.0,0.0,1.0
+264L,Post injection,55 (14),0.0,0.0,0.0,1.0
+264L,Post injection,55 (15),0.0,0.0,0.0,1.0
+265L,Pre injection,56 (14),1.0,0.0,0.0,1.0
+265L,Pre injection,56 (15),1.0,0.0,0.0,1.0
+265L,Pre injection,56 (16),1.0,0.0,0.0,1.0
+265L,Pre injection,56 (17),1.0,0.0,0.0,1.0
+265L,Post injection,56 (15),1.0,0.0,0.0,1.0
+265L,Post injection,56 (16),1.0,0.0,0.0,1.0
+265L,Post injection,56 (17),1.0,0.0,0.0,1.0
+265L,Post injection,56 (18),1.0,0.0,0.0,1.0
+269R,Pre injection,60 (22),1.0,1.0,0.0,1.0
+269R,Pre injection,60 (23),1.0,1.0,0.0,1.0
+269R,Pre injection,60 (24),1.0,1.0,0.0,1.0
+269R,Pre injection,60 (25),1.0,1.0,0.0,1.0
+269R,Post injection,60 (22),1.0,1.0,0.0,1.0
+269R,Post injection,60 (23),1.0,1.0,0.0,1.0
+269R,Post injection,60 (24),1.0,1.0,0.0,1.0
+269R,Post injection,60 (25),1.0,1.0,0.0,1.0
+271L,Pre injection,62 (12),1.0,0.0,0.0,1.0
+271L,Pre injection,62 (13),1.0,0.0,0.0,1.0
+271L,Pre injection,62 (14),1.0,0.0,0.0,1.0
+271L,Pre injection,62 (15),1.0,0.0,0.0,1.0
+271L,Post injection,62 (1),1.0,0.0,0.0,1.0
+271L,Post injection,62 (2),1.0,0.0,0.0,1.0
+271L,Post injection,62 (3),1.0,0.0,0.0,1.0
+271L,Post injection,62 (4),1.0,0.0,0.0,1.0
+273L,Pre injection,64 (14),1.0,1.0,0.0,1.0
+273L,Pre injection,64 (15),1.0,1.0,0.0,1.0
+273L,Pre injection,64 (16),1.0,1.0,0.0,1.0
+273L,Pre injection,64 (17),1.0,1.0,0.0,1.0
+273L,Post injection,64 (14),0.0,1.0,0.0,1.0
+273L,Post injection,64 (15),1.0,1.0,0.0,1.0
+273L,Post injection,64 (16),1.0,1.0,0.0,1.0
+273L,Post injection,64 (17),1.0,1.0,0.0,1.0
+278R,Pre injection,69 (14),1.0,1.0,0.0,1.0
+278R,Pre injection,69 (15),1.0,1.0,0.0,1.0
+278R,Pre injection,69 (16),1.0,1.0,0.0,1.0
+278R,Pre injection,69 (17),1.0,1.0,0.0,1.0
+278R,Post injection,69 (14),1.0,0.0,0.0,1.0
+278R,Post injection,69 (15),1.0,0.0,0.0,1.0
+278R,Post injection,69 (16),1.0,0.0,0.0,1.0
+278R,Post injection,69 (17),1.0,0.0,0.0,1.0
+280R,Pre injection,71 (15),1.0,0.0,0.0,1.0
+280R,Pre injection,71 (16),1.0,0.0,0.0,1.0
+280R,Pre injection,71 (17),1.0,0.0,0.0,1.0
+280R,Pre injection,71 (18),1.0,0.0,0.0,1.0
+280R,Post injection,71 (15),1.0,0.0,0.0,1.0
+280R,Post injection,71 (16),1.0,0.0,0.0,1.0
+280R,Post injection,71 (17),1.0,0.0,0.0,1.0
+280R,Post injection,71 (18),1.0,0.0,0.0,1.0
+281L,Pre injection,72 (14),1.0,1.0,0.0,1.0
+281L,Pre injection,72 (15),1.0,1.0,0.0,1.0
+281L,Pre injection,72 (16),1.0,1.0,0.0,1.0
+281L,Pre injection,72 (17),1.0,1.0,0.0,1.0
+281L,Post injection,72 (15),1.0,0.0,0.0,1.0
+281L,Post injection,72 (16),1.0,0.0,0.0,1.0
+281L,Post injection,72 (17),1.0,0.0,0.0,1.0
+281L,Post injection,72 (18),1.0,0.0,0.0,1.0
+292R,Pre injection,84_001011,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001012,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001013,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001014,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001015,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001016,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001017,1.0,0.0,0.0,1.0
+292R,Pre injection,84_001018,1.0,0.0,0.0,1.0
+292R,Post injection,84_001011,1.0,0.0,0.0,1.0
+292R,Post injection,84_001012,0.0,0.0,0.0,1.0
+292R,Post injection,84_001013,1.0,0.0,0.0,1.0
+292R,Post injection,84_001014,1.0,0.0,0.0,1.0
+292R,Post injection,84_001015,1.0,0.0,0.0,1.0
+292R,Post injection,84_001016,1.0,0.0,0.0,1.0
+292R,Post injection,84_001017,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001011,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001012,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001013,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001014,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001015,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001016,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001017,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001018,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001019,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001020,1.0,0.0,0.0,1.0
+294L,Pre injection,86_001021,1.0,0.0,0.0,1.0
+294L,Post injection,86_001012,1.0,0.0,0.0,1.0
+294L,Post injection,86_001013,1.0,0.0,0.0,1.0
+294L,Post injection,86_001014,1.0,0.0,0.0,1.0
+294L,Post injection,86_001015,1.0,0.0,0.0,1.0
+294L,Post injection,86_001016,1.0,0.0,0.0,1.0
+294L,Post injection,86_001017,1.0,0.0,0.0,1.0
+294L,Post injection,86_001018,1.0,0.0,0.0,1.0
+294L,Post injection,86_001019,1.0,0.0,0.0,1.0
+294L,Post injection,86_001020,1.0,0.0,0.0,1.0
+295R,Pre injection,87_001005,1.0,0.0,0.0,1.0
+295R,Pre injection,87_001006,1.0,0.0,0.0,1.0
+295R,Pre injection,87_001007,1.0,1.0,0.0,1.0
+295R,Pre injection,87_001008,1.0,1.0,0.0,1.0
+295R,Pre injection,87_001009,1.0,1.0,0.0,1.0
+295R,Pre injection,87_001010,1.0,0.0,0.0,1.0
+295R,Pre injection,87_001011,1.0,0.0,0.0,1.0
+295R,Pre injection,87_001012,1.0,0.0,0.0,1.0
+295R,Post injection,87_001005,1.0,1.0,0.0,1.0
+295R,Post injection,87_001006,1.0,1.0,0.0,1.0
+295R,Post injection,87_001007,1.0,1.0,0.0,1.0
+295R,Post injection,87_001008,1.0,1.0,0.0,1.0
+295R,Post injection,87_001009,1.0,1.0,0.0,1.0
+295R,Post injection,87_001010,1.0,1.0,0.0,1.0
+295R,Post injection,87_001011,1.0,1.0,0.0,1.0
+295R,Post injection,87_001012,1.0,0.0,0.0,1.0
+295R,Post injection,87_001013,1.0,0.0,0.0,1.0
+299R,Pre injection,91_002010,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002011,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002012,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002013,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002014,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002015,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002016,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002017,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002018,1.0,1.0,0.0,1.0
+299R,Pre injection,91_002019,1.0,1.0,0.0,1.0
+299R,Post injection,91_001011,0.0,1.0,0.0,1.0
+299R,Post injection,91_001012,0.0,1.0,0.0,1.0
+299R,Post injection,91_001013,0.0,1.0,0.0,1.0
+299R,Post injection,91_001014,0.0,1.0,0.0,1.0
+299R,Post injection,91_001015,1.0,1.0,0.0,1.0
+299R,Post injection,91_001016,0.0,1.0,0.0,1.0
+299R,Post injection,91_001017,0.0,1.0,0.0,1.0
+299R,Post injection,91_001018,0.0,1.0,0.0,1.0
+299R,Post injection,91_001019,1.0,1.0,0.0,1.0
+300R,Pre injection,92_001007,1.0,0.0,0.0,1.0
+300R,Pre injection,92_001008,1.0,0.0,0.0,1.0
+300R,Pre injection,92_001009,1.0,0.0,0.0,1.0
+300R,Pre injection,92_001010,1.0,0.0,0.0,1.0
+300R,Pre injection,92_001011,1.0,0.0,0.0,1.0
+300R,Pre injection,92_001012,1.0,0.0,0.0,1.0
+300R,Pre injection,92_001013,1.0,0.0,0.0,1.0
+300R,Post injection,92_001007,1.0,0.0,0.0,1.0
+300R,Post injection,92_001008,1.0,0.0,0.0,1.0
+300R,Post injection,92_001009,1.0,0.0,0.0,1.0
+300R,Post injection,92_001010,1.0,1.0,0.0,1.0
+300R,Post injection,92_001011,1.0,1.0,0.0,1.0
+300R,Post injection,92_001012,1.0,1.0,0.0,1.0
+300R,Post injection,92_001013,1.0,1.0,0.0,1.0
+300R,Post injection,92_001014,1.0,1.0,0.0,1.0
+300R,Post injection,92_001015,1.0,0.0,0.0,1.0
+302L,Pre injection,95_001010,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001011,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001012,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001013,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001014,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001015,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001016,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001017,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001018,1.0,1.0,0.0,1.0
+302L,Pre injection,95_001019,1.0,0.0,0.0,1.0
+302L,Post injection,95_001012,1.0,0.0,0.0,1.0
+302L,Post injection,95_001013,1.0,1.0,0.0,1.0
+302L,Post injection,95_001014,1.0,1.0,0.0,1.0
+302L,Post injection,95_001015,1.0,1.0,0.0,1.0
+302L,Post injection,95_001016,1.0,1.0,0.0,1.0
+302L,Post injection,95_001017,1.0,1.0,0.0,1.0
+302L,Post injection,95_001018,1.0,0.0,0.0,1.0
+303R,Pre injection,96_001009,1.0,0.0,0.0,1.0
+303R,Pre injection,96_001010,1.0,1.0,0.0,1.0
+303R,Pre injection,96_001011,1.0,1.0,0.0,1.0
+303R,Pre injection,96_001012,1.0,1.0,0.0,1.0
+303R,Pre injection,96_001013,1.0,1.0,0.0,1.0
+303R,Pre injection,96_001014,1.0,1.0,0.0,1.0
+303R,Pre injection,96_001015,1.0,0.0,0.0,1.0
+303R,Pre injection,96_001016,1.0,0.0,0.0,1.0
+303R,Pre injection,96_001017,1.0,0.0,0.0,1.0
+303R,Post injection,96_001009,1.0,0.0,0.0,1.0
+303R,Post injection,96_001010,1.0,1.0,0.0,1.0
+303R,Post injection,96_001011,1.0,1.0,0.0,1.0
+303R,Post injection,96_001012,1.0,1.0,0.0,1.0
+303R,Post injection,96_001013,1.0,1.0,0.0,1.0
+303R,Post injection,96_001014,1.0,0.0,0.0,1.0
+303R,Post injection,96_001015,1.0,0.0,0.0,1.0
+303R,Post injection,96_001016,1.0,0.0,0.0,1.0
+303R,Post injection,96_001017,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001009,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001010,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001011,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001012,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001013,1.0,1.0,0.0,1.0
+304L,Pre injection,97_001014,1.0,1.0,0.0,1.0
+304L,Pre injection,97_001015,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001016,1.0,0.0,0.0,1.0
+304L,Pre injection,97_001017,1.0,0.0,0.0,1.0
+304L,Post injection,97_001010,1.0,0.0,0.0,1.0
+304L,Post injection,97_001011,1.0,0.0,0.0,1.0
+304L,Post injection,97_001012,1.0,0.0,0.0,1.0
+304L,Post injection,97_001013,1.0,0.0,0.0,1.0
+304L,Post injection,97_001014,1.0,0.0,0.0,1.0
+304L,Post injection,97_001015,1.0,0.0,0.0,1.0
+304L,Post injection,97_001016,1.0,0.0,0.0,1.0
+304L,Post injection,97_001017,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002008,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002009,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002010,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002011,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002012,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002013,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002014,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002015,1.0,0.0,0.0,1.0
+307L,Pre injection,100_002016,1.0,0.0,0.0,1.0
+307L,Post injection,100_001008,0.0,0.0,0.0,1.0
+307L,Post injection,100_001009,1.0,0.0,0.0,1.0
+307L,Post injection,100_001010,1.0,0.0,0.0,1.0
+307L,Post injection,100_001011,1.0,0.0,0.0,1.0
+307L,Post injection,100_001012,1.0,0.0,0.0,1.0
+307L,Post injection,100_001013,1.0,0.0,0.0,1.0
+307L,Post injection,100_001014,1.0,0.0,0.0,1.0
+307L,Post injection,100_001015,1.0,0.0,0.0,1.0
+307L,Post injection,100_001016,1.0,0.0,0.0,1.0
+311R,Pre injection,105_001011,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001012,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001013,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001014,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001015,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001016,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001017,1.0,0.0,0.0,1.0
+311R,Pre injection,105_001018,1.0,0.0,0.0,0.0
+311R,Pre injection,105_001019,1.0,0.0,0.0,0.0
+311R,Post injection,105_001012,1.0,0.0,0.0,0.0
+311R,Post injection,105_001013,1.0,0.0,0.0,1.0
+311R,Post injection,105_001014,1.0,0.0,0.0,0.0
+311R,Post injection,105_001015,1.0,0.0,0.0,1.0
+311R,Post injection,105_001016,1.0,0.0,0.0,1.0
+311R,Post injection,105_001017,1.0,0.0,0.0,0.0
+311R,Post injection,105_001018,1.0,0.0,0.0,0.0
+311R,Post injection,105_001019,1.0,0.0,0.0,0.0
+312L,Pre injection,106_001012,1.0,0.0,0.0,1.0
+312L,Pre injection,106_001013,1.0,0.0,0.0,1.0
+312L,Pre injection,106_001014,1.0,1.0,0.0,1.0
+312L,Pre injection,106_001015,1.0,1.0,0.0,1.0
+312L,Pre injection,106_001016,1.0,0.0,0.0,1.0
+312L,Pre injection,106_001017,1.0,0.0,0.0,1.0
+312L,Post injection,106_001012,1.0,0.0,0.0,1.0
+312L,Post injection,106_001013,1.0,0.0,0.0,1.0
+312L,Post injection,106_001014,1.0,0.0,0.0,1.0
+312L,Post injection,106_001015,1.0,0.0,0.0,1.0
+312L,Post injection,106_001016,1.0,0.0,0.0,1.0
+312L,Post injection,106_001017,1.0,0.0,0.0,1.0
+313L,Pre injection,107_001009,1.0,0.0,0.0,1.0
+313L,Pre injection,107_001010,1.0,0.0,0.0,1.0
+313L,Pre injection,107_001011,1.0,0.0,0.0,1.0
+313L,Pre injection,107_001012,1.0,1.0,0.0,1.0
+313L,Pre injection,107_001013,1.0,1.0,0.0,1.0
+313L,Pre injection,107_001014,1.0,0.0,0.0,1.0
+313L,Pre injection,107_001015,1.0,0.0,0.0,1.0
+313L,Pre injection,107_001016,1.0,0.0,0.0,1.0
+313L,Post injection,107_001009,1.0,0.0,0.0,1.0
+313L,Post injection,107_001010,1.0,0.0,0.0,1.0
+313L,Post injection,107_001011,1.0,1.0,0.0,1.0
+313L,Post injection,107_001012,1.0,1.0,0.0,1.0
+313L,Post injection,107_001013,1.0,0.0,0.0,1.0
+313L,Post injection,107_001014,1.0,0.0,0.0,1.0
+313L,Post injection,107_001015,1.0,0.0,0.0,1.0
+316R,Pre injection,110_001007,1.0,0.0,0.0,1.0
+316R,Pre injection,110_001008,1.0,0.0,0.0,1.0
+316R,Pre injection,110_001009,1.0,0.0,0.0,1.0
+316R,Pre injection,110_001013,1.0,0.0,0.0,1.0
+316R,Pre injection,110_001014,1.0,0.0,0.0,1.0
+316R,Pre injection,110_001015,1.0,0.0,0.0,1.0
+316R,Post injection,110_001007,1.0,0.0,0.0,1.0
+316R,Post injection,110_001008,1.0,0.0,0.0,1.0
+316R,Post injection,110_001009,1.0,0.0,0.0,1.0
+316R,Post injection,110_001010,1.0,1.0,0.0,1.0
+316R,Post injection,110_001011,1.0,1.0,0.0,1.0
+316R,Post injection,110_001012,1.0,1.0,0.0,1.0
+316R,Post injection,110_001013,1.0,1.0,0.0,1.0
+316R,Post injection,110_001014,1.0,0.0,0.0,1.0
+316R,Post injection,110_001015,1.0,0.0,0.0,1.0
+319R,Pre injection,113_001009,1.0,0.0,0.0,1.0
+319R,Pre injection,113_001010,1.0,1.0,0.0,1.0
+319R,Pre injection,113_001011,1.0,1.0,0.0,1.0
+319R,Pre injection,113_001012,1.0,1.0,0.0,1.0
+319R,Pre injection,113_001013,1.0,1.0,0.0,1.0
+319R,Pre injection,113_001014,1.0,1.0,0.0,1.0
+319R,Pre injection,113_001015,1.0,1.0,0.0,1.0
+319R,Post injection,113_001009,1.0,1.0,0.0,1.0
+319R,Post injection,113_001010,1.0,1.0,0.0,1.0
+319R,Post injection,113_001011,1.0,1.0,0.0,1.0
+319R,Post injection,113_001012,1.0,1.0,0.0,1.0
+319R,Post injection,113_001013,1.0,1.0,0.0,1.0
+319R,Post injection,113_001014,1.0,1.0,0.0,1.0
+319R,Post injection,113_001015,1.0,1.0,0.0,1.0
+322R,Pre injection,116_001009,1.0,0.0,0.0,1.0
+322R,Pre injection,116_001010,1.0,0.0,0.0,1.0
+322R,Pre injection,116_001011,1.0,0.0,0.0,1.0
+322R,Pre injection,116_001012,1.0,0.0,0.0,1.0
+322R,Pre injection,116_001013,1.0,0.0,0.0,1.0
+322R,Pre injection,116_001014,1.0,0.0,0.0,1.0
+325L,Post injection,121_001011,1.0,0.0,0.0,1.0
+325L,Post injection,121_001012,1.0,0.0,0.0,1.0
+325L,Post injection,121_001013,1.0,0.0,0.0,1.0
+325L,Post injection,121_001014,1.0,0.0,0.0,1.0
+325L,Post injection,121_001015,1.0,0.0,0.0,1.0
+325L,Post injection,121_001016,1.0,0.0,0.0,1.0
+325L,Post injection,121_001017,1.0,0.0,0.0,1.0
+325L,Post injection,121_001018,1.0,0.0,0.0,1.0
+325L,Post injection,121_001019,1.0,0.0,0.0,1.0
+325L,Post injection,121_001020,1.0,0.0,0.0,1.0
+325L,Post injection,121_001021,1.0,0.0,0.0,1.0
+326R,Pre injection,122_001008,1.0,0.0,0.0,1.0
+326R,Pre injection,122_001009,1.0,1.0,0.0,1.0
+326R,Pre injection,122_001010,1.0,1.0,0.0,1.0
+326R,Pre injection,122_001011,1.0,1.0,0.0,1.0
+326R,Pre injection,122_001012,1.0,0.0,0.0,1.0
+326R,Pre injection,122_001013,1.0,0.0,0.0,1.0
+326R,Pre injection,122_001014,1.0,0.0,0.0,1.0
+326R,Pre injection,122_001015,1.0,0.0,0.0,1.0
+326R,Post injection,122_001008,1.0,1.0,0.0,1.0
+326R,Post injection,122_001009,1.0,1.0,0.0,1.0
+326R,Post injection,122_001010,1.0,1.0,0.0,1.0
+326R,Post injection,122_001011,1.0,1.0,0.0,1.0
+326R,Post injection,122_001012,1.0,0.0,0.0,1.0
+326R,Post injection,122_001013,1.0,0.0,0.0,1.0
+326R,Post injection,122_001014,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001007,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001008,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001009,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001010,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001011,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001012,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001013,1.0,0.0,0.0,1.0
+327R,Pre injection,123_001014,1.0,0.0,0.0,1.0
+327R,Post injection,123_001008,1.0,0.0,0.0,1.0
+327R,Post injection,123_001009,1.0,0.0,0.0,1.0
+327R,Post injection,123_001010,1.0,0.0,0.0,1.0
+327R,Post injection,123_001011,1.0,0.0,0.0,1.0
+327R,Post injection,123_001012,1.0,0.0,0.0,1.0
+327R,Post injection,123_001013,1.0,0.0,0.0,1.0
+327R,Post injection,123_001014,1.0,0.0,0.0,1.0
+328L,Pre injection,124_001006,1.0,0.0,0.0,1.0
+328L,Pre injection,124_001007,1.0,0.0,0.0,1.0
+328L,Pre injection,124_001008,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001009,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001010,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001011,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001012,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001013,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001014,1.0,1.0,0.0,1.0
+328L,Pre injection,124_001015,1.0,1.0,0.0,1.0
+328L,Post injection,124_001012,1.0,0.0,0.0,1.0
+328L,Post injection,124_001013,1.0,0.0,0.0,1.0
+328L,Post injection,124_001014,1.0,0.0,0.0,1.0
+328L,Post injection,124_001015,1.0,1.0,0.0,1.0
+328L,Post injection,124_001016,1.0,0.0,0.0,1.0
+328L,Post injection,124_001017,1.0,0.0,0.0,1.0
+328L,Post injection,124_001018,1.0,0.0,0.0,1.0
+328L,Post injection,124_001019,1.0,0.0,0.0,1.0
+328L,Post injection,124_001020,1.0,0.0,0.0,1.0
+328L,Post injection,124_001021,1.0,0.0,0.0,1.0
+330R,Pre injection,126_001007,1.0,0.0,0.0,1.0
+330R,Pre injection,126_001008,1.0,0.0,0.0,1.0
+330R,Pre injection,126_001009,1.0,0.0,0.0,1.0
+330R,Pre injection,126_001010,1.0,1.0,0.0,1.0
+330R,Pre injection,126_001011,1.0,1.0,0.0,1.0
+330R,Pre injection,126_001012,1.0,1.0,0.0,1.0
+330R,Pre injection,126_001013,1.0,1.0,0.0,1.0
+330R,Pre injection,126_001014,1.0,1.0,0.0,1.0
+330R,Pre injection,126_001015,1.0,1.0,0.0,1.0
+330R,Pre injection,126_001016,1.0,1.0,0.0,1.0
+332L,Pre injection,129_001011,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001012,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001013,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001014,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001015,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001016,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001017,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001018,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001019,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001020,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001021,1.0,0.0,0.0,1.0
+332L,Pre injection,129_001022,1.0,0.0,0.0,1.0
+332L,Post injection,129_001009,1.0,0.0,0.0,1.0
+332L,Post injection,129_001010,1.0,0.0,0.0,1.0
+332L,Post injection,129_001011,1.0,0.0,0.0,1.0
+332L,Post injection,129_001012,1.0,0.0,0.0,1.0
+332L,Post injection,129_001013,1.0,0.0,0.0,1.0
+332L,Post injection,129_001014,1.0,0.0,0.0,1.0
+332L,Post injection,129_001015,1.0,0.0,0.0,1.0
+332L,Post injection,129_001016,1.0,0.0,0.0,1.0
+341L,Pre injection,138_001010,1.0,1.0,0.0,1.0
+341L,Pre injection,138_001011,1.0,1.0,0.0,1.0
+341L,Pre injection,138_001012,1.0,1.0,0.0,1.0
+341L,Pre injection,138_001013,1.0,1.0,0.0,1.0
+341L,Pre injection,138_001014,1.0,1.0,0.0,1.0
+341L,Pre injection,138_001015,1.0,1.0,0.0,1.0
+341L,Post injection,138_001010,1.0,1.0,0.0,1.0
+341L,Post injection,138_001011,1.0,1.0,0.0,1.0
+341L,Post injection,138_001012,1.0,1.0,0.0,1.0
+341L,Post injection,138_001013,1.0,1.0,0.0,1.0
+341L,Post injection,138_001014,1.0,1.0,0.0,1.0
+342R,Pre injection,139_001011,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001012,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001013,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001014,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001016,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001017,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001018,1.0,0.0,0.0,1.0
+342R,Pre injection,139_001019,1.0,0.0,0.0,1.0
+342R,Post injection,139_001011,1.0,0.0,0.0,1.0
+342R,Post injection,139_001012,1.0,0.0,0.0,1.0
+342R,Post injection,139_001013,1.0,0.0,0.0,1.0
+342R,Post injection,139_001014,1.0,0.0,0.0,1.0
+342R,Post injection,139_001015,1.0,0.0,0.0,1.0
+342R,Post injection,139_001016,1.0,0.0,0.0,1.0
+342R,Post injection,139_001017,1.0,0.0,0.0,1.0
+342R,Post injection,139_001018,1.0,0.0,0.0,1.0
+342R,Post injection,139_001019,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002006,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002007,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002008,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002009,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002010,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002011,1.0,1.0,0.0,1.0
+343R,Pre injection,140_002012,1.0,1.0,0.0,1.0
+343R,Pre injection,140_002013,1.0,1.0,0.0,1.0
+343R,Pre injection,140_002014,1.0,1.0,0.0,1.0
+343R,Pre injection,140_002015,1.0,1.0,0.0,1.0
+343R,Pre injection,140_002016,1.0,0.0,0.0,1.0
+343R,Pre injection,140_002017,1.0,0.0,0.0,1.0
+343R,Post injection,140_001009,1.0,1.0,0.0,1.0
+343R,Post injection,140_001010,1.0,1.0,0.0,1.0
+343R,Post injection,140_001011,1.0,1.0,0.0,1.0
+343R,Post injection,140_001012,1.0,1.0,0.0,1.0
+343R,Post injection,140_001013,1.0,1.0,0.0,1.0
+343R,Post injection,140_001014,1.0,1.0,0.0,1.0
+343R,Post injection,140_001015,1.0,1.0,0.0,1.0
+343R,Post injection,140_001016,1.0,0.0,0.0,1.0
+343R,Post injection,140_001017,1.0,0.0,0.0,1.0
+345R,Pre injection,142_002007,1.0,0.0,0.0,1.0
+345R,Pre injection,142_002008,1.0,0.0,0.0,1.0
+345R,Pre injection,142_002009,1.0,0.0,0.0,1.0
+345R,Pre injection,142_002010,1.0,0.0,0.0,1.0
+345R,Pre injection,142_002011,1.0,1.0,0.0,1.0
+345R,Pre injection,142_002012,1.0,1.0,0.0,1.0
+345R,Pre injection,142_002013,1.0,1.0,0.0,1.0
+345R,Pre injection,142_002014,1.0,0.0,0.0,1.0
+345R,Pre injection,142_002015,1.0,0.0,0.0,1.0
+345R,Post injection,142_001007,1.0,0.0,0.0,1.0
+345R,Post injection,142_001008,1.0,0.0,0.0,1.0
+345R,Post injection,142_001009,1.0,1.0,0.0,1.0
+345R,Post injection,142_001010,1.0,1.0,0.0,1.0
+345R,Post injection,142_001011,1.0,1.0,0.0,1.0
+345R,Post injection,142_001012,1.0,1.0,0.0,1.0
+345R,Post injection,142_001013,1.0,0.0,0.0,1.0
+345R,Post injection,142_001014,1.0,0.0,0.0,1.0
+345R,Post injection,142_001015,1.0,0.0,0.0,1.0
+347R,Pre injection,144_001009,1.0,0.0,0.0,1.0
+347R,Pre injection,144_001010,1.0,1.0,0.0,1.0
+347R,Pre injection,144_001011,1.0,0.0,0.0,1.0
+347R,Pre injection,144_001012,1.0,0.0,0.0,1.0
+347R,Pre injection,144_001013,1.0,0.0,0.0,1.0
+347R,Pre injection,144_001014,1.0,0.0,0.0,1.0
+347R,Post injection,144_001008,1.0,0.0,0.0,1.0
+347R,Post injection,144_001009,1.0,1.0,0.0,1.0
+347R,Post injection,144_001010,1.0,1.0,0.0,1.0
+347R,Post injection,144_001011,1.0,1.0,0.0,1.0
+347R,Post injection,144_001012,1.0,1.0,0.0,1.0
+347R,Post injection,144_001013,1.0,0.0,0.0,1.0
+347R,Post injection,144_001014,1.0,1.0,0.0,1.0
+347R,Post injection,144_001015,1.0,0.0,0.0,1.0
+347R,Post injection,144_001016,1.0,0.0,0.0,1.0
+347R,Post injection,144_001017,1.0,0.0,0.0,1.0
+348L,Pre injection,145_001014,1.0,0.0,0.0,1.0
+348L,Pre injection,145_001015,1.0,0.0,0.0,1.0
+348L,Pre injection,145_001016,1.0,0.0,0.0,1.0
+348L,Pre injection,145_001017,1.0,0.0,0.0,1.0
+348L,Pre injection,145_001018,1.0,0.0,0.0,1.0
+348L,Pre injection,145_001019,1.0,0.0,0.0,1.0
+348L,Post injection,145_001015,1.0,0.0,0.0,1.0
+348L,Post injection,145_001016,1.0,0.0,0.0,1.0
+348L,Post injection,145_001017,1.0,0.0,0.0,1.0
+348L,Post injection,145_001018,1.0,0.0,0.0,1.0
+348L,Post injection,145_001019,1.0,0.0,0.0,1.0
+348L,Post injection,145_001020,1.0,0.0,0.0,1.0
+349L,Pre injection,146_001009,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001010,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001011,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001012,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001013,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001014,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001015,1.0,1.0,0.0,1.0
+349L,Pre injection,146_001016,1.0,1.0,0.0,1.0
+349L,Post injection,146_001009,1.0,1.0,0.0,1.0
+349L,Post injection,146_001010,1.0,1.0,0.0,1.0
+349L,Post injection,146_001011,1.0,1.0,0.0,1.0
+349L,Post injection,146_001012,1.0,1.0,0.0,1.0
+349L,Post injection,146_001013,1.0,1.0,0.0,1.0
+349L,Post injection,146_001014,1.0,1.0,0.0,1.0
+349L,Post injection,146_001015,1.0,1.0,0.0,1.0
+349L,Post injection,146_001016,1.0,1.0,0.0,1.0
+351R,Pre injection,148_001008,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001009,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001010,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001011,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001012,1.0,1.0,0.0,1.0
+351R,Pre injection,148_001013,1.0,1.0,0.0,1.0
+351R,Pre injection,148_001014,1.0,1.0,0.0,1.0
+351R,Pre injection,148_001015,1.0,1.0,0.0,1.0
+351R,Pre injection,148_001016,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001017,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001018,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001019,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001020,1.0,0.0,0.0,1.0
+351R,Pre injection,148_001021,1.0,0.0,0.0,1.0
+351R,Post injection,148_001008,1.0,1.0,0.0,1.0
+351R,Post injection,148_001009,1.0,0.0,0.0,1.0
+351R,Post injection,148_001010,1.0,0.0,0.0,1.0
+351R,Post injection,148_001011,1.0,1.0,0.0,1.0
+351R,Post injection,148_001012,1.0,1.0,0.0,1.0
+351R,Post injection,148_001013,1.0,1.0,0.0,1.0
+351R,Post injection,148_001014,1.0,1.0,0.0,1.0
+351R,Post injection,148_001015,1.0,1.0,0.0,1.0
+351R,Post injection,148_001016,1.0,1.0,0.0,1.0
+351R,Post injection,148_001017,1.0,0.0,0.0,1.0
+351R,Post injection,148_001018,1.0,0.0,0.0,1.0
+351R,Post injection,148_001019,1.0,0.0,0.0,1.0
+351R,Post injection,148_001020,1.0,0.0,0.0,1.0
+351R,Post injection,148_001021,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001008,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001009,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001010,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001011,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001012,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001013,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001014,1.0,0.0,0.0,1.0
+352L,Pre injection,149_001015,1.0,0.0,0.0,1.0
+352L,Post injection,149_001008,1.0,0.0,0.0,1.0
+352L,Post injection,149_001009,1.0,0.0,0.0,1.0
+352L,Post injection,149_001010,1.0,1.0,0.0,1.0
+352L,Post injection,149_001011,1.0,1.0,0.0,1.0
+352L,Post injection,149_001012,1.0,0.0,0.0,1.0
+352L,Post injection,149_001013,1.0,1.0,0.0,1.0
+352L,Post injection,149_001014,1.0,0.0,0.0,1.0
+352L,Post injection,149_001015,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001008,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001009,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001010,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001011,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001012,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001013,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001014,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001015,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001016,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001017,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001018,1.0,0.0,0.0,1.0
+357R,Pre injection,155_001019,1.0,0.0,0.0,1.0
+357R,Post injection,155_002009,1.0,0.0,0.0,1.0
+357R,Post injection,155_002010,1.0,0.0,0.0,1.0
+357R,Post injection,155_002011,1.0,0.0,0.0,1.0
+357R,Post injection,155_002012,1.0,0.0,0.0,1.0
+357R,Post injection,155_002013,1.0,0.0,0.0,1.0
+357R,Post injection,155_002014,1.0,0.0,0.0,1.0
+357R,Post injection,155_002015,1.0,0.0,0.0,1.0
+357R,Post injection,155_002016,1.0,0.0,0.0,1.0
+357R,Post injection,155_002017,1.0,0.0,0.0,1.0
+357R,Post injection,155_002018,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001009,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001010,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001011,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001012,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001013,1.0,1.0,0.0,1.0
+360L,Pre injection,160_001014,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001015,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001016,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001017,1.0,0.0,0.0,1.0
+360L,Pre injection,160_001018,1.0,0.0,0.0,1.0
+360L,Post injection,160_001010,1.0,0.0,0.0,1.0
+360L,Post injection,160_001011,1.0,0.0,0.0,1.0
+360L,Post injection,160_001012,1.0,0.0,0.0,1.0
+360L,Post injection,160_001013,1.0,0.0,0.0,1.0
+360L,Post injection,160_001014,1.0,0.0,0.0,1.0
+360L,Post injection,160_001015,1.0,0.0,0.0,1.0
+360L,Post injection,160_001016,1.0,1.0,0.0,1.0
+360L,Post injection,160_001017,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001008,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001009,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001010,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001011,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001012,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001013,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001014,1.0,1.0,0.0,1.0
+361L,Pre injection,161_001015,1.0,1.0,0.0,1.0
+361L,Pre injection,161_001016,1.0,1.0,0.0,1.0
+361L,Pre injection,161_001017,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001018,1.0,0.0,0.0,1.0
+361L,Pre injection,161_001019,1.0,0.0,0.0,1.0
+361L,Post injection,161_001008,1.0,0.0,0.0,1.0
+361L,Post injection,161_001009,1.0,0.0,0.0,1.0
+361L,Post injection,161_001010,1.0,0.0,0.0,1.0
+361L,Post injection,161_001011,1.0,0.0,0.0,1.0
+361L,Post injection,161_001012,1.0,0.0,0.0,1.0
+361L,Post injection,161_001013,1.0,0.0,0.0,1.0
+361L,Post injection,161_001014,1.0,0.0,0.0,1.0
+361L,Post injection,161_001015,1.0,0.0,0.0,1.0
+361L,Post injection,161_001016,1.0,0.0,0.0,1.0
+361L,Post injection,161_001017,1.0,0.0,0.0,1.0
+361L,Post injection,161_001018,1.0,0.0,0.0,1.0
+361L,Post injection,161_001019,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001007,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001008,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001009,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001010,1.0,1.0,0.0,1.0
+368L,Pre injection,168_001011,1.0,1.0,0.0,1.0
+368L,Pre injection,168_001012,1.0,1.0,0.0,1.0
+368L,Pre injection,168_001013,1.0,1.0,0.0,1.0
+368L,Pre injection,168_001014,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001015,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001016,1.0,0.0,0.0,1.0
+368L,Pre injection,168_001017,1.0,0.0,0.0,1.0
+368L,Post injection,168_001007,0.0,1.0,0.0,0.0
+368L,Post injection,168_001008,0.0,0.0,0.0,1.0
+368L,Post injection,168_001009,0.0,0.0,0.0,0.0
+368L,Post injection,168_001010,0.0,0.0,0.0,1.0
+368L,Post injection,168_001011,0.0,0.0,0.0,0.0
+368L,Post injection,168_001012,0.0,0.0,0.0,1.0
+368L,Post injection,168_001013,0.0,0.0,0.0,0.0
+368L,Post injection,168_001014,0.0,0.0,0.0,0.0
+368L,Post injection,168_001015,0.0,0.0,0.0,1.0
+368L,Post injection,168_001016,0.0,0.0,0.0,0.0
+368L,Post injection,168_001017,0.0,0.0,0.0,0.0
+371R,Pre injection,174_001010,0.0,1.0,0.0,1.0
+371R,Pre injection,174_001011,0.0,1.0,0.0,1.0
+371R,Pre injection,174_001012,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001013,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001014,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001015,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001016,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001017,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001018,1.0,1.0,0.0,1.0
+371R,Pre injection,174_001019,1.0,1.0,0.0,1.0
+371R,Post injection,174_001012,0.0,0.0,0.0,1.0
+371R,Post injection,174_001013,0.0,1.0,0.0,1.0
+371R,Post injection,174_001014,1.0,1.0,0.0,1.0
+371R,Post injection,174_001015,1.0,1.0,0.0,1.0
+371R,Post injection,174_001016,1.0,1.0,0.0,1.0
+371R,Post injection,174_001017,1.0,1.0,0.0,1.0
+371R,Post injection,174_001018,1.0,1.0,0.0,1.0
+371R,Post injection,174_001019,1.0,0.0,0.0,1.0
+375L,Pre injection,179_001010,0.0,0.0,0.0,1.0
+375L,Pre injection,179_001011,0.0,0.0,0.0,1.0
+375L,Pre injection,179_001012,1.0,0.0,0.0,1.0
+375L,Pre injection,179_001013,1.0,0.0,0.0,1.0
+375L,Pre injection,179_001014,1.0,0.0,0.0,1.0
+375L,Pre injection,179_001015,1.0,0.0,0.0,1.0
+375L,Pre injection,179_001016,1.0,0.0,0.0,1.0
+375L,Post injection,179_001010,0.0,0.0,0.0,1.0
+375L,Post injection,179_001011,1.0,0.0,0.0,1.0
+375L,Post injection,179_001012,1.0,0.0,0.0,1.0
+375L,Post injection,179_001013,1.0,0.0,0.0,1.0
+375L,Post injection,179_001014,1.0,0.0,0.0,1.0
+375L,Post injection,179_001015,1.0,0.0,0.0,1.0
+375L,Post injection,179_001016,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002010,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002011,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002012,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002013,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002014,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002015,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002016,1.0,0.0,0.0,1.0
+376R,Pre injection,180_002017,1.0,0.0,0.0,1.0
+376R,Post injection,180_001009,1.0,0.0,0.0,1.0
+376R,Post injection,180_001010,1.0,0.0,0.0,1.0
+376R,Post injection,180_001011,1.0,0.0,0.0,1.0
+376R,Post injection,180_001012,1.0,0.0,0.0,1.0
+376R,Post injection,180_001013,1.0,0.0,0.0,1.0
+376R,Post injection,180_001014,1.0,0.0,0.0,1.0
+376R,Post injection,180_001015,1.0,0.0,0.0,1.0
+376R,Post injection,180_001016,1.0,0.0,0.0,1.0
+376R,Post injection,180_001017,1.0,0.0,0.0,1.0
+377L,Pre injection,181_001011,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001012,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001013,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001014,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001015,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001016,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001017,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001018,1.0,1.0,0.0,1.0
+377L,Pre injection,181_001019,1.0,0.0,0.0,1.0
+377L,Post injection,181_001012,1.0,0.0,0.0,1.0
+377L,Post injection,181_001013,1.0,0.0,0.0,1.0
+377L,Post injection,181_001014,1.0,0.0,0.0,1.0
+377L,Post injection,181_001015,1.0,0.0,0.0,1.0
+377L,Post injection,181_001016,1.0,0.0,0.0,1.0
+377L,Post injection,181_001017,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001007,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001008,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001009,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001010,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001011,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001012,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001013,1.0,0.0,0.0,1.0
+378L,Pre injection,182_001014,1.0,0.0,0.0,1.0
+378L,Post injection,182_001007,1.0,0.0,0.0,1.0
+378L,Post injection,182_001008,0.0,0.0,0.0,1.0
+378L,Post injection,182_001009,0.0,0.0,0.0,1.0
+378L,Post injection,182_001010,0.0,0.0,0.0,1.0
+378L,Post injection,182_001011,1.0,0.0,0.0,1.0
+378L,Post injection,182_001012,0.0,0.0,0.0,1.0
+382L,Pre injection,187_001008,1.0,0.0,0.0,1.0
+382L,Pre injection,187_001009,1.0,0.0,0.0,1.0
+382L,Pre injection,187_001010,1.0,0.0,0.0,1.0
+382L,Pre injection,187_001011,1.0,0.0,0.0,1.0
+382L,Pre injection,187_001012,1.0,0.0,0.0,1.0
+382L,Pre injection,187_001013,1.0,0.0,0.0,1.0
+382L,Pre injection,187_001014,1.0,0.0,0.0,1.0
+382L,Post injection,187_001009,1.0,0.0,0.0,1.0
+382L,Post injection,187_001010,1.0,0.0,0.0,1.0
+382L,Post injection,187_001011,1.0,0.0,0.0,1.0
+382L,Post injection,187_001012,1.0,0.0,0.0,1.0
+382L,Post injection,187_001013,1.0,0.0,0.0,1.0
+382L,Post injection,187_001014,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001005,1.0,0.0,0.0,0.0
+388L,Pre injection,193_001006,1.0,0.0,0.0,0.0
+388L,Pre injection,193_001007,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001008,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001009,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001010,1.0,0.0,0.0,0.0
+388L,Pre injection,193_001011,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001012,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001013,1.0,0.0,0.0,1.0
+388L,Pre injection,193_001014,1.0,0.0,0.0,1.0
+388L,Post injection,193_001011,1.0,0.0,0.0,1.0
+388L,Post injection,193_001012,1.0,0.0,0.0,0.0
+388L,Post injection,193_001013,1.0,0.0,0.0,1.0
+388L,Post injection,193_001014,1.0,0.0,0.0,1.0
+388L,Post injection,193_001015,1.0,0.0,0.0,1.0
+388L,Post injection,193_001016,1.0,0.0,0.0,1.0
+388L,Post injection,193_001017,1.0,0.0,0.0,1.0
+388L,Post injection,193_001018,1.0,0.0,0.0,1.0
+388L,Post injection,193_001019,1.0,0.0,0.0,1.0
+396L,Pre injection,204_001011,1.0,0.0,0.0,1.0
+396L,Pre injection,204_001012,1.0,0.0,0.0,1.0
+396L,Pre injection,204_001013,1.0,0.0,0.0,1.0
+396L,Pre injection,204_001014,1.0,0.0,0.0,1.0
+396L,Pre injection,204_001015,1.0,0.0,0.0,1.0
+396L,Pre injection,204_001016,1.0,1.0,0.0,1.0
+396L,Pre injection,204_001017,1.0,1.0,0.0,1.0
+396L,Pre injection,204_001018,1.0,1.0,0.0,1.0
+396L,Pre injection,204_001019,1.0,0.0,0.0,1.0
+396L,Post injection,204_001013,1.0,0.0,0.0,1.0
+396L,Post injection,204_001014,1.0,0.0,0.0,1.0
+396L,Post injection,204_001015,1.0,0.0,0.0,1.0
+396L,Post injection,204_001016,1.0,0.0,0.0,1.0
+396L,Post injection,204_001017,1.0,0.0,0.0,1.0
+396L,Post injection,204_001018,1.0,0.0,0.0,1.0
+396L,Post injection,204_001019,1.0,0.0,0.0,1.0
+397L,Pre injection,205 (11),1.0,0.0,0.0,1.0
+397L,Pre injection,205 (12),1.0,0.0,0.0,1.0
+397L,Pre injection,205 (13),1.0,0.0,0.0,1.0
+397L,Pre injection,205 (14),1.0,0.0,0.0,1.0
+397L,Pre injection,205 (15),1.0,0.0,0.0,1.0
+397L,Pre injection,205 (16),0.0,0.0,0.0,1.0
+397L,Pre injection,205 (17),0.0,0.0,0.0,0.0
+397L,Post injection,205 (10),0.0,0.0,0.0,1.0
+397L,Post injection,205 (11),0.0,0.0,0.0,1.0
+397L,Post injection,205 (12),0.0,0.0,0.0,1.0
+397L,Post injection,205 (13),0.0,0.0,0.0,1.0
+397L,Post injection,205 (14),0.0,0.0,0.0,1.0
+397L,Post injection,205 (15),0.0,0.0,0.0,1.0
+397L,Post injection,205 (16),0.0,0.0,0.0,1.0
+398R,Pre injection,206_001006,1.0,0.0,0.0,1.0
+398R,Pre injection,206_001007,1.0,0.0,0.0,1.0
+398R,Pre injection,206_001008,1.0,0.0,0.0,1.0
+398R,Pre injection,206_001009,1.0,1.0,0.0,1.0
+398R,Pre injection,206_001010,1.0,1.0,0.0,1.0
+398R,Pre injection,206_001011,1.0,1.0,0.0,1.0
+398R,Pre injection,206_001012,1.0,1.0,0.0,1.0
+398R,Pre injection,206_001013,1.0,1.0,0.0,1.0
+398R,Pre injection,206_001014,1.0,0.0,0.0,1.0
+398R,Pre injection,206_001015,1.0,0.0,0.0,1.0
+398R,Pre injection,206_001016,1.0,0.0,0.0,1.0
+398R,Post injection,206_001007,1.0,0.0,0.0,0.0
+398R,Post injection,206_001008,1.0,0.0,0.0,0.0
+398R,Post injection,206_001009,1.0,0.0,0.0,0.0
+398R,Post injection,206_001010,1.0,0.0,0.0,0.0
+398R,Post injection,206_001011,1.0,1.0,0.0,1.0
+398R,Post injection,206_001012,1.0,1.0,0.0,1.0
+398R,Post injection,206_001013,1.0,0.0,0.0,0.0
+398R,Post injection,206_001014,1.0,0.0,0.0,0.0
+398R,Post injection,206_001015,1.0,0.0,0.0,0.0
+402L,Pre injection,212_001007,1.0,0.0,0.0,1.0
+402L,Pre injection,212_001008,1.0,0.0,0.0,1.0
+402L,Pre injection,212_001009,1.0,1.0,0.0,1.0
+402L,Pre injection,212_001010,1.0,1.0,0.0,1.0
+402L,Pre injection,212_001011,1.0,1.0,0.0,1.0
+402L,Pre injection,212_001012,1.0,1.0,0.0,1.0
+402L,Pre injection,212_001013,1.0,1.0,0.0,1.0
+402L,Pre injection,212_001014,1.0,1.0,0.0,1.0
+402L,Pre injection,212_001015,1.0,0.0,0.0,1.0
+402L,Pre injection,212_001016,1.0,0.0,0.0,1.0
+402L,Post injection,212_001008,1.0,0.0,0.0,1.0
+402L,Post injection,212_001009,1.0,1.0,0.0,1.0
+402L,Post injection,212_001010,1.0,1.0,0.0,1.0
+402L,Post injection,212_001011,1.0,1.0,0.0,1.0
+402L,Post injection,212_001012,1.0,1.0,0.0,1.0
+402L,Post injection,212_001013,1.0,1.0,0.0,1.0
+402L,Post injection,212_001014,1.0,1.0,0.0,1.0
+402L,Post injection,212_001015,1.0,0.0,0.0,1.0
+402L,Post injection,212_001016,1.0,0.0,0.0,1.0
+402L,Post injection,212_001017,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001010,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001011,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001012,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001013,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001014,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001015,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001016,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001017,1.0,0.0,0.0,1.0
+404L,Pre injection,214_001018,1.0,0.0,0.0,1.0
+404L,Post injection,214_001009,0.0,0.0,0.0,1.0
+404L,Post injection,214_001010,0.0,0.0,0.0,1.0
+404L,Post injection,214_001011,0.0,0.0,0.0,1.0
+404L,Post injection,214_001012,1.0,1.0,0.0,1.0
+404L,Post injection,214_001013,1.0,1.0,0.0,1.0
+404L,Post injection,214_001014,1.0,0.0,0.0,1.0
+404L,Post injection,214_001015,1.0,0.0,0.0,1.0
+404L,Post injection,214_001016,1.0,0.0,0.0,1.0
+404L,Post injection,214_001017,1.0,0.0,0.0,1.0
+404L,Post injection,214_001018,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001007,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001008,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001009,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001010,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001011,1.0,1.0,0.0,1.0
+406L,Pre injection,217_001012,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001013,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001014,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001015,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001016,1.0,0.0,0.0,1.0
+406L,Pre injection,217_001017,1.0,0.0,0.0,1.0
+406L,Post injection,217_001007,0.0,0.0,0.0,0.0
+406L,Post injection,217_001008,0.0,0.0,0.0,0.0
+406L,Post injection,217_001009,0.0,0.0,0.0,0.0
+406L,Post injection,217_001010,1.0,0.0,0.0,0.0
+406L,Post injection,217_001011,1.0,0.0,0.0,0.0
+406L,Post injection,217_001012,1.0,0.0,0.0,0.0
+406L,Post injection,217_001013,1.0,0.0,0.0,0.0
+406L,Post injection,217_001014,1.0,0.0,0.0,0.0
+406L,Post injection,217_001015,1.0,0.0,0.0,0.0
+406L,Post injection,217_001016,1.0,0.0,0.0,0.0
+406L,Post injection,217_001017,1.0,0.0,0.0,0.0
+411R,Pre injection,222_001009,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001010,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001011,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001012,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001013,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001014,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001015,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001016,1.0,0.0,0.0,1.0
+411R,Pre injection,222_001017,1.0,0.0,0.0,1.0
+411R,Post injection,222_001009,1.0,0.0,0.0,1.0
+411R,Post injection,222_001010,1.0,0.0,0.0,1.0
+411R,Post injection,222_001011,1.0,0.0,0.0,1.0
+411R,Post injection,222_001012,1.0,0.0,0.0,1.0
+411R,Post injection,222_001013,1.0,0.0,0.0,1.0
+411R,Post injection,222_001014,1.0,0.0,0.0,1.0
+411R,Post injection,222_001015,1.0,0.0,0.0,1.0
+411R,Post injection,222_001016,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001005,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001006,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001007,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001008,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001009,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001010,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001011,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001012,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001013,1.0,0.0,0.0,1.0
+412R,Pre injection,223_001014,1.0,0.0,0.0,1.0
+412R,Post injection,223_001010,0.0,0.0,0.0,0.0
+412R,Post injection,223_001011,1.0,0.0,0.0,1.0
+412R,Post injection,223_001012,1.0,0.0,0.0,1.0
+412R,Post injection,223_001013,1.0,0.0,0.0,1.0
+412R,Post injection,223_001014,1.0,0.0,0.0,1.0
+412R,Post injection,223_001015,1.0,0.0,0.0,1.0
+412R,Post injection,223_001016,1.0,0.0,0.0,1.0
+412R,Post injection,223_001017,1.0,0.0,0.0,1.0
+412R,Post injection,223_001018,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001005,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001006,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001007,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001008,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001009,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001010,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001011,1.0,0.0,0.0,1.0
+413L,Pre injection,224_001012,1.0,0.0,0.0,1.0
+413L,Post injection,224_001006,1.0,0.0,0.0,1.0
+413L,Post injection,224_001007,1.0,0.0,0.0,1.0
+413L,Post injection,224_001008,1.0,0.0,0.0,1.0
+413L,Post injection,224_001009,1.0,0.0,0.0,1.0
+413L,Post injection,224_001010,1.0,0.0,0.0,1.0
+413L,Post injection,224_001011,1.0,0.0,0.0,1.0
+413L,Post injection,224_001012,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002009,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002010,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002011,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002012,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002013,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002014,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002015,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002016,1.0,0.0,0.0,1.0
+416R,Pre injection,227_002017,1.0,0.0,0.0,1.0
+416R,Post injection,227_001008,1.0,0.0,0.0,1.0
+416R,Post injection,227_001009,1.0,0.0,0.0,1.0
+416R,Post injection,227_001010,1.0,0.0,0.0,1.0
+416R,Post injection,227_001011,1.0,0.0,0.0,1.0
+416R,Post injection,227_001012,1.0,0.0,0.0,1.0
+416R,Post injection,227_001013,1.0,0.0,0.0,1.0
+416R,Post injection,227_001014,1.0,0.0,0.0,1.0
+416R,Post injection,227_001015,1.0,0.0,0.0,1.0
+416R,Post injection,227_001016,1.0,0.0,0.0,1.0
+416R,Post injection,227_001017,1.0,0.0,0.0,1.0
+416R,Post injection,227_001018,1.0,0.0,0.0,1.0
+416R,Post injection,227_001019,1.0,0.0,0.0,1.0
+417L,Pre injection,228_001012,1.0,1.0,0.0,1.0
+417L,Pre injection,228_001013,1.0,1.0,0.0,1.0
+417L,Pre injection,228_001014,1.0,1.0,0.0,1.0
+417L,Pre injection,228_001015,1.0,1.0,0.0,1.0
+417L,Pre injection,228_001016,1.0,1.0,0.0,1.0
+417L,Pre injection,228_001017,1.0,0.0,0.0,1.0
+417L,Post injection,228_001011,1.0,0.0,0.0,1.0
+417L,Post injection,228_001012,1.0,0.0,0.0,1.0
+417L,Post injection,228_001013,1.0,0.0,0.0,1.0
+417L,Post injection,228_001014,1.0,0.0,0.0,1.0
+417L,Post injection,228_001015,1.0,0.0,0.0,1.0
+417L,Post injection,228_001016,1.0,0.0,0.0,1.0
+417L,Post injection,228_001017,0.0,0.0,0.0,0.0
+417L,Post injection,228_001018,0.0,0.0,0.0,0.0
+417L,Post injection,228_001019,0.0,0.0,0.0,0.0
+419L,Pre injection,230_001011,0.0,0.0,0.0,1.0
+419L,Pre injection,230_001012,1.0,0.0,0.0,1.0
+419L,Pre injection,230_001013,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001014,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001015,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001016,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001017,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001018,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001019,1.0,1.0,0.0,1.0
+419L,Pre injection,230_001020,1.0,0.0,0.0,1.0
+419L,Pre injection,230_001021,1.0,0.0,0.0,1.0
+419L,Post injection,230_001011,1.0,0.0,0.0,1.0
+419L,Post injection,230_001012,1.0,0.0,0.0,1.0
+419L,Post injection,230_001013,1.0,0.0,0.0,1.0
+419L,Post injection,230_001014,1.0,0.0,0.0,1.0
+419L,Post injection,230_001015,1.0,0.0,0.0,1.0
+419L,Post injection,230_001016,1.0,0.0,0.0,1.0
+419L,Post injection,230_001017,1.0,0.0,0.0,1.0
+419L,Post injection,230_001018,1.0,0.0,0.0,1.0
+419L,Post injection,230_001019,1.0,0.0,0.0,1.0
+419L,Post injection,230_001020,1.0,0.0,0.0,1.0
+419L,Post injection,230_001021,1.0,0.0,0.0,1.0
+420R,Pre injection,231_001009,1.0,0.0,0.0,1.0
+420R,Pre injection,231_001010,1.0,0.0,0.0,1.0
+420R,Pre injection,231_001011,1.0,0.0,0.0,1.0
+420R,Pre injection,231_001012,1.0,0.0,0.0,1.0
+420R,Pre injection,231_001013,1.0,0.0,0.0,1.0
+420R,Post injection,231_002009,1.0,0.0,0.0,1.0
+420R,Post injection,231_002010,1.0,0.0,0.0,1.0
+420R,Post injection,231_002011,1.0,0.0,0.0,1.0
+420R,Post injection,231_002012,1.0,0.0,0.0,1.0
+420R,Post injection,231_002013,1.0,0.0,0.0,1.0
+420R,Post injection,231_002014,1.0,0.0,0.0,1.0
+420R,Post injection,231_002015,1.0,0.0,0.0,1.0
+420R,Post injection,231_002016,1.0,0.0,0.0,1.0
+420R,Post injection,231_002017,1.0,0.0,0.0,1.0
+420R,Post injection,231_002018,1.0,0.0,0.0,1.0
+420R,Post injection,231_002019,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001008,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001009,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001010,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001011,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001012,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001013,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001014,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001015,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001016,1.0,0.0,0.0,1.0
+422L,Pre injection,233_001017,1.0,0.0,0.0,1.0
+422L,Post injection,233_001008,1.0,0.0,0.0,1.0
+422L,Post injection,233_001009,1.0,0.0,0.0,1.0
+422L,Post injection,233_001010,1.0,0.0,0.0,1.0
+422L,Post injection,233_001011,1.0,0.0,0.0,1.0
+422L,Post injection,233_001012,1.0,0.0,0.0,1.0
+422L,Post injection,233_001013,1.0,0.0,0.0,1.0
+422L,Post injection,233_001014,1.0,0.0,0.0,1.0
+422L,Post injection,233_001015,1.0,0.0,0.0,1.0
+422L,Post injection,233_001016,1.0,0.0,0.0,1.0
+422L,Post injection,233_001017,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001004,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001005,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001006,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001007,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001008,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001009,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001010,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001011,1.0,0.0,0.0,1.0
+423L,Pre injection,234_001012,1.0,0.0,0.0,1.0
+423L,Post injection,234_001006,0.0,0.0,0.0,1.0
+423L,Post injection,234_001007,0.0,0.0,0.0,1.0
+423L,Post injection,234_001008,0.0,0.0,0.0,0.0
+423L,Post injection,234_001009,0.0,0.0,0.0,1.0
+423L,Post injection,234_001010,0.0,0.0,0.0,0.0
+423L,Post injection,234_001011,0.0,0.0,0.0,0.0
+423L,Post injection,234_001012,0.0,0.0,0.0,0.0
+426L,Pre injection,237_001008,1.0,0.0,0.0,1.0
+426L,Pre injection,237_001009,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001010,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001011,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001012,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001013,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001014,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001015,1.0,1.0,0.0,1.0
+426L,Pre injection,237_001016,1.0,0.0,0.0,1.0
+426L,Post injection,237_001008,1.0,0.0,0.0,1.0
+426L,Post injection,237_001009,1.0,0.0,0.0,1.0
+426L,Post injection,237_001010,1.0,1.0,0.0,1.0
+426L,Post injection,237_001011,1.0,1.0,0.0,1.0
+426L,Post injection,237_001012,1.0,1.0,0.0,1.0
+426L,Post injection,237_001013,1.0,1.0,0.0,1.0
+426L,Post injection,237_001014,1.0,1.0,0.0,1.0
+426L,Post injection,237_001015,1.0,0.0,0.0,1.0
+426L,Post injection,237_001016,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001009,0.0,0.0,0.0,0.0
+427L,Pre injection,238_001010,1.0,0.0,0.0,0.0
+427L,Pre injection,238_001011,1.0,1.0,0.0,0.0
+427L,Pre injection,238_001012,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001013,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001014,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001015,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001016,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001017,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001018,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001019,1.0,0.0,0.0,1.0
+427L,Pre injection,238_001020,1.0,0.0,0.0,1.0
+427L,Post injection,238_001009,0.0,0.0,0.0,0.0
+427L,Post injection,238_001010,0.0,0.0,0.0,0.0
+427L,Post injection,238_001011,1.0,1.0,0.0,1.0
+427L,Post injection,238_001012,1.0,1.0,0.0,1.0
+427L,Post injection,238_001013,1.0,0.0,0.0,1.0
+427L,Post injection,238_001014,1.0,0.0,0.0,1.0
+427L,Post injection,238_001015,1.0,0.0,0.0,1.0
+427L,Post injection,238_001016,1.0,0.0,0.0,1.0
+427L,Post injection,238_001017,1.0,0.0,0.0,1.0
+427L,Post injection,238_001018,1.0,0.0,0.0,1.0
+427L,Post injection,238_001019,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001009,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001010,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001011,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001012,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001013,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001014,1.0,1.0,0.0,1.0
+428L,Pre injection,239_001015,1.0,1.0,0.0,1.0
+428L,Pre injection,239_001016,1.0,1.0,0.0,1.0
+428L,Pre injection,239_001017,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001018,1.0,0.0,0.0,1.0
+428L,Pre injection,239_001019,1.0,0.0,0.0,1.0
+428L,Post injection,239_001009,1.0,0.0,0.0,1.0
+428L,Post injection,239_001010,1.0,0.0,0.0,1.0
+428L,Post injection,239_001011,1.0,0.0,0.0,1.0
+428L,Post injection,239_001012,1.0,0.0,0.0,1.0
+428L,Post injection,239_001013,1.0,1.0,0.0,1.0
+428L,Post injection,239_001014,1.0,1.0,0.0,1.0
+428L,Post injection,239_001015,1.0,1.0,0.0,1.0
+428L,Post injection,239_001016,1.0,1.0,0.0,1.0
+428L,Post injection,239_001017,1.0,0.0,0.0,1.0
+428L,Post injection,239_001018,1.0,0.0,0.0,1.0
+428L,Post injection,239_001019,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001005,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001006,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001007,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001008,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001009,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001010,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001011,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001012,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001013,1.0,0.0,0.0,1.0
+429L,Pre injection,240_001014,1.0,0.0,0.0,1.0
+429L,Post injection,240_001005,1.0,0.0,0.0,1.0
+429L,Post injection,240_001006,1.0,0.0,0.0,1.0
+429L,Post injection,240_001007,1.0,0.0,0.0,1.0
+429L,Post injection,240_001008,1.0,0.0,0.0,1.0
+429L,Post injection,240_001009,1.0,0.0,0.0,1.0
+429L,Post injection,240_001010,1.0,0.0,0.0,1.0
+429L,Post injection,240_001011,1.0,0.0,0.0,1.0
+429L,Post injection,240_001012,1.0,0.0,0.0,1.0
+429L,Post injection,240_001013,1.0,0.0,0.0,1.0
+429L,Post injection,240_001014,1.0,0.0,0.0,1.0
+429L,Post injection,240_001015,1.0,1.0,0.0,1.0
+429L,Post injection,240_001016,1.0,1.0,0.0,1.0
+429L,Post injection,240_001017,1.0,1.0,0.0,1.0
+431R,Pre injection,242_001004,1.0,0.0,0.0,1.0
+431R,Pre injection,242_001005,1.0,0.0,0.0,0.0
+431R,Pre injection,242_001006,1.0,0.0,0.0,0.0
+431R,Pre injection,242_001007,1.0,0.0,0.0,1.0
+431R,Pre injection,242_001008,1.0,0.0,0.0,1.0
+431R,Pre injection,242_001009,1.0,0.0,0.0,1.0
+431R,Pre injection,242_001010,1.0,1.0,0.0,1.0
+431R,Pre injection,242_001011,1.0,0.0,0.0,0.0
+431R,Pre injection,242_001012,1.0,0.0,0.0,0.0
+431R,Pre injection,242_001013,1.0,0.0,0.0,0.0
+431R,Post injection,242_001007,1.0,0.0,0.0,0.0
+431R,Post injection,242_001008,1.0,0.0,0.0,0.0
+431R,Post injection,242_001009,1.0,0.0,0.0,0.0
+431R,Post injection,242_001010,1.0,0.0,0.0,0.0
+431R,Post injection,242_001011,1.0,0.0,0.0,0.0
+431R,Post injection,242_001012,1.0,0.0,0.0,0.0
+431R,Post injection,242_001013,0.0,0.0,0.0,0.0
+438R,Pre injection,249_002010,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002011,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002012,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002013,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002014,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002015,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002016,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002017,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002018,1.0,0.0,0.0,1.0
+438R,Pre injection,249_002019,1.0,0.0,0.0,1.0
+438R,Post injection,249_001010,1.0,0.0,0.0,1.0
+438R,Post injection,249_001011,1.0,0.0,0.0,1.0
+438R,Post injection,249_001012,1.0,0.0,0.0,1.0
+438R,Post injection,249_001013,1.0,0.0,0.0,1.0
+438R,Post injection,249_001014,1.0,0.0,0.0,1.0
+438R,Post injection,249_001015,1.0,0.0,0.0,1.0
+438R,Post injection,249_001016,1.0,0.0,0.0,1.0
+438R,Post injection,249_001017,1.0,0.0,0.0,1.0
+438R,Post injection,249_001018,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001009,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001010,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001011,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001012,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001013,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001014,1.0,1.0,0.0,1.0
+453L,Pre injection,265_001015,1.0,1.0,0.0,1.0
+453L,Pre injection,265_001016,1.0,1.0,0.0,1.0
+453L,Pre injection,265_001017,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001018,1.0,0.0,0.0,1.0
+453L,Pre injection,265_001019,1.0,0.0,0.0,1.0
+453L,Post injection,265_001009,1.0,0.0,0.0,1.0
+453L,Post injection,265_001010,1.0,0.0,0.0,1.0
+453L,Post injection,265_001011,1.0,0.0,0.0,1.0
+453L,Post injection,265_001012,1.0,0.0,0.0,1.0
+453L,Post injection,265_001013,1.0,0.0,0.0,1.0
+453L,Post injection,265_001014,1.0,0.0,0.0,1.0
+453L,Post injection,265_001015,1.0,0.0,0.0,1.0
+453L,Post injection,265_001016,1.0,0.0,0.0,1.0
+453L,Post injection,265_001017,1.0,0.0,0.0,1.0
+453L,Post injection,265_001018,1.0,0.0,0.0,1.0
+454L,Pre injection,266_001011,1.0,0.0,0.0,1.0
+454L,Pre injection,266_001012,1.0,1.0,0.0,1.0
+454L,Pre injection,266_001013,1.0,1.0,0.0,1.0
+454L,Pre injection,266_001014,1.0,1.0,0.0,1.0
+454L,Pre injection,266_001015,1.0,1.0,0.0,1.0
+454L,Pre injection,266_001016,1.0,1.0,0.0,1.0
+454L,Pre injection,266_001017,1.0,1.0,0.0,1.0
+454L,Pre injection,266_001018,1.0,0.0,0.0,1.0
+454L,Pre injection,266_001019,1.0,0.0,0.0,1.0
+454L,Pre injection,266_001020,1.0,0.0,0.0,1.0
+454L,Pre injection,266_001021,1.0,0.0,0.0,1.0
+454L,Post injection,266_001011,1.0,0.0,0.0,1.0
+454L,Post injection,266_001012,1.0,0.0,0.0,1.0
+454L,Post injection,266_001013,1.0,1.0,0.0,1.0
+454L,Post injection,266_001014,1.0,1.0,0.0,1.0
+454L,Post injection,266_001015,1.0,1.0,0.0,1.0
+454L,Post injection,266_001016,1.0,1.0,0.0,1.0
+454L,Post injection,266_001017,1.0,1.0,0.0,1.0
+454L,Post injection,266_001018,1.0,0.0,0.0,1.0
+454L,Post injection,266_001019,1.0,0.0,0.0,1.0
+454L,Post injection,266_001020,1.0,0.0,0.0,1.0
+454L,Post injection,266_001021,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001008,1.0,0.0,0.0,0.0
+456R,Pre injection,268_001009,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001010,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001011,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001012,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001013,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001014,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001015,1.0,0.0,0.0,1.0
+456R,Pre injection,268_001016,1.0,0.0,0.0,1.0
+456R,Post injection,268_001008,1.0,0.0,0.0,1.0
+456R,Post injection,268_001009,1.0,0.0,0.0,1.0
+456R,Post injection,268_001010,1.0,0.0,0.0,1.0
+456R,Post injection,268_001011,1.0,0.0,0.0,1.0
+456R,Post injection,268_001012,1.0,0.0,0.0,1.0
+456R,Post injection,268_001013,1.0,0.0,0.0,1.0
+456R,Post injection,268_001014,1.0,0.0,0.0,1.0
+456R,Post injection,268_001015,1.0,0.0,0.0,1.0
+456R,Post injection,268_001016,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001007,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001008,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001009,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001010,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001011,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001012,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001013,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001014,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001015,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001016,1.0,0.0,0.0,1.0
+457L,Pre injection,269_001017,1.0,0.0,0.0,1.0
+457L,Post injection,269_001007,1.0,0.0,0.0,1.0
+457L,Post injection,269_001008,1.0,0.0,0.0,1.0
+457L,Post injection,269_001009,1.0,0.0,0.0,1.0
+457L,Post injection,269_001010,1.0,0.0,0.0,1.0
+457L,Post injection,269_001011,1.0,0.0,0.0,1.0
+457L,Post injection,269_001012,1.0,0.0,0.0,1.0
+457L,Post injection,269_001013,1.0,0.0,0.0,1.0
+457L,Post injection,269_001014,1.0,0.0,0.0,1.0
+457L,Post injection,269_001015,1.0,0.0,0.0,1.0
+457L,Post injection,269_001016,1.0,0.0,0.0,1.0
+458R,Pre injection,272_001007,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001008,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001009,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001010,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001011,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001012,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001013,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001014,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001015,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001016,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001017,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001018,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001019,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001020,1.0,1.0,0.0,1.0
+458R,Pre injection,272_001021,1.0,1.0,0.0,1.0
+458R,Post injection,272_001006,1.0,1.0,0.0,1.0
+458R,Post injection,272_001007,1.0,1.0,0.0,1.0
+458R,Post injection,272_001008,1.0,1.0,0.0,1.0
+458R,Post injection,272_001009,1.0,1.0,0.0,1.0
+458R,Post injection,272_001010,1.0,0.0,0.0,1.0
+458R,Post injection,272_001011,1.0,1.0,0.0,1.0
+458R,Post injection,272_001012,1.0,1.0,0.0,1.0
+458R,Post injection,272_001013,1.0,1.0,0.0,1.0
+458R,Post injection,272_001014,1.0,1.0,0.0,1.0
+458R,Post injection,272_001015,1.0,1.0,0.0,1.0
+458R,Post injection,272_001016,1.0,1.0,0.0,1.0
+458R,Post injection,272_001017,1.0,1.0,0.0,1.0
+458R,Post injection,272_001018,1.0,1.0,0.0,1.0
+458R,Post injection,272_001019,1.0,1.0,0.0,1.0
+458R,Post injection,272_001020,1.0,0.0,0.0,1.0
+458R,Post injection,272_001021,1.0,0.0,0.0,1.0
+461L,Pre injection,275_001009,1.0,0.0,0.0,1.0
+461L,Pre injection,275_001010,1.0,0.0,0.0,1.0
+461L,Pre injection,275_001011,1.0,0.0,0.0,1.0
+461L,Pre injection,275_001012,1.0,0.0,0.0,1.0
+461L,Pre injection,275_001013,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001014,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001015,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001016,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001017,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001018,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001019,1.0,1.0,0.0,1.0
+461L,Pre injection,275_001020,1.0,0.0,0.0,1.0
+461L,Post injection,275_001009,1.0,0.0,0.0,1.0
+461L,Post injection,275_001010,1.0,0.0,0.0,1.0
+461L,Post injection,275_001011,1.0,0.0,0.0,1.0
+461L,Post injection,275_001012,1.0,1.0,0.0,1.0
+461L,Post injection,275_001013,1.0,1.0,0.0,1.0
+461L,Post injection,275_001014,1.0,1.0,0.0,1.0
+461L,Post injection,275_001015,1.0,1.0,0.0,1.0
+461L,Post injection,275_001016,1.0,1.0,0.0,1.0
+461L,Post injection,275_001017,1.0,1.0,0.0,1.0
+461L,Post injection,275_001018,1.0,1.0,0.0,1.0
+461L,Post injection,275_001019,1.0,1.0,0.0,1.0
+461L,Post injection,275_001020,1.0,1.0,0.0,1.0
+461L,Post injection,275_001021,1.0,0.0,0.0,1.0
+463L,Pre injection,277_001011,0.0,0.0,0.0,1.0
+463L,Pre injection,277_001012,0.0,1.0,0.0,1.0
+463L,Pre injection,277_001013,1.0,1.0,0.0,1.0
+463L,Pre injection,277_001014,1.0,0.0,0.0,1.0
+463L,Pre injection,277_001015,1.0,0.0,0.0,1.0
+463L,Pre injection,277_001016,1.0,1.0,0.0,1.0
+463L,Pre injection,277_001017,1.0,1.0,0.0,1.0
+463L,Post injection,277_001011,1.0,1.0,0.0,1.0
+463L,Post injection,277_001012,0.0,0.0,0.0,1.0
+463L,Post injection,277_001013,1.0,0.0,0.0,1.0
+463L,Post injection,277_001014,0.0,0.0,0.0,1.0
+463L,Post injection,277_001015,0.0,0.0,0.0,1.0
+463L,Post injection,277_001016,1.0,0.0,0.0,1.0
+463L,Post injection,277_001017,0.0,0.0,0.0,1.0
+467L,Pre injection,281_001007,1.0,0.0,0.0,1.0
+467L,Pre injection,281_001008,1.0,0.0,0.0,1.0
+467L,Pre injection,281_001009,1.0,0.0,0.0,1.0
+467L,Pre injection,281_001010,1.0,1.0,0.0,1.0
+467L,Pre injection,281_001011,1.0,1.0,0.0,1.0
+467L,Pre injection,281_001012,1.0,1.0,0.0,1.0
+467L,Pre injection,281_001013,1.0,1.0,0.0,1.0
+467L,Pre injection,281_001014,1.0,1.0,0.0,1.0
+467L,Pre injection,281_001015,1.0,1.0,0.0,1.0
+467L,Pre injection,281_001016,1.0,0.0,0.0,1.0
+467L,Pre injection,281_001017,1.0,0.0,0.0,1.0
+467L,Post injection,281_001007,1.0,0.0,0.0,1.0
+467L,Post injection,281_001008,1.0,0.0,0.0,1.0
+467L,Post injection,281_001009,1.0,0.0,0.0,1.0
+467L,Post injection,281_001010,1.0,0.0,0.0,1.0
+467L,Post injection,281_001011,1.0,0.0,0.0,1.0
+467L,Post injection,281_001012,1.0,0.0,0.0,1.0
+467L,Post injection,281_001013,1.0,0.0,0.0,1.0
+467L,Post injection,281_001014,1.0,0.0,0.0,1.0
+467L,Post injection,281_001015,1.0,0.0,0.0,1.0
+467L,Post injection,281_001016,1.0,0.0,0.0,1.0
+467L,Post injection,281_001017,1.0,0.0,0.0,1.0
+468L,Pre injection,282_001009,1.0,0.0,0.0,1.0
+468L,Pre injection,282_001010,1.0,0.0,0.0,1.0
+468L,Pre injection,282_001011,1.0,0.0,0.0,1.0
+468L,Pre injection,282_001012,1.0,0.0,0.0,1.0
+468L,Pre injection,282_001013,1.0,1.0,0.0,1.0
+468L,Pre injection,282_001014,1.0,1.0,0.0,1.0
+468L,Pre injection,282_001015,1.0,1.0,0.0,1.0
+468L,Pre injection,282_001016,1.0,1.0,0.0,1.0
+468L,Pre injection,282_001017,1.0,1.0,0.0,1.0
+468L,Pre injection,282_001018,1.0,1.0,0.0,1.0
+468L,Pre injection,282_001019,1.0,1.0,0.0,1.0
+468L,Post injection,282_001009,1.0,0.0,0.0,1.0
+468L,Post injection,282_001010,1.0,0.0,0.0,1.0
+468L,Post injection,282_001011,1.0,0.0,0.0,1.0
+468L,Post injection,282_001012,1.0,0.0,0.0,1.0
+468L,Post injection,282_001013,1.0,1.0,0.0,1.0
+468L,Post injection,282_001014,1.0,1.0,0.0,1.0
+468L,Post injection,282_001015,1.0,1.0,0.0,1.0
+468L,Post injection,282_001016,1.0,1.0,0.0,1.0
+468L,Post injection,282_001017,1.0,1.0,0.0,1.0
+468L,Post injection,282_001018,1.0,1.0,0.0,1.0
+468L,Post injection,282_001019,1.0,0.0,0.0,1.0
+474L,Pre injection,289_001012,1.0,1.0,0.0,1.0
+474L,Pre injection,289_001013,1.0,1.0,0.0,1.0
+474L,Pre injection,289_001014,1.0,0.0,0.0,1.0
+474L,Pre injection,289_001015,1.0,0.0,0.0,1.0
+474L,Post injection,289_001011,1.0,0.0,0.0,1.0
+474L,Post injection,289_001012,1.0,0.0,0.0,1.0
+474L,Post injection,289_001013,1.0,0.0,0.0,1.0
+474L,Post injection,289_001014,1.0,0.0,0.0,1.0
+475L,Pre injection,290_001010,1.0,0.0,0.0,1.0
+475L,Pre injection,290_001011,1.0,0.0,0.0,1.0
+475L,Pre injection,290_001012,1.0,0.0,0.0,1.0
+475L,Pre injection,290_001013,1.0,0.0,0.0,1.0
+475L,Pre injection,290_001014,1.0,0.0,0.0,1.0
+478R,Pre injection,293_001010,1.0,1.0,0.0,1.0
+478R,Pre injection,293_001011,1.0,1.0,0.0,1.0
+478R,Pre injection,293_001012,1.0,1.0,0.0,1.0
+478R,Pre injection,293_001013,1.0,1.0,0.0,1.0
+478R,Pre injection,293_001014,1.0,1.0,0.0,1.0
+478R,Post injection,293_001011,1.0,1.0,0.0,1.0
+478R,Post injection,293_001012,1.0,1.0,0.0,1.0
+478R,Post injection,293_001013,1.0,0.0,0.0,1.0
+478R,Post injection,293_001014,1.0,0.0,0.0,1.0
+484L,Pre injection,300_001011,1.0,0.0,0.0,1.0
+484L,Pre injection,300_001012,1.0,0.0,0.0,1.0
+484L,Pre injection,300_001013,1.0,0.0,0.0,1.0
+484L,Pre injection,300_001014,1.0,0.0,0.0,1.0
+484L,Post injection,300_001011,1.0,0.0,0.0,1.0
+484L,Post injection,300_001012,1.0,0.0,0.0,1.0
+484L,Post injection,300_001013,1.0,0.0,0.0,1.0
+484L,Post injection,300_001014,1.0,0.0,0.0,1.0
+487R,Pre injection,304_001011,1.0,1.0,0.0,0.0
+487R,Pre injection,304_001012,1.0,0.0,0.0,1.0
+487R,Pre injection,304_001013,1.0,0.0,0.0,0.0
+494L,Pre injection,313_001006,0.0,1.0,0.0,1.0
+494L,Pre injection,313_001007,0.0,1.0,0.0,1.0
+494L,Pre injection,313_001008,0.0,1.0,0.0,1.0
+494L,Pre injection,313_001009,0.0,1.0,0.0,1.0
+494L,Post injection,313_001007,1.0,0.0,0.0,1.0
+494L,Post injection,313_001008,0.0,0.0,0.0,1.0
+494L,Post injection,313_001009,0.0,1.0,0.0,1.0
+494L,Post injection,313_001010,0.0,1.0,0.0,1.0
+495R,Pre injection,314_001013,1.0,0.0,0.0,1.0
+495R,Pre injection,314_001014,1.0,0.0,0.0,1.0
+495R,Pre injection,314_001015,1.0,1.0,0.0,0.0
+495R,Post injection,314_001013,1.0,0.0,0.0,1.0
+495R,Post injection,314_001014,1.0,1.0,0.0,1.0
+495R,Post injection,314_001015,1.0,0.0,0.0,1.0
+495R,Post injection,314_001016,1.0,0.0,0.0,1.0
+497R,Pre injection,316_001011,1.0,0.0,0.0,1.0
+497R,Pre injection,316_001012,1.0,0.0,0.0,1.0
+497R,Pre injection,316_001013,1.0,0.0,0.0,1.0
+497R,Pre injection,316_001014,1.0,0.0,0.0,1.0
+497R,Post injection,316_001010,1.0,0.0,0.0,1.0
+497R,Post injection,316_001011,1.0,0.0,0.0,1.0
+497R,Post injection,316_001012,1.0,0.0,0.0,1.0
+497R,Post injection,316_001013,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001006,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001007,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001008,1.0,1.0,0.0,1.0
+500L,Pre injection,321_001009,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001010,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001011,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001012,1.0,0.0,0.0,1.0
+500L,Pre injection,321_001013,1.0,0.0,0.0,1.0
+500L,Post injection,321_001006,1.0,0.0,0.0,1.0
+500L,Post injection,321_001007,1.0,1.0,0.0,1.0
+500L,Post injection,321_001008,1.0,1.0,0.0,1.0
+500L,Post injection,321_001009,1.0,1.0,0.0,1.0
+500L,Post injection,321_001010,1.0,1.0,0.0,1.0
+500L,Post injection,321_001011,1.0,1.0,0.0,1.0
+500L,Post injection,321_001012,1.0,1.0,0.0,1.0
+500L,Post injection,321_001013,1.0,1.0,0.0,1.0
+501L,Pre injection,322_001011,0.0,0.0,0.0,1.0
+501L,Pre injection,322_001012,1.0,0.0,0.0,1.0
+501L,Pre injection,322_001013,0.0,0.0,0.0,1.0
+501L,Pre injection,322_001014,0.0,0.0,0.0,1.0
+501L,Pre injection,322_001015,0.0,0.0,0.0,1.0
+501L,Pre injection,322_001016,0.0,0.0,0.0,1.0
+501L,Pre injection,322_001017,0.0,0.0,0.0,1.0
+501L,Pre injection,322_001018,0.0,0.0,0.0,1.0
+501L,Post injection,322_002011,1.0,0.0,0.0,1.0
+501L,Post injection,322_002012,0.0,0.0,0.0,1.0
+501L,Post injection,322_002013,0.0,0.0,0.0,1.0
+501L,Post injection,322_002014,0.0,0.0,0.0,1.0
+501L,Post injection,322_002015,0.0,0.0,0.0,1.0
+501L,Post injection,322_002016,0.0,0.0,0.0,1.0
+501L,Post injection,322_002017,0.0,0.0,0.0,1.0
+501L,Post injection,322_002018,0.0,0.0,0.0,1.0
+502L,Pre injection,323_001011,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001012,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001013,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001014,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001015,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001016,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001017,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001018,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001019,1.0,0.0,0.0,1.0
+502L,Pre injection,323_001020,1.0,0.0,0.0,1.0
+503R,Pre injection,324_001009,1.0,0.0,0.0,1.0
+503R,Pre injection,324_001010,1.0,0.0,0.0,1.0
+503R,Pre injection,324_001011,1.0,0.0,0.0,1.0
+503R,Pre injection,324_001012,0.0,0.0,0.0,1.0
+503R,Pre injection,324_001013,0.0,0.0,0.0,1.0
+503R,Pre injection,324_001014,0.0,0.0,0.0,1.0
+503R,Post injection,324_001009,1.0,0.0,0.0,1.0
+503R,Post injection,324_001010,1.0,0.0,0.0,1.0
+503R,Post injection,324_001011,1.0,0.0,0.0,1.0
+503R,Post injection,324_001012,1.0,0.0,0.0,1.0
+503R,Post injection,324_001013,0.0,0.0,0.0,1.0
+503R,Post injection,324_001014,0.0,0.0,0.0,1.0
+507R,Pre injection,328_001011,0.0,0.0,0.0,1.0
+507R,Pre injection,328_001012,1.0,0.0,0.0,1.0
+507R,Pre injection,328_001013,1.0,0.0,0.0,1.0
+507R,Pre injection,328_001014,0.0,0.0,0.0,1.0
+507R,Pre injection,328_001015,0.0,0.0,0.0,1.0
+511L,Pre injection,332_001013,0.0,0.0,0.0,1.0
+511L,Pre injection,332_001014,0.0,0.0,0.0,1.0
+511L,Pre injection,332_001015,0.0,0.0,0.0,1.0
+511L,Pre injection,332_001016,1.0,0.0,0.0,1.0
+511L,Pre injection,332_001017,0.0,0.0,0.0,1.0
+511L,Pre injection,332_001018,0.0,0.0,0.0,1.0
+511L,Pre injection,332_001019,1.0,0.0,0.0,1.0
+511L,Pre injection,332_001020,1.0,0.0,0.0,1.0
+511L,Pre injection,332_001021,1.0,0.0,0.0,1.0
+511L,Post injection,332_001013,1.0,0.0,0.0,1.0
+511L,Post injection,332_001014,1.0,0.0,0.0,1.0
+511L,Post injection,332_001015,1.0,0.0,0.0,1.0
+511L,Post injection,332_001016,1.0,0.0,0.0,1.0
+511L,Post injection,332_001017,1.0,0.0,0.0,1.0
+511L,Post injection,332_001018,1.0,0.0,0.0,1.0
+511L,Post injection,332_001019,1.0,0.0,0.0,1.0
+511L,Post injection,332_001020,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001007,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001008,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001009,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001010,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001011,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001012,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001013,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001014,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001015,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001016,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001017,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001018,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001019,1.0,1.0,0.0,1.0
+513L,Pre injection,334_001020,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001009,0.0,0.0,0.0,1.0
+513L,Pre injection,334_001010,0.0,0.0,0.0,1.0
+513L,Pre injection,334_001011,0.0,0.0,0.0,1.0
+513L,Pre injection,334_001012,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001013,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001014,0.0,0.0,0.0,1.0
+513L,Pre injection,334_001015,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001016,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001017,1.0,0.0,0.0,1.0
+513L,Pre injection,334_001018,0.0,0.0,0.0,1.0
+513L,Pre injection,334_001019,0.0,0.0,0.0,1.0
+516L,Pre injection,338_001008,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001009,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001010,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001011,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001012,1.0,1.0,0.0,1.0
+516L,Pre injection,338_001013,1.0,1.0,0.0,1.0
+516L,Pre injection,338_001014,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001015,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001016,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001017,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001018,1.0,0.0,0.0,1.0
+516L,Pre injection,338_001019,1.0,0.0,0.0,1.0
+516L,Post injection,338_001011,1.0,0.0,0.0,1.0
+516L,Post injection,338_001012,1.0,0.0,0.0,1.0
+516L,Post injection,338_001013,1.0,0.0,0.0,1.0
+516L,Post injection,338_001014,1.0,0.0,0.0,1.0
+516L,Post injection,338_001015,1.0,0.0,0.0,1.0
+516L,Post injection,338_001016,1.0,0.0,0.0,1.0
+516L,Post injection,338_001017,1.0,0.0,0.0,1.0
+516L,Post injection,338_001018,1.0,0.0,0.0,1.0
+516L,Post injection,338_001019,1.0,0.0,0.0,1.0
+516L,Post injection,338_001020,1.0,0.0,0.0,1.0
+516L,Post injection,338_001021,1.0,0.0,0.0,1.0
+520L,Pre injection,342_001006,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001007,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001008,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001009,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001010,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001011,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001012,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001013,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001014,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001015,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001016,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001017,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001018,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001019,1.0,1.0,0.0,1.0
+520L,Pre injection,342_001020,1.0,0.0,0.0,1.0
+520L,Post injection,342_001006,1.0,0.0,0.0,1.0
+520L,Post injection,342_001007,1.0,0.0,0.0,1.0
+520L,Post injection,342_001008,1.0,0.0,0.0,1.0
+520L,Post injection,342_001009,1.0,0.0,0.0,1.0
+520L,Post injection,342_001010,1.0,0.0,0.0,1.0
+520L,Post injection,342_001011,1.0,0.0,0.0,1.0
+520L,Post injection,342_001012,1.0,0.0,0.0,1.0
+520L,Post injection,342_001013,1.0,1.0,0.0,1.0
+520L,Post injection,342_001014,1.0,1.0,0.0,1.0
+520L,Post injection,342_001015,1.0,1.0,0.0,1.0
+520L,Post injection,342_001016,1.0,1.0,0.0,1.0
+520L,Post injection,342_001017,1.0,1.0,0.0,1.0
+520L,Post injection,342_001018,1.0,1.0,0.0,1.0
+520L,Post injection,342_001019,1.0,1.0,0.0,1.0
+520L,Post injection,342_001020,1.0,1.0,0.0,1.0
+521L,Pre injection,343_001007,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001008,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001009,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001010,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001011,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001012,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001013,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001014,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001015,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001016,1.0,0.0,0.0,1.0
+521L,Pre injection,343_001017,1.0,0.0,0.0,1.0
+521L,Post injection,343_001010,1.0,0.0,0.0,1.0
+521L,Post injection,343_001011,1.0,0.0,0.0,1.0
+521L,Post injection,343_001012,1.0,0.0,0.0,1.0
+521L,Post injection,343_001013,1.0,0.0,0.0,1.0
+521L,Post injection,343_001014,1.0,0.0,0.0,1.0
+521L,Post injection,343_001015,1.0,0.0,0.0,1.0
+521L,Post injection,343_001016,1.0,0.0,0.0,1.0
+521L,Post injection,343_001017,1.0,0.0,0.0,1.0
+521L,Post injection,343_001018,1.0,0.0,0.0,1.0
+523L,Pre injection,345_001009,1.0,0.0,0.0,1.0
+523L,Pre injection,345_001010,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001011,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001012,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001013,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001014,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001015,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001016,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001017,1.0,1.0,0.0,1.0
+523L,Pre injection,345_001018,1.0,0.0,0.0,1.0
+523L,Pre injection,345_001019,1.0,0.0,0.0,1.0
+523L,Post injection,345_001010,1.0,1.0,0.0,1.0
+523L,Post injection,345_001011,1.0,1.0,0.0,1.0
+523L,Post injection,345_001012,1.0,1.0,0.0,1.0
+523L,Post injection,345_001013,1.0,1.0,0.0,1.0
+523L,Post injection,345_001014,1.0,1.0,0.0,1.0
+523L,Post injection,345_001015,1.0,1.0,0.0,1.0
+523L,Post injection,345_001016,0.0,1.0,0.0,1.0
+523L,Post injection,345_001017,0.0,1.0,0.0,1.0
+523L,Post injection,345_001018,0.0,1.0,0.0,1.0
+523L,Post injection,345_001019,0.0,1.0,0.0,1.0
+530L,Pre injection,352_001010,1.0,0.0,0.0,1.0
+530L,Pre injection,352_001011,1.0,0.0,0.0,1.0
+530L,Pre injection,352_001012,1.0,0.0,0.0,1.0
+530L,Pre injection,352_001013,1.0,0.0,0.0,1.0
+530L,Pre injection,352_001014,1.0,1.0,0.0,1.0
+530L,Pre injection,352_001015,1.0,1.0,0.0,1.0
+530L,Pre injection,352_001016,1.0,1.0,0.0,1.0
+530L,Pre injection,352_001017,1.0,0.0,0.0,1.0
+530L,Pre injection,352_001018,1.0,0.0,0.0,1.0
+530L,Pre injection,352_001019,1.0,0.0,0.0,1.0
+530L,Post injection,352_001010,1.0,0.0,0.0,0.0
+530L,Post injection,352_001011,1.0,0.0,0.0,0.0
+530L,Post injection,352_001012,0.0,0.0,0.0,0.0
+530L,Post injection,352_001013,0.0,0.0,0.0,0.0
+530L,Post injection,352_001014,0.0,0.0,0.0,0.0
+530L,Post injection,352_001015,0.0,0.0,0.0,1.0
+530L,Post injection,352_001016,1.0,0.0,0.0,1.0
+530L,Post injection,352_001017,0.0,0.0,0.0,1.0
+530L,Post injection,352_001018,0.0,0.0,0.0,1.0
+530L,Post injection,352_001019,0.0,0.0,0.0,1.0
+531L,Pre injection,353_001008,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001009,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001010,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001011,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001012,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001013,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001014,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001015,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001016,1.0,0.0,0.0,1.0
+531L,Pre injection,353_001017,1.0,0.0,0.0,1.0
+531L,Post injection,353_001010,1.0,0.0,0.0,1.0
+531L,Post injection,353_001011,1.0,0.0,0.0,1.0
+531L,Post injection,353_001012,1.0,0.0,0.0,1.0
+531L,Post injection,353_001013,1.0,0.0,0.0,1.0
+531L,Post injection,353_001014,1.0,0.0,0.0,1.0
+531L,Post injection,353_001015,1.0,0.0,0.0,1.0
+531L,Post injection,353_001016,1.0,0.0,0.0,1.0
+531L,Post injection,353_001017,1.0,0.0,0.0,1.0
+531L,Post injection,353_001018,1.0,0.0,0.0,1.0
+531L,Post injection,353_001019,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001010,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001011,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001012,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001013,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001014,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001015,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001016,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001017,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001018,1.0,0.0,0.0,1.0
+532L,Pre injection,354_001019,1.0,0.0,0.0,1.0
+532L,Post injection,354_001010,1.0,0.0,0.0,1.0
+532L,Post injection,354_001011,1.0,0.0,0.0,1.0
+532L,Post injection,354_001012,1.0,0.0,0.0,1.0
+532L,Post injection,354_001013,1.0,0.0,0.0,1.0
+532L,Post injection,354_001014,1.0,1.0,0.0,1.0
+532L,Post injection,354_001015,1.0,0.0,0.0,1.0
+532L,Post injection,354_001016,1.0,0.0,0.0,1.0
+532L,Post injection,354_001017,1.0,0.0,0.0,1.0
+532L,Post injection,354_001018,1.0,0.0,0.0,1.0
+532L,Post injection,354_001019,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001013,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001014,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001015,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001016,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001017,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001018,1.0,0.0,0.0,1.0
+534R,Pre injection,357_001019,1.0,0.0,0.0,1.0
+534R,Post injection,357_001013,0.0,0.0,0.0,1.0
+534R,Post injection,357_001014,1.0,0.0,0.0,1.0
+534R,Post injection,357_001015,1.0,0.0,0.0,1.0
+534R,Post injection,357_001016,1.0,0.0,0.0,1.0
+534R,Post injection,357_001017,1.0,0.0,0.0,1.0
+534R,Post injection,357_001018,1.0,0.0,0.0,1.0
+534R,Post injection,357_001019,1.0,0.0,0.0,1.0
+540R,Pre injection,364_001006,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001007,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001008,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001009,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001010,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001011,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001012,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001013,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001014,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001015,1.0,1.0,0.0,1.0
+540R,Pre injection,364_001016,1.0,1.0,0.0,1.0
+540R,Post injection,364_001006,1.0,0.0,0.0,1.0
+540R,Post injection,364_001007,1.0,0.0,0.0,1.0
+540R,Post injection,364_001008,1.0,1.0,0.0,1.0
+540R,Post injection,364_001009,1.0,1.0,0.0,1.0
+540R,Post injection,364_001010,1.0,1.0,0.0,1.0
+540R,Post injection,364_001011,1.0,1.0,0.0,1.0
+540R,Post injection,364_001012,1.0,1.0,0.0,1.0
+540R,Post injection,364_001013,1.0,1.0,0.0,1.0
+540R,Post injection,364_001014,1.0,1.0,0.0,1.0
+540R,Post injection,364_001015,1.0,1.0,0.0,1.0
+540R,Post injection,364_001016,1.0,1.0,0.0,1.0
+541L,Pre injection,367_001009,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001010,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001011,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001012,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001013,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001014,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001015,1.0,0.0,0.0,1.0
+541L,Pre injection,367_001016,1.0,0.0,0.0,1.0
+541L,Post injection,367_001009,1.0,0.0,0.0,1.0
+541L,Post injection,367_001010,1.0,0.0,0.0,1.0
+541L,Post injection,367_001011,1.0,0.0,0.0,1.0
+541L,Post injection,367_001012,1.0,0.0,0.0,1.0
+541L,Post injection,367_001013,1.0,0.0,0.0,1.0
+541L,Post injection,367_001014,1.0,0.0,0.0,1.0
+541L,Post injection,367_001015,1.0,0.0,0.0,1.0
+541L,Post injection,367_001016,1.0,0.0,0.0,1.0
+545L,Pre injection,371_001008,1.0,0.0,0.0,1.0
+545L,Pre injection,371_001009,1.0,1.0,0.0,1.0
+545L,Pre injection,371_001010,1.0,1.0,0.0,1.0
+545L,Pre injection,371_001011,1.0,1.0,0.0,1.0
+545L,Pre injection,371_001012,1.0,1.0,0.0,1.0
+545L,Pre injection,371_001013,1.0,1.0,0.0,1.0
+545L,Pre injection,371_001014,1.0,0.0,0.0,1.0
+545L,Pre injection,371_001015,1.0,0.0,0.0,1.0
+545L,Post injection,371_001007,0.0,0.0,0.0,1.0
+545L,Post injection,371_001008,0.0,0.0,0.0,1.0
+545L,Post injection,371_001009,0.0,0.0,0.0,1.0
+545L,Post injection,371_001010,0.0,0.0,0.0,1.0
+545L,Post injection,371_001011,0.0,0.0,0.0,1.0
+545L,Post injection,371_001012,0.0,0.0,0.0,1.0
+545L,Post injection,371_001013,0.0,0.0,0.0,1.0
+545L,Post injection,371_001014,0.0,0.0,0.0,1.0
+545L,Post injection,371_001015,0.0,0.0,0.0,1.0
+549L,Pre injection,375_001005,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001006,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001007,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001008,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001009,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001010,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001011,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001012,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001013,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001014,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001015,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001016,1.0,0.0,0.0,1.0
+549L,Pre injection,375_001017,1.0,0.0,0.0,1.0
+549L,Post injection,375_001009,1.0,0.0,0.0,0.0
+549L,Post injection,375_001010,1.0,0.0,0.0,1.0
+549L,Post injection,375_001011,1.0,0.0,0.0,1.0
+549L,Post injection,375_001012,1.0,0.0,0.0,1.0
+549L,Post injection,375_001013,1.0,0.0,0.0,1.0
+549L,Post injection,375_001014,1.0,0.0,0.0,1.0
+549L,Post injection,375_001015,1.0,0.0,0.0,1.0
+549L,Post injection,375_001016,1.0,0.0,0.0,1.0
+549L,Post injection,375_001017,1.0,0.0,0.0,1.0
+551L,Pre injection,377_001007,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001008,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001009,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001010,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001011,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001012,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001013,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001014,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001015,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001016,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001017,1.0,1.0,0.0,1.0
+551L,Pre injection,377_001018,1.0,1.0,0.0,1.0
+551L,Post injection,377_001007,1.0,0.0,0.0,1.0
+551L,Post injection,377_001008,1.0,0.0,0.0,1.0
+551L,Post injection,377_001009,1.0,0.0,0.0,1.0
+551L,Post injection,377_001010,1.0,0.0,0.0,1.0
+551L,Post injection,377_001011,1.0,0.0,0.0,1.0
+551L,Post injection,377_001012,1.0,0.0,0.0,1.0
+551L,Post injection,377_001013,1.0,0.0,0.0,1.0
+551L,Post injection,377_001014,1.0,0.0,0.0,1.0
+551L,Post injection,377_001015,1.0,0.0,0.0,1.0
+551L,Post injection,377_001016,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001008,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001009,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001010,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001011,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001012,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001013,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001014,1.0,0.0,0.0,1.0
+554R,Pre injection,381_001015,1.0,0.0,0.0,1.0
+554R,Post injection,381_001008,1.0,0.0,0.0,1.0
+554R,Post injection,381_001009,1.0,0.0,0.0,1.0
+554R,Post injection,381_001010,1.0,0.0,0.0,1.0
+554R,Post injection,381_001011,1.0,0.0,0.0,1.0
+554R,Post injection,381_001012,1.0,0.0,0.0,1.0
+554R,Post injection,381_001013,1.0,0.0,0.0,1.0
+554R,Post injection,381_001014,1.0,0.0,0.0,1.0
+554R,Post injection,381_001015,1.0,0.0,0.0,1.0
+556L,Pre injection,383_001014,1.0,0.0,0.0,1.0
+556L,Pre injection,383_001015,1.0,0.0,0.0,1.0
+556L,Pre injection,383_001016,1.0,0.0,0.0,1.0
+556L,Pre injection,383_001017,1.0,0.0,0.0,1.0
+556L,Pre injection,383_001018,0.0,0.0,0.0,1.0
+556L,Pre injection,383_001019,0.0,0.0,0.0,1.0
+556L,Post injection,383_001014,0.0,0.0,0.0,1.0
+556L,Post injection,383_001015,0.0,0.0,0.0,1.0
+556L,Post injection,383_001016,0.0,0.0,0.0,1.0
+556L,Post injection,383_001017,0.0,0.0,0.0,1.0
+556L,Post injection,383_001018,0.0,0.0,0.0,1.0
+556L,Post injection,383_001019,0.0,0.0,0.0,1.0
+558L,Pre injection,385_001006,1.0,0.0,0.0,1.0
+558L,Pre injection,385_001007,1.0,0.0,0.0,1.0
+558L,Pre injection,385_001008,1.0,0.0,0.0,1.0
+558L,Pre injection,385_001009,1.0,0.0,0.0,1.0
+558L,Pre injection,385_001010,1.0,0.0,0.0,1.0
+558L,Pre injection,385_001011,1.0,1.0,0.0,1.0
+558L,Pre injection,385_001012,1.0,1.0,0.0,1.0
+558L,Pre injection,385_001013,1.0,1.0,0.0,1.0
+558L,Pre injection,385_001014,1.0,1.0,0.0,1.0
+558L,Pre injection,385_001015,1.0,0.0,0.0,1.0
+558L,Pre injection,385_001016,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001011,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001012,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001013,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001014,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001015,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001016,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001017,1.0,0.0,0.0,1.0
+562R,Pre injection,389_001018,1.0,0.0,0.0,1.0
+562R,Post injection,389_001011,1.0,0.0,0.0,1.0
+562R,Post injection,389_001012,1.0,0.0,0.0,1.0
+562R,Post injection,389_001013,1.0,0.0,0.0,1.0
+562R,Post injection,389_001014,1.0,0.0,0.0,1.0
+562R,Post injection,389_001015,1.0,0.0,0.0,1.0
+562R,Post injection,389_001016,1.0,0.0,0.0,1.0
+562R,Post injection,389_001017,1.0,0.0,0.0,1.0
+562R,Post injection,389_001018,1.0,0.0,0.0,1.0
+564L,Pre injection,391_001014,1.0,0.0,0.0,1.0
+564L,Pre injection,391_001015,1.0,1.0,0.0,1.0
+564L,Pre injection,391_001016,1.0,0.0,0.0,1.0
+564L,Pre injection,391_001017,1.0,0.0,0.0,1.0
+564L,Pre injection,391_001018,1.0,0.0,0.0,1.0
+564L,Pre injection,391_001019,1.0,0.0,0.0,1.0
+564L,Post injection,391_001014,1.0,0.0,0.0,1.0
+564L,Post injection,391_001015,1.0,0.0,0.0,1.0
+564L,Post injection,391_001016,1.0,0.0,0.0,1.0
+564L,Post injection,391_001017,1.0,0.0,0.0,1.0
+564L,Post injection,391_001018,1.0,0.0,0.0,1.0
+564L,Post injection,391_001019,1.0,0.0,0.0,1.0
+565L,Pre injection,392_001007,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001008,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001009,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001010,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001011,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001012,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001013,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001014,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001015,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001016,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001017,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001018,1.0,1.0,0.0,1.0
+565L,Pre injection,392_001019,1.0,0.0,0.0,1.0
+565L,Post injection,392_001000,0.0,1.0,0.0,0.0
+565L,Post injection,392_001001,0.0,1.0,0.0,0.0
+565L,Post injection,392_001002,0.0,1.0,0.0,0.0
+565L,Post injection,392_001003,0.0,1.0,0.0,0.0
+565L,Post injection,392_001004,0.0,1.0,0.0,0.0
+565L,Post injection,392_001005,0.0,1.0,0.0,0.0
+565L,Post injection,392_001006,0.0,1.0,0.0,0.0
+565L,Post injection,392_001007,0.0,1.0,0.0,0.0
+565L,Post injection,392_001008,0.0,1.0,0.0,0.0
+565L,Post injection,392_001009,0.0,1.0,0.0,0.0
+565L,Post injection,392_001010,0.0,0.0,0.0,0.0
+565L,Post injection,392_001011,0.0,0.0,0.0,0.0
+568L,Pre injection,395_001009,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001010,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001011,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001012,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001013,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001014,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001015,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001016,1.0,0.0,0.0,1.0
+568L,Pre injection,395_001017,1.0,0.0,0.0,1.0
+568L,Post injection,395_001009,1.0,0.0,0.0,1.0
+568L,Post injection,395_001010,1.0,0.0,0.0,1.0
+568L,Post injection,395_001011,1.0,0.0,0.0,1.0
+568L,Post injection,395_001012,1.0,0.0,0.0,1.0
+568L,Post injection,395_001013,1.0,0.0,0.0,1.0
+568L,Post injection,395_001014,1.0,0.0,0.0,1.0
+568L,Post injection,395_001015,1.0,0.0,0.0,1.0
+568L,Post injection,395_001016,1.0,0.0,0.0,1.0
+568L,Post injection,395_001017,1.0,0.0,0.0,1.0
+569L,Pre injection,396_001007,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001008,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001009,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001010,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001011,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001012,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001013,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001014,1.0,1.0,0.0,1.0
+569L,Pre injection,396_001015,1.0,1.0,0.0,1.0
+569L,Pre injection,396_001016,1.0,1.0,0.0,1.0
+569L,Pre injection,396_001017,0.0,1.0,0.0,1.0
+569L,Pre injection,396_001018,1.0,1.0,1.0,0.0
+569L,Pre injection,396_001019,1.0,1.0,1.0,0.0
+570L,Pre injection,397_001010,1.0,0.0,0.0,0.0
+570L,Pre injection,397_001011,1.0,0.0,0.0,0.0
+570L,Pre injection,397_001012,1.0,0.0,0.0,1.0
+570L,Pre injection,397_001013,0.0,0.0,0.0,1.0
+570L,Post injection,397_001008,0.0,0.0,0.0,1.0
+570L,Post injection,397_001009,0.0,0.0,0.0,1.0
+570L,Post injection,397_001010,0.0,0.0,0.0,1.0
+570L,Post injection,397_001011,0.0,0.0,0.0,0.0
+570L,Post injection,397_001012,0.0,0.0,0.0,0.0
+570L,Post injection,397_001013,1.0,0.0,0.0,1.0
+571L,Pre injection,398_001009,1.0,0.0,0.0,0.0
+571L,Pre injection,398_001010,1.0,0.0,0.0,0.0
+571L,Pre injection,398_001011,1.0,0.0,0.0,0.0
+571L,Pre injection,398_001012,1.0,1.0,0.0,0.0
+571L,Pre injection,398_001013,1.0,1.0,0.0,0.0
+571L,Pre injection,398_001014,1.0,1.0,0.0,0.0
+571L,Pre injection,398_001015,1.0,1.0,0.0,1.0
+571L,Pre injection,398_001016,1.0,1.0,0.0,0.0
+571L,Pre injection,398_001017,1.0,1.0,0.0,1.0
+571L,Pre injection,398_001018,1.0,1.0,0.0,1.0
+571L,Pre injection,398_001019,1.0,1.0,0.0,0.0
+571L,Post injection,398_001012,1.0,1.0,0.0,1.0
+571L,Post injection,398_001013,1.0,1.0,0.0,1.0
+571L,Post injection,398_001014,1.0,1.0,0.0,1.0
+571L,Post injection,398_001015,1.0,1.0,0.0,1.0
+571L,Post injection,398_001016,1.0,1.0,0.0,1.0
+571L,Post injection,398_001017,1.0,1.0,0.0,1.0
+571L,Post injection,398_001018,1.0,1.0,0.0,1.0
+571L,Post injection,398_001019,1.0,1.0,0.0,1.0
+576L,Pre injection,405_001014,1.0,0.0,0.0,1.0
+576L,Pre injection,405_001015,1.0,0.0,0.0,1.0
+576L,Pre injection,405_001016,1.0,0.0,0.0,1.0
+576L,Pre injection,405_001017,1.0,0.0,0.0,1.0
+576L,Post injection,405_001014,1.0,0.0,0.0,1.0
+576L,Post injection,405_001015,1.0,0.0,0.0,1.0
+576L,Post injection,405_001016,1.0,0.0,0.0,1.0
+576L,Post injection,405_001017,1.0,0.0,0.0,1.0
+577L,Pre injection,406_001012,1.0,1.0,0.0,1.0
+577L,Pre injection,406_001013,1.0,1.0,0.0,1.0
+577L,Pre injection,406_001014,1.0,1.0,0.0,1.0
+577L,Post injection,406_001013,1.0,0.0,0.0,1.0
+577L,Post injection,406_001014,1.0,0.0,0.0,1.0
+577L,Post injection,406_001015,1.0,0.0,0.0,1.0
+580R,Pre injection,410_001014,1.0,1.0,0.0,1.0
+580R,Pre injection,410_001015,1.0,1.0,0.0,1.0
+580R,Pre injection,410_001016,1.0,1.0,0.0,0.0
+580R,Post injection,410_001014,0.0,0.0,0.0,1.0
+580R,Post injection,410_001015,0.0,0.0,0.0,1.0
+580R,Post injection,410_001016,0.0,0.0,0.0,1.0
+581L,Pre injection,414_001011,1.0,0.0,0.0,0.0
+581L,Pre injection,414_001012,1.0,0.0,0.0,1.0
+581L,Pre injection,414_001013,1.0,0.0,0.0,0.0
+581L,Post injection,414_001011,1.0,0.0,0.0,1.0
+581L,Post injection,414_001012,0.0,0.0,0.0,0.0
+581L,Post injection,414_001013,0.0,0.0,0.0,1.0
+581L,Post injection,414_001014,0.0,0.0,0.0,0.0
+585R,Pre injection,421_001012,1.0,0.0,0.0,1.0
+585R,Pre injection,421_001013,1.0,0.0,0.0,1.0
+585R,Pre injection,421_001014,1.0,0.0,0.0,1.0
+585R,Pre injection,421_001015,1.0,0.0,0.0,1.0
+585R,Post injection,421_001012,1.0,0.0,0.0,1.0
+585R,Post injection,421_001013,1.0,0.0,0.0,1.0
+585R,Post injection,421_001014,1.0,0.0,0.0,1.0
+585R,Post injection,421_001015,1.0,0.0,0.0,1.0
+587R,Pre injection,423_001010,1.0,0.0,0.0,1.0
+587R,Pre injection,423_001011,1.0,0.0,0.0,1.0
+587R,Pre injection,423_001012,1.0,0.0,0.0,1.0
+587R,Post injection,423_001011,1.0,0.0,0.0,1.0
+587R,Post injection,423_001012,1.0,0.0,0.0,1.0
+587R,Post injection,423_001013,1.0,0.0,0.0,1.0
+589R,Pre injection,425_001013,1.0,1.0,0.0,1.0
+589R,Pre injection,425_001014,1.0,1.0,0.0,1.0
+589R,Pre injection,425_001015,1.0,1.0,0.0,1.0
+589R,Post injection,425_001013,0.0,0.0,0.0,1.0
+589R,Post injection,425_001014,0.0,0.0,0.0,1.0
+590R,Pre injection,426_001011,1.0,0.0,0.0,1.0
+590R,Pre injection,426_001012,1.0,0.0,0.0,1.0
+590R,Pre injection,426_001013,1.0,0.0,0.0,1.0
+590R,Post injection,426_001011,1.0,0.0,0.0,1.0
+590R,Post injection,426_001012,1.0,0.0,0.0,1.0
+590R,Post injection,426_001013,1.0,0.0,0.0,1.0
+593L,Pre injection,429_001014,1.0,0.0,0.0,1.0
+593L,Pre injection,429_001015,1.0,1.0,0.0,1.0
+593L,Post injection,429_001014,1.0,0.0,0.0,1.0
+593L,Post injection,429_001015,1.0,0.0,0.0,1.0
+593L,Post injection,429_001016,1.0,0.0,0.0,1.0
+595L,Pre injection,431_001014,1.0,1.0,0.0,1.0
+595L,Pre injection,431_001015,1.0,1.0,0.0,1.0
+595L,Pre injection,431_001016,1.0,1.0,0.0,1.0
+595L,Post injection,431_001014,1.0,1.0,0.0,1.0
+595L,Post injection,431_001015,1.0,1.0,0.0,1.0
+595L,Post injection,431_001016,1.0,1.0,0.0,1.0
+596L,Pre injection,432_001011,1.0,0.0,0.0,0.0
+596L,Post injection,432_001011,1.0,0.0,0.0,1.0
