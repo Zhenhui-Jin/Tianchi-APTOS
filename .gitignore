@@ -1,3 +1,22 @@
+
+
+
+.idea
+data/Train_set/TrainingSet*
+data/Test_set/PreliminaryValidationSet*
+data/train/*
+data/test/*
+data/CST/*
+
+
+
+
+
+
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
