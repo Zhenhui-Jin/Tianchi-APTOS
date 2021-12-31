@@ -91,7 +91,7 @@ def predict_csv(test_data, model_load_path, **kwargs):
 
 
 def predict_all(model_image_path, model_csv_path):
-    result_path = os.path.join(config.PREDICT_RESULT_PATH, f'{time.strftime("%Y%m%d%H%M")}')
+    result_path = os.path.join(config.PREDICT_RESULT_PATH, f'{time.strftime("%Y%m%d%H%M%D")}')
     os.makedirs(result_path, exist_ok=True)
 
     result_stage1 = os.path.join(result_path, 'submit_stage1.csv')
@@ -118,16 +118,17 @@ def predict_all(model_image_path, model_csv_path):
 
 def predict_before_after(before_model_load_path, after_model_load_path, model_csv_path):
     result_path = os.path.join(config.PREDICT_RESULT_PATH, f'{time.strftime("%Y%m%d%H%M")}')
-    os.makedirs(result_path, exist_ok=True)
 
     result_stage1 = os.path.join(result_path, 'submit_stage1.csv')
     result_stage2_case = os.path.join(result_path, 'submit_stage2_case.csv')
     result_stage2_pic = os.path.join(result_path, 'submit_stage2_pic.csv')
 
     stage2_pic, predict_data, = _predict_image_before_after(before_model_load_path, after_model_load_path)
-    stage2_pic.to_csv(result_stage2_pic, index=False)
 
     predict_data = predict_csv(predict_data, model_csv_path)
+
+    os.makedirs(result_path, exist_ok=True)
+    stage2_pic.to_csv(result_stage2_pic, index=False)
     predict_data['VA'] = abs(predict_data['VA'])
     submit_stage1 = pd.read_csv('data/submit/submit_stage1.csv')
     submit_stage1 = submit_stage1[['patient ID']]
@@ -140,3 +141,4 @@ def predict_before_after(before_model_load_path, after_model_load_path, model_cs
     stage2_case = stage2_case.merge(predict_data, on='patient ID')
     stage2_case = stage2_case[['patient ID', 'VA', 'continue injection', 'preCST', 'CST']]
     stage2_case.to_csv(result_stage2_case, index=False)
+    return result_path

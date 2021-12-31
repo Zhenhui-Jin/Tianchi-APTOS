@@ -5,18 +5,20 @@ from processing import data_factory
 def train_image():
     model_path = {
         # 'Model-Image-All': (None, 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'),
-        'Model-Image-After': (1, 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'),
-        'Model-Image-Before': (0, 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt')}
 
-    for eta, epochs in zip([0.0001, 0.0001, 0.0001], [50, 50, 50]):
+        'Model-Image-After': (1, 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'),
+        'Model-Image-Before': (0, 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt')
+    }
+
+    for eta, epochs in zip([0.001, 0.0001, 0.0001], [50]):
         for key, (after, path), in model_path.items():
             path = training.train_image(
-                    after=after,
-                    epochs=epochs,
-                    learning_rate=eta,
-                    model_load_path=path)
+                after=after,
+                epochs=epochs,
+                learning_rate=eta,
+                model_load_path=path)
             model_path[key] = (after, path)
-
+            break
         print(model_path)
 
 
@@ -54,9 +56,9 @@ def start_process():
 
     item = input('\n'.join(select) + '\n')
 
-    model_csv_path = 'model/ckpt/Model-CSV/202112302328/Model-CSV.pt'
-    model_image_path_before = 'model/ckpt/Model-Image-Before/202112301803/Model-Image-Before.pt'
-    model_image_path_after = 'model/ckpt/Model-Image-After/202112301618/Model-Image-After.pt'
+    model_csv_path = 'model/ckpt/Model-CSV/202112302045/Model-CSV.pt'
+    model_image_path_before = 'model/ckpt/Model-Image-Before/202112310014/Model-Image-Before.pt'
+    model_image_path_after = 'model/ckpt/Model-Image-After/202112310204/Model-Image-After.pt'
     model_image_path_all = 'model/ckpt/Model-Image-All/202112301955/Model-Image-All.pt'
 
     try:
@@ -66,10 +68,11 @@ def start_process():
         if key == 'predict_all':
             F(model_image_path_all, model_csv_path)
         elif key == 'predict_before_after':
-            F(model_image_path_before, model_image_path_after, model_csv_path)
+            result_path = F(model_image_path_before, model_image_path_after, model_csv_path)
         else:
             F()
-    except:
+    except Exception as e:
+        print(e)
         start_process()
 
 
